@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import site from "@/data/site.json";
 import { Button } from "@/components/ui/Button";
-import { AnimatedProgress } from "@/components/ui/AnimatedProgress";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 
 export default function Hero() {
   return (
@@ -62,9 +62,15 @@ export default function Hero() {
         >
           <div className="flex justify-between text-xs text-slate-500 mb-1">
             <span>{site.goal.label}</span>
-            <span>${site.goal.current} / ${site.goal.target}</span>
           </div>
-          <AnimatedProgress value={site.goal.current} max={site.goal.target} />
+          <ProgressBar
+            currentValue={site.goal.current}
+            targetValue={site.goal.target}
+            label={site.goal.label}
+            color="gold"
+            prefix="$"
+            height="md"
+          />
         </motion.div>
       )}
 
