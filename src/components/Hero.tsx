@@ -19,9 +19,7 @@ export default function Hero() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative w-28 h-28 mb-8 rounded-2xl overflow-hidden border-2 border-amber-500/20 glow-gold"
       >
-        <div className="w-full h-full bg-gradient-to-br from-amber-500/20 to-amber-700/20 flex items-center justify-center text-5xl">
-          {site.avatar}
-        </div>
+        <img src="/logo.png" alt="PromptVault" className="w-full h-full object-cover" />
       </motion.div>
 
       {/* Headline */}
