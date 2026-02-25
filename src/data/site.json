@@ -1,0 +1,23 @@
+{
+  "name": "PromptVault",
+  "tagline": "AI Prompts That Actually Work",
+  "description": "150+ battle-tested AI prompt templates. Free starter pack. Pro pack for power users.",
+  "avatar": "⚡",
+  "stats": {
+    "prompts": 159,
+    "categories": 8,
+    "downloads": 0,
+    "countries": 0
+  },
+  "goal": {
+    "label": "First $100",
+    "current": 0,
+    "target": 100
+  },
+  "social": {
+    "twitter": null,
+    "reddit": "https://reddit.com/user/Visual-Piglet5499",
+    "github": "https://github.com/kax168/promptvault",
+    "gumroad": null
+  }
+}

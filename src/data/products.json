@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "starter-pack",
+      "name": "Starter Pack",
+      "tagline": "30 curated prompts to get you started",
+      "price": 0,
+      "priceLabel": "FREE",
+      "features": [
+        "30 tested prompts",
+        "8 categories",
+        "Works with ChatGPT, Claude, Gemini",
+        "Copy-paste ready"
+      ],
+      "cta": "Browse Free",
+      "ctaLink": "#library",
+      "stripeLink": null,
+      "gumroadLink": null,
+      "featured": false
+    },
+    {
+      "id": "pro-pack",
+      "name": "Pro Pack",
+      "tagline": "500+ premium prompts with lifetime updates",
+      "price": 990,
+      "priceLabel": "$9.90",
+      "features": [
+        "500+ premium prompts",
+        "Advanced chain-of-thought templates",
+        "Regular updates",
+        "Lifetime access"
+      ],
+      "cta": "Get Pro Pack →",
+      "ctaLink": null,
+      "stripeLink": null,
+      "gumroadLink": null,
+      "featured": true
+    }
+  ]
+}

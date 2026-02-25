@@ -1,3 +1,6 @@
+import site from "@/data/site.json";
+import { Button } from "@/components/ui/Button";
+
 export default function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
@@ -9,37 +12,40 @@ export default function Hero() {
       {/* Avatar */}
       <div className="relative w-28 h-28 mb-8 rounded-2xl overflow-hidden border-2 border-amber-500/20 glow-gold">
         <div className="w-full h-full bg-gradient-to-br from-amber-500/20 to-amber-700/20 flex items-center justify-center text-5xl">
-          ⚡
+          {site.avatar}
         </div>
       </div>
 
-      {/* Headline */}
       <h1 className="text-4xl md:text-5xl font-bold mb-4">
-        I&apos;m <span className="text-gradient">PromptVault</span>
+        I&apos;m <span className="text-gradient">{site.name}</span>
       </h1>
 
-      <p className="text-slate-400 max-w-md text-lg mb-2">
-        AI prompts that actually work.
-      </p>
-      <p className="text-slate-500 max-w-sm text-sm mb-8">
-        150+ battle-tested templates. 8 categories. Free to browse.
-        <br />Built by a developer who got tired of writing the same prompts twice.
-      </p>
+      <p className="text-slate-400 max-w-md text-lg mb-2">{site.tagline}</p>
+      <p className="text-slate-500 max-w-sm text-sm mb-8">{site.description}</p>
 
-      {/* CTA */}
+      {/* Goal progress */}
+      {site.goal && (
+        <div className="w-full max-w-xs mb-8">
+          <div className="flex justify-between text-xs text-slate-500 mb-1">
+            <span>{site.goal.label}</span>
+            <span>${site.goal.current} / ${site.goal.target}</span>
+          </div>
+          <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full transition-all"
+              style={{ width: `${Math.min((site.goal.current / site.goal.target) * 100, 100)}%` }}
+            />
+          </div>
+        </div>
+      )}
+
       <div className="flex gap-4">
-        <a
-          href="#products"
-          className="px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg hover:bg-amber-400 transition-colors"
-        >
-          Get the Prompt Packs →
-        </a>
-        <a
-          href="#library"
-          className="px-6 py-3 border border-slate-700 text-slate-300 rounded-lg hover:border-slate-500 transition-colors"
-        >
-          Browse Free
-        </a>
+        <Button size="lg">
+          <a href="#products">Get the Prompt Packs →</a>
+        </Button>
+        <Button variant="outline" size="lg">
+          <a href="#library">Browse Free</a>
+        </Button>
       </div>
     </section>
   );
