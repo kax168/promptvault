@@ -1,7 +1,10 @@
 import site from "@/data/site.json";
 
 export default function Footer() {
-  const links = Object.entries(site.social).filter(([, v]) => v);
+  const allSocial = site.social as Record<string, string | null>;
+  const links = Object.entries(allSocial).filter(
+    (entry): entry is [string, string] => entry[1] !== null
+  );
   return (
     <footer className="py-12 px-6 border-t border-slate-900">
       <div className="max-w-xl mx-auto text-center">
@@ -10,7 +13,7 @@ export default function Footer() {
             {links.map(([name, url]) => (
               <a
                 key={name}
-                href={url as string}
+                href={url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-slate-500 hover:text-amber-400 transition-colors capitalize"
