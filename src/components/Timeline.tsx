@@ -1,15 +1,27 @@
+"use client";
+import { motion } from "framer-motion";
 import timeline from "@/data/timeline.json";
+import { FadeIn } from "@/components/ui/Motion";
 
 export default function Timeline() {
   return (
     <section className="py-16 px-6">
       <div className="max-w-xl mx-auto">
-        <h2 className="text-2xl font-bold mb-8 text-center">
-          The <span className="text-gradient">Journey</span>
-        </h2>
+        <FadeIn>
+          <h2 className="text-2xl font-bold mb-8 text-center">
+            The <span className="text-gradient">Journey</span>
+          </h2>
+        </FadeIn>
         <div className="space-y-0">
           {timeline.events.map((e, i) => (
-            <div key={i} className="flex gap-4 pb-8 relative">
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.15 }}
+              className="flex gap-4 pb-8 relative"
+            >
               {i < timeline.events.length - 1 && (
                 <div className="absolute left-[19px] top-8 w-px h-full bg-slate-800" />
               )}
@@ -21,7 +33,7 @@ export default function Timeline() {
                 <div className="text-sm font-semibold text-slate-200 mb-1">{e.title}</div>
                 <div className="text-xs text-slate-500 leading-relaxed">{e.description}</div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
