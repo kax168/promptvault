@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="relative flex flex-col items-center justify-center min-h-[85vh] px-6 text-center overflow-hidden">
       {/* Top announcement bar */}
       <a
-        href="https://kaixuan2.gumroad.com"
+        href="https://fromlaerkai.gumroad.com"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-amber-600 to-orange-500 py-2 text-center text-sm font-medium text-black hover:opacity-90 transition-opacity"
