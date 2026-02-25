@@ -1,0 +1,52 @@
+[
+  {
+    "id": "trans-6",
+    "title": "Email & Business Correspondence Translator",
+    "description": "Translate business emails with appropriate formality levels",
+    "category": "translation",
+    "tags": ["email", "business"],
+    "prompt": "Translate this business email from [source language] to [target language]. Match the formality level to [target culture] business norms. Adjust greetings, sign-offs, and politeness markers appropriately. Keep the core message and any action items crystal clear.\n\nEmail:\n[paste email here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-7",
+    "title": "UI/UX String Translator",
+    "description": "Translate app interface strings with length constraints",
+    "category": "translation",
+    "tags": ["ui", "software"],
+    "prompt": "Translate these UI strings from [source language] to [target language]. Rules:\n- Keep translations as short as possible (buttons, labels have limited space)\n- Use standard platform conventions for the target locale\n- Preserve placeholders like {name}, %d, {{count}} exactly as-is\n- Note any strings where translation is significantly longer than source\n\nStrings:\n[paste strings here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-8",
+    "title": "Literary Style Translator",
+    "description": "Translate creative writing preserving voice and literary devices",
+    "category": "translation",
+    "tags": ["literary", "creative"],
+    "prompt": "You are a literary translator. Translate this passage from [source language] to [target language]. Preserve the author's voice, rhythm, metaphors, and literary devices. Prioritize capturing the feeling and artistry over word-for-word accuracy. If a metaphor doesn't work in the target language, find an equivalent that carries the same emotional weight.\n\nPassage:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-9",
+    "title": "Medical Document Translator",
+    "description": "Translate medical records and health documents accurately",
+    "category": "translation",
+    "tags": ["medical", "health"],
+    "prompt": "You are a medical translator. Translate this medical document from [source language] to [target language]. Use standard medical terminology in the target language. Keep drug names in their international nonproprietary names (INN). Flag any ambiguous terms. Do not interpret or add medical advice.\n\nDocument:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-10",
+    "title": "Social Media Post Translator",
+    "description": "Translate social posts while keeping them engaging and platform-appropriate",
+    "category": "translation",
+    "tags": ["social", "casual"],
+    "prompt": "Translate this social media post from [source language] to [target language]. Keep it natural, engaging, and platform-appropriate. Adapt hashtags to trending equivalents in the target language. Preserve emojis. Match the casual/fun tone. Keep it within [platform] character limits.\n\nPost:\n[paste post here]\nPlatform: [Twitter/Instagram/etc.]",
+    "model": "Any",
+    "isPro": false
+  }
+]

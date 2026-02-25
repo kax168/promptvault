@@ -1,0 +1,52 @@
+[
+  {
+    "id": "trans-11",
+    "title": "E-commerce Product Listing Translator",
+    "description": "Translate product listings optimized for local SEO",
+    "category": "translation",
+    "tags": ["ecommerce", "seo"],
+    "prompt": "Translate this product listing from [source language] to [target language]. Optimize for local SEO: use keywords that [target market] shoppers actually search for. Adapt measurements, sizes, and currency references. Make the description compelling for local buyers.\n\nListing:\n[paste listing here]\nTarget marketplace: [Amazon.de/Rakuten/etc.]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-12",
+    "title": "Contract Clause Translator",
+    "description": "Translate contract clauses with legal precision",
+    "category": "translation",
+    "tags": ["legal", "contract"],
+    "prompt": "Translate these contract clauses from [source language] to [target language]. Maintain legal precision. Use standard contract language in the target jurisdiction. Preserve numbered references and cross-references. Flag any clauses that may have different enforceability in [target country].\n\nClauses:\n[paste clauses here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-13",
+    "title": "Game Localization Translator",
+    "description": "Translate game dialogue and UI for different markets",
+    "category": "translation",
+    "tags": ["gaming", "localization"],
+    "prompt": "You are a game localization expert. Translate this game content from [source language] to [target language]. Adapt humor, puns, and cultural references for the target audience. Keep character voice consistent. Preserve variable placeholders like {player_name}. Match the tone: [epic/casual/horror/comedic].\n\nContent type: [dialogue/UI/item descriptions/quest text]\n\n[paste content here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-14",
+    "title": "Patent Document Translator",
+    "description": "Translate patent claims and descriptions with technical precision",
+    "category": "translation",
+    "tags": ["patent", "technical"],
+    "prompt": "Translate this patent document from [source language] to [target language]. Follow patent translation conventions: maintain claim structure, use precise technical language, preserve reference numerals, and keep the same level of specificity. Do not simplify or paraphrase claims.\n\nDocument:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-15",
+    "title": "Menu & Food Description Translator",
+    "description": "Translate restaurant menus with appetizing descriptions",
+    "category": "translation",
+    "tags": ["food", "hospitality"],
+    "prompt": "Translate this restaurant menu from [source language] to [target language]. Make dish descriptions appetizing and clear. Explain unfamiliar ingredients or cooking methods briefly in parentheses. Keep allergen information accurate. Adapt portion descriptions to local conventions.\n\nMenu:\n[paste menu here]",
+    "model": "Any",
+    "isPro": false
+  }
+]

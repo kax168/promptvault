@@ -1,0 +1,82 @@
+[
+  {
+    "id": "prod-17",
+    "title": "Weekly Review Template",
+    "description": "Structured weekly review to reflect and plan ahead",
+    "category": "productivity",
+    "tags": ["review", "planning"],
+    "prompt": "Help me do a structured weekly review. I'll share what happened this week. Analyze it and give me:\n1. Top 3 wins\n2. Top 3 lessons learned\n3. What I should stop/start/continue\n4. Priority tasks for next week (max 5)\n5. One thing I'm avoiding that I should face\n\nThis week: [paste your week summary]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-18",
+    "title": "Meeting Notes to Action Items",
+    "description": "Extract clear action items from messy meeting notes",
+    "category": "productivity",
+    "tags": ["meetings", "action-items"],
+    "prompt": "Extract action items from these meeting notes. For each item list: task description, owner, deadline, priority (high/medium/low), and dependencies. Group by owner. Flag any decisions made and any unresolved questions that need follow-up.\n\nMeeting notes:\n[paste notes here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-19",
+    "title": "Decision Matrix Builder",
+    "description": "Make complex decisions using a weighted scoring matrix",
+    "category": "productivity",
+    "tags": ["decision", "framework"],
+    "prompt": "Help me decide between these options: [option 1], [option 2], [option 3]. Create a weighted decision matrix. Suggest 5-7 relevant criteria based on my context. Ask me to weight each criterion 1-10, then score each option. Show the final weighted scores and a clear recommendation.\n\nContext: [what you're deciding and why it matters]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "prod-20",
+    "title": "Habit Tracker & Accountability Coach",
+    "description": "Design a habit system and get accountability check-ins",
+    "category": "productivity",
+    "tags": ["habits", "coaching"],
+    "prompt": "I want to build these habits: [list habits]. For each habit, help me:\n1. Define the smallest possible version (2-minute rule)\n2. Identify the best trigger/cue\n3. Design the reward\n4. Plan for obstacles\n5. Create a 30-day progression plan\n\nMy schedule: [brief daily routine]\nPast attempts: [what failed before]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-21",
+    "title": "Email Inbox Zero Processor",
+    "description": "Batch process emails with clear action categories",
+    "category": "productivity",
+    "tags": ["email", "organization"],
+    "prompt": "I'll paste my email subjects and senders. Categorize each into: Reply Now (under 2 min), Schedule Time (needs thought), Delegate (to whom), Archive (no action needed), or Unsubscribe. For Reply Now items, draft a brief response. For Schedule Time items, suggest a time block.\n\nEmails:\n[paste email list]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "prod-22",
+    "title": "Project Scope Definer",
+    "description": "Define clear project scope to prevent scope creep",
+    "category": "productivity",
+    "tags": ["project", "scope"],
+    "prompt": "Help me define the scope for this project: [project name]. Based on my description, create:\n1. Project goal (one sentence)\n2. In scope (specific deliverables)\n3. Out of scope (explicitly excluded)\n4. Assumptions\n5. Constraints (time, budget, resources)\n6. Success criteria (measurable)\n7. Milestones with dates\n\nProject description: [describe your project]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-23",
+    "title": "Learning Plan Generator",
+    "description": "Create a structured self-study plan for any skill",
+    "category": "productivity",
+    "tags": ["learning", "education"],
+    "prompt": "Create a [X]-week learning plan for [skill/topic]. My current level: [beginner/intermediate]. Available time: [hours per week]. Include: weekly goals, specific resources (free when possible), practice exercises, milestones to check progress, and a mini-project at the end to prove competency.\n\nWhy I'm learning this: [motivation]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "prod-24",
+    "title": "SOPs from Brain Dump",
+    "description": "Turn messy process descriptions into clean SOPs",
+    "category": "productivity",
+    "tags": ["sop", "documentation"],
+    "prompt": "Turn my brain dump into a clean Standard Operating Procedure. Format: Title, Purpose, Scope, Prerequisites, Step-by-step instructions (numbered, with screenshots placeholders), Common mistakes to avoid, Troubleshooting FAQ, and Version/date.\n\nMy messy description:\n[paste your brain dump about the process]",
+    "model": "Any",
+    "isPro": false
+  }
+]

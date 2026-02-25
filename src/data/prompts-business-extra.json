@@ -1,0 +1,82 @@
+[
+  {
+    "id": "biz-13",
+    "title": "Investor Pitch Deck Script",
+    "description": "Generate a compelling pitch deck narrative for fundraising",
+    "category": "business",
+    "tags": ["pitch", "fundraising"],
+    "prompt": "Create a 10-slide pitch deck script for [company name]. We are a [industry] startup that [one-line description]. Include: Problem, Solution, Market Size (TAM/SAM/SOM), Business Model, Traction, Team, Competition, Go-to-Market, Financials, Ask. Make each slide punchy with one key message. Target audience: [seed/Series A] investors.\n\nKey metrics: [paste metrics]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-14",
+    "title": "Competitive Analysis Framework",
+    "description": "Analyze competitors systematically across key dimensions",
+    "category": "business",
+    "tags": ["strategy", "competition"],
+    "prompt": "Conduct a competitive analysis for [your product] against these competitors: [competitor 1], [competitor 2], [competitor 3]. Analyze each across: pricing, features, target audience, market positioning, strengths, weaknesses, and unique selling points. Create a comparison matrix and identify gaps we can exploit.\n\nOur product: [description]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-15",
+    "title": "OKR Generator",
+    "description": "Create quarterly OKRs aligned with company strategy",
+    "category": "business",
+    "tags": ["okr", "planning"],
+    "prompt": "Generate quarterly OKRs for [team/department]. Company mission: [mission]. This quarter's strategic priority: [priority]. Create 3 Objectives, each with 3-4 measurable Key Results. Each KR should be specific, time-bound, and have a clear metric. Include stretch targets.\n\nTeam size: [number]\nCurrent challenges: [challenges]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "biz-16",
+    "title": "Customer Persona Builder",
+    "description": "Create detailed customer personas from market data",
+    "category": "business",
+    "tags": ["persona", "marketing"],
+    "prompt": "Create 3 detailed customer personas for [product/service]. For each persona include: Name, Age, Job title, Income, Goals, Pain points, Preferred channels, Buying triggers, Objections, and a day-in-the-life scenario. Base these on [industry] market data.\n\nProduct: [description]\nTarget market: [market]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "biz-17",
+    "title": "Partnership Proposal Writer",
+    "description": "Draft a compelling business partnership proposal",
+    "category": "business",
+    "tags": ["partnership", "proposal"],
+    "prompt": "Write a partnership proposal from [your company] to [target company]. Structure: Executive summary, mutual benefits, proposed collaboration model, revenue sharing/terms, timeline, success metrics, and next steps. Tone: professional but enthusiastic. Emphasize the win-win.\n\nYour company: [description]\nTarget company: [description]\nProposed partnership: [idea]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-18",
+    "title": "Unit Economics Calculator",
+    "description": "Break down unit economics for a business model",
+    "category": "business",
+    "tags": ["finance", "metrics"],
+    "prompt": "Calculate and explain the unit economics for my [business type]. Given these inputs:\n- Customer Acquisition Cost: $[CAC]\n- Average Revenue Per User: $[ARPU]/month\n- Gross Margin: [X]%\n- Monthly Churn: [X]%\n\nCalculate: LTV, LTV:CAC ratio, payback period, and break-even point. Tell me if this business model is healthy and what to improve.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-19",
+    "title": "Board Meeting Prep",
+    "description": "Prepare a structured board meeting agenda and talking points",
+    "category": "business",
+    "tags": ["board", "management"],
+    "prompt": "Prepare a board meeting agenda and talking points. Company: [name], Stage: [seed/growth/etc]. Cover: financial update, KPI dashboard, product roadmap progress, team updates, risks and mitigation, strategic decisions needed, and Q&A prep. Include potential tough questions and suggested answers.\n\nKey updates this quarter: [updates]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-20",
+    "title": "Pricing Strategy Advisor",
+    "description": "Develop a data-driven pricing strategy for your product",
+    "category": "business",
+    "tags": ["pricing", "strategy"],
+    "prompt": "Help me develop a pricing strategy for [product]. Current price: [price]. Competitors charge: [range]. Our costs: [costs]. Analyze these pricing models for my case: freemium, tiered, usage-based, flat-rate, and per-seat. Recommend the best approach with specific price points and justification. Include a pricing page layout suggestion.",
+    "model": "Any",
+    "isPro": false
+  }
+]

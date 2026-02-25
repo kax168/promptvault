@@ -1,0 +1,52 @@
+[
+  {
+    "id": "trans-16",
+    "title": "News Article Translator",
+    "description": "Translate news articles maintaining journalistic style",
+    "category": "translation",
+    "tags": ["news", "journalism"],
+    "prompt": "Translate this news article from [source language] to [target language]. Maintain journalistic objectivity and AP/Reuters style. Keep quotes attributed correctly. Adapt date formats, currency, and measurement units for the target audience. Preserve the inverted pyramid structure.\n\nArticle:\n[paste article here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-17",
+    "title": "Poetry Translator",
+    "description": "Translate poetry preserving rhythm, rhyme, and meaning",
+    "category": "translation",
+    "tags": ["poetry", "literary"],
+    "prompt": "Translate this poem from [source language] to [target language]. Provide two versions:\n1. A faithful translation prioritizing meaning\n2. A creative adaptation preserving rhythm and rhyme scheme where possible\n\nNote any untranslatable wordplay or cultural allusions.\n\nPoem:\n[paste poem here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-18",
+    "title": "Customer Support Script Translator",
+    "description": "Translate support scripts with empathetic tone for local markets",
+    "category": "translation",
+    "tags": ["support", "customer-service"],
+    "prompt": "Translate these customer support scripts from [source language] to [target language]. Adapt the tone to match [target culture] customer service expectations. Adjust formality level appropriately. Preserve escalation paths and technical troubleshooting steps exactly.\n\nScripts:\n[paste scripts here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-19",
+    "title": "SEO Content Translator",
+    "description": "Translate web content while optimizing for target-language SEO",
+    "category": "translation",
+    "tags": ["seo", "web"],
+    "prompt": "Translate this web page content from [source language] to [target language]. Research and use high-volume keywords in the target language (don't just translate the English keywords). Adapt meta title (under 60 chars) and meta description (under 155 chars). Keep heading hierarchy. Make CTAs compelling for the local market.\n\nContent:\n[paste content here]\nTarget keywords (English): [keywords]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-20",
+    "title": "Multi-Language Comparison Translator",
+    "description": "Translate text into multiple languages side by side for comparison",
+    "category": "translation",
+    "tags": ["multi-language", "comparison"],
+    "prompt": "Translate the following text into these languages: [language 1], [language 2], [language 3]. Present results in a table format with the original and all translations side by side. Note any significant differences in meaning or nuance between the translations.\n\nText:\n[paste text here]",
+    "model": "Any",
+    "isPro": false
+  }
+]

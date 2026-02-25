@@ -2222,5 +2222,538 @@
       "funnel"
     ],
     "prompt": "Design a lead magnet for [BRAND] targeting [AUDIENCE] in the [INDUSTRY] space. Goal: capture email addresses and begin nurturing toward [END_GOAL: product purchase/demo request/consultation]. Lead magnet type: [TYPE: checklist/template/guide/toolkit/quiz/cheat sheet/swipe file/calculator]. Topic: [TOPIC] — solving the specific problem of [PROBLEM]. Include: 1) Title — benefit-driven, specific (e.g., 'The [NUMBER]-Step [OUTCOME] [TYPE]'), 2) Landing Page Headline and Subheadline for the opt-in page, 3) [NUMBER] bullet points describing what's inside (use 'curiosity + benefit' format), 4) Complete outline of the lead magnet content with [NUMBER] sections, 5) Design notes — format, length, branding elements, 6) Delivery email copy — subject line and body for the automated delivery, 7) Follow-up sequence brief — [NUMBER] emails to send after delivery with topics and timing, 8) Promotion plan — [NUMBER] channels and tactics to drive opt-ins. The lead magnet should be completable in under [TIME] and deliver a quick win."
+  },
+  {
+    "id": "biz-13",
+    "title": "Investor Pitch Deck Script",
+    "description": "Generate a compelling pitch deck narrative for fundraising",
+    "category": "business",
+    "tags": [
+      "pitch",
+      "fundraising"
+    ],
+    "prompt": "Create a 10-slide pitch deck script for [company name]. We are a [industry] startup that [one-line description]. Include: Problem, Solution, Market Size (TAM/SAM/SOM), Business Model, Traction, Team, Competition, Go-to-Market, Financials, Ask. Make each slide punchy with one key message. Target audience: [seed/Series A] investors.\n\nKey metrics: [paste metrics]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-14",
+    "title": "Competitive Analysis Framework",
+    "description": "Analyze competitors systematically across key dimensions",
+    "category": "business",
+    "tags": [
+      "strategy",
+      "competition"
+    ],
+    "prompt": "Conduct a competitive analysis for [your product] against these competitors: [competitor 1], [competitor 2], [competitor 3]. Analyze each across: pricing, features, target audience, market positioning, strengths, weaknesses, and unique selling points. Create a comparison matrix and identify gaps we can exploit.\n\nOur product: [description]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-15",
+    "title": "OKR Generator",
+    "description": "Create quarterly OKRs aligned with company strategy",
+    "category": "business",
+    "tags": [
+      "okr",
+      "planning"
+    ],
+    "prompt": "Generate quarterly OKRs for [team/department]. Company mission: [mission]. This quarter's strategic priority: [priority]. Create 3 Objectives, each with 3-4 measurable Key Results. Each KR should be specific, time-bound, and have a clear metric. Include stretch targets.\n\nTeam size: [number]\nCurrent challenges: [challenges]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "biz-16",
+    "title": "Customer Persona Builder",
+    "description": "Create detailed customer personas from market data",
+    "category": "business",
+    "tags": [
+      "persona",
+      "marketing"
+    ],
+    "prompt": "Create 3 detailed customer personas for [product/service]. For each persona include: Name, Age, Job title, Income, Goals, Pain points, Preferred channels, Buying triggers, Objections, and a day-in-the-life scenario. Base these on [industry] market data.\n\nProduct: [description]\nTarget market: [market]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "biz-17",
+    "title": "Partnership Proposal Writer",
+    "description": "Draft a compelling business partnership proposal",
+    "category": "business",
+    "tags": [
+      "partnership",
+      "proposal"
+    ],
+    "prompt": "Write a partnership proposal from [your company] to [target company]. Structure: Executive summary, mutual benefits, proposed collaboration model, revenue sharing/terms, timeline, success metrics, and next steps. Tone: professional but enthusiastic. Emphasize the win-win.\n\nYour company: [description]\nTarget company: [description]\nProposed partnership: [idea]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-18",
+    "title": "Unit Economics Calculator",
+    "description": "Break down unit economics for a business model",
+    "category": "business",
+    "tags": [
+      "finance",
+      "metrics"
+    ],
+    "prompt": "Calculate and explain the unit economics for my [business type]. Given these inputs:\n- Customer Acquisition Cost: $[CAC]\n- Average Revenue Per User: $[ARPU]/month\n- Gross Margin: [X]%\n- Monthly Churn: [X]%\n\nCalculate: LTV, LTV:CAC ratio, payback period, and break-even point. Tell me if this business model is healthy and what to improve.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-19",
+    "title": "Board Meeting Prep",
+    "description": "Prepare a structured board meeting agenda and talking points",
+    "category": "business",
+    "tags": [
+      "board",
+      "management"
+    ],
+    "prompt": "Prepare a board meeting agenda and talking points. Company: [name], Stage: [seed/growth/etc]. Cover: financial update, KPI dashboard, product roadmap progress, team updates, risks and mitigation, strategic decisions needed, and Q&A prep. Include potential tough questions and suggested answers.\n\nKey updates this quarter: [updates]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "biz-20",
+    "title": "Pricing Strategy Advisor",
+    "description": "Develop a data-driven pricing strategy for your product",
+    "category": "business",
+    "tags": [
+      "pricing",
+      "strategy"
+    ],
+    "prompt": "Help me develop a pricing strategy for [product]. Current price: [price]. Competitors charge: [range]. Our costs: [costs]. Analyze these pricing models for my case: freemium, tiered, usage-based, flat-rate, and per-seat. Recommend the best approach with specific price points and justification. Include a pricing page layout suggestion.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-17",
+    "title": "Weekly Review Template",
+    "description": "Structured weekly review to reflect and plan ahead",
+    "category": "productivity",
+    "tags": [
+      "review",
+      "planning"
+    ],
+    "prompt": "Help me do a structured weekly review. I'll share what happened this week. Analyze it and give me:\n1. Top 3 wins\n2. Top 3 lessons learned\n3. What I should stop/start/continue\n4. Priority tasks for next week (max 5)\n5. One thing I'm avoiding that I should face\n\nThis week: [paste your week summary]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-18",
+    "title": "Meeting Notes to Action Items",
+    "description": "Extract clear action items from messy meeting notes",
+    "category": "productivity",
+    "tags": [
+      "meetings",
+      "action-items"
+    ],
+    "prompt": "Extract action items from these meeting notes. For each item list: task description, owner, deadline, priority (high/medium/low), and dependencies. Group by owner. Flag any decisions made and any unresolved questions that need follow-up.\n\nMeeting notes:\n[paste notes here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-19",
+    "title": "Decision Matrix Builder",
+    "description": "Make complex decisions using a weighted scoring matrix",
+    "category": "productivity",
+    "tags": [
+      "decision",
+      "framework"
+    ],
+    "prompt": "Help me decide between these options: [option 1], [option 2], [option 3]. Create a weighted decision matrix. Suggest 5-7 relevant criteria based on my context. Ask me to weight each criterion 1-10, then score each option. Show the final weighted scores and a clear recommendation.\n\nContext: [what you're deciding and why it matters]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "prod-20",
+    "title": "Habit Tracker & Accountability Coach",
+    "description": "Design a habit system and get accountability check-ins",
+    "category": "productivity",
+    "tags": [
+      "habits",
+      "coaching"
+    ],
+    "prompt": "I want to build these habits: [list habits]. For each habit, help me:\n1. Define the smallest possible version (2-minute rule)\n2. Identify the best trigger/cue\n3. Design the reward\n4. Plan for obstacles\n5. Create a 30-day progression plan\n\nMy schedule: [brief daily routine]\nPast attempts: [what failed before]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-21",
+    "title": "Email Inbox Zero Processor",
+    "description": "Batch process emails with clear action categories",
+    "category": "productivity",
+    "tags": [
+      "email",
+      "organization"
+    ],
+    "prompt": "I'll paste my email subjects and senders. Categorize each into: Reply Now (under 2 min), Schedule Time (needs thought), Delegate (to whom), Archive (no action needed), or Unsubscribe. For Reply Now items, draft a brief response. For Schedule Time items, suggest a time block.\n\nEmails:\n[paste email list]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "prod-22",
+    "title": "Project Scope Definer",
+    "description": "Define clear project scope to prevent scope creep",
+    "category": "productivity",
+    "tags": [
+      "project",
+      "scope"
+    ],
+    "prompt": "Help me define the scope for this project: [project name]. Based on my description, create:\n1. Project goal (one sentence)\n2. In scope (specific deliverables)\n3. Out of scope (explicitly excluded)\n4. Assumptions\n5. Constraints (time, budget, resources)\n6. Success criteria (measurable)\n7. Milestones with dates\n\nProject description: [describe your project]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "prod-23",
+    "title": "Learning Plan Generator",
+    "description": "Create a structured self-study plan for any skill",
+    "category": "productivity",
+    "tags": [
+      "learning",
+      "education"
+    ],
+    "prompt": "Create a [X]-week learning plan for [skill/topic]. My current level: [beginner/intermediate]. Available time: [hours per week]. Include: weekly goals, specific resources (free when possible), practice exercises, milestones to check progress, and a mini-project at the end to prove competency.\n\nWhy I'm learning this: [motivation]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "prod-24",
+    "title": "SOPs from Brain Dump",
+    "description": "Turn messy process descriptions into clean SOPs",
+    "category": "productivity",
+    "tags": [
+      "sop",
+      "documentation"
+    ],
+    "prompt": "Turn my brain dump into a clean Standard Operating Procedure. Format: Title, Purpose, Scope, Prerequisites, Step-by-step instructions (numbered, with screenshots placeholders), Common mistakes to avoid, Troubleshooting FAQ, and Version/date.\n\nMy messy description:\n[paste your brain dump about the process]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-1",
+    "title": "Technical Document Translator",
+    "description": "Translate technical documentation while preserving formatting and terminology",
+    "category": "translation",
+    "tags": [
+      "technical",
+      "documentation"
+    ],
+    "prompt": "You are an expert technical translator. Translate the following text from [source language] to [target language]. Preserve all technical terminology, code snippets, and formatting. If a technical term has no standard translation, keep the original term and add a brief explanation in parentheses.\n\nText to translate:\n[paste text here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-2",
+    "title": "Marketing Copy Localizer",
+    "description": "Adapt marketing copy for different cultural markets",
+    "category": "translation",
+    "tags": [
+      "marketing",
+      "localization"
+    ],
+    "prompt": "You are a marketing localization expert. Adapt the following marketing copy from [source language] to [target language]. Don't just translate literally - adapt idioms, cultural references, humor, and tone to resonate with [target market] audiences. Maintain the persuasive intent and emotional impact.\n\nOriginal copy:\n[paste text here]\n\nTarget market: [country/region]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-3",
+    "title": "Legal Document Translator",
+    "description": "Translate legal documents with precise terminology",
+    "category": "translation",
+    "tags": [
+      "legal",
+      "formal"
+    ],
+    "prompt": "You are a certified legal translator. Translate the following legal document from [source language] to [target language]. Use precise legal terminology appropriate for the [target country] legal system. Flag any terms that have different legal implications across jurisdictions. Maintain formal register throughout.\n\nDocument:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-4",
+    "title": "Subtitle & Caption Translator",
+    "description": "Translate video subtitles with timing and character limits in mind",
+    "category": "translation",
+    "tags": [
+      "subtitles",
+      "video"
+    ],
+    "prompt": "You are a professional subtitle translator. Translate these subtitles from [source language] to [target language]. Rules:\n1. Keep each line under 42 characters\n2. Maintain the same number of lines per subtitle block\n3. Preserve timing cues if provided\n4. Adapt jokes and cultural references for the target audience\n5. Use natural spoken language, not formal written style\n\nSubtitles:\n[paste subtitles here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-5",
+    "title": "Academic Paper Translator",
+    "description": "Translate research papers while maintaining academic rigor",
+    "category": "translation",
+    "tags": [
+      "academic",
+      "research"
+    ],
+    "prompt": "You are an academic translator specializing in [field]. Translate this research paper excerpt from [source language] to [target language]. Maintain academic tone, preserve citation formats, keep statistical notations unchanged, and use field-standard terminology in the target language.\n\nText:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-6",
+    "title": "Email & Business Correspondence Translator",
+    "description": "Translate business emails with appropriate formality levels",
+    "category": "translation",
+    "tags": [
+      "email",
+      "business"
+    ],
+    "prompt": "Translate this business email from [source language] to [target language]. Match the formality level to [target culture] business norms. Adjust greetings, sign-offs, and politeness markers appropriately. Keep the core message and any action items crystal clear.\n\nEmail:\n[paste email here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-7",
+    "title": "UI/UX String Translator",
+    "description": "Translate app interface strings with length constraints",
+    "category": "translation",
+    "tags": [
+      "ui",
+      "software"
+    ],
+    "prompt": "Translate these UI strings from [source language] to [target language]. Rules:\n- Keep translations as short as possible (buttons, labels have limited space)\n- Use standard platform conventions for the target locale\n- Preserve placeholders like {name}, %d, {{count}} exactly as-is\n- Note any strings where translation is significantly longer than source\n\nStrings:\n[paste strings here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-8",
+    "title": "Literary Style Translator",
+    "description": "Translate creative writing preserving voice and literary devices",
+    "category": "translation",
+    "tags": [
+      "literary",
+      "creative"
+    ],
+    "prompt": "You are a literary translator. Translate this passage from [source language] to [target language]. Preserve the author's voice, rhythm, metaphors, and literary devices. Prioritize capturing the feeling and artistry over word-for-word accuracy. If a metaphor doesn't work in the target language, find an equivalent that carries the same emotional weight.\n\nPassage:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-9",
+    "title": "Medical Document Translator",
+    "description": "Translate medical records and health documents accurately",
+    "category": "translation",
+    "tags": [
+      "medical",
+      "health"
+    ],
+    "prompt": "You are a medical translator. Translate this medical document from [source language] to [target language]. Use standard medical terminology in the target language. Keep drug names in their international nonproprietary names (INN). Flag any ambiguous terms. Do not interpret or add medical advice.\n\nDocument:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-10",
+    "title": "Social Media Post Translator",
+    "description": "Translate social posts while keeping them engaging and platform-appropriate",
+    "category": "translation",
+    "tags": [
+      "social",
+      "casual"
+    ],
+    "prompt": "Translate this social media post from [source language] to [target language]. Keep it natural, engaging, and platform-appropriate. Adapt hashtags to trending equivalents in the target language. Preserve emojis. Match the casual/fun tone. Keep it within [platform] character limits.\n\nPost:\n[paste post here]\nPlatform: [Twitter/Instagram/etc.]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-11",
+    "title": "E-commerce Product Listing Translator",
+    "description": "Translate product listings optimized for local SEO",
+    "category": "translation",
+    "tags": [
+      "ecommerce",
+      "seo"
+    ],
+    "prompt": "Translate this product listing from [source language] to [target language]. Optimize for local SEO: use keywords that [target market] shoppers actually search for. Adapt measurements, sizes, and currency references. Make the description compelling for local buyers.\n\nListing:\n[paste listing here]\nTarget marketplace: [Amazon.de/Rakuten/etc.]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-12",
+    "title": "Contract Clause Translator",
+    "description": "Translate contract clauses with legal precision",
+    "category": "translation",
+    "tags": [
+      "legal",
+      "contract"
+    ],
+    "prompt": "Translate these contract clauses from [source language] to [target language]. Maintain legal precision. Use standard contract language in the target jurisdiction. Preserve numbered references and cross-references. Flag any clauses that may have different enforceability in [target country].\n\nClauses:\n[paste clauses here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-13",
+    "title": "Game Localization Translator",
+    "description": "Translate game dialogue and UI for different markets",
+    "category": "translation",
+    "tags": [
+      "gaming",
+      "localization"
+    ],
+    "prompt": "You are a game localization expert. Translate this game content from [source language] to [target language]. Adapt humor, puns, and cultural references for the target audience. Keep character voice consistent. Preserve variable placeholders like {player_name}. Match the tone: [epic/casual/horror/comedic].\n\nContent type: [dialogue/UI/item descriptions/quest text]\n\n[paste content here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-14",
+    "title": "Patent Document Translator",
+    "description": "Translate patent claims and descriptions with technical precision",
+    "category": "translation",
+    "tags": [
+      "patent",
+      "technical"
+    ],
+    "prompt": "Translate this patent document from [source language] to [target language]. Follow patent translation conventions: maintain claim structure, use precise technical language, preserve reference numerals, and keep the same level of specificity. Do not simplify or paraphrase claims.\n\nDocument:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-15",
+    "title": "Menu & Food Description Translator",
+    "description": "Translate restaurant menus with appetizing descriptions",
+    "category": "translation",
+    "tags": [
+      "food",
+      "hospitality"
+    ],
+    "prompt": "Translate this restaurant menu from [source language] to [target language]. Make dish descriptions appetizing and clear. Explain unfamiliar ingredients or cooking methods briefly in parentheses. Keep allergen information accurate. Adapt portion descriptions to local conventions.\n\nMenu:\n[paste menu here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-16",
+    "title": "News Article Translator",
+    "description": "Translate news articles maintaining journalistic style",
+    "category": "translation",
+    "tags": [
+      "news",
+      "journalism"
+    ],
+    "prompt": "Translate this news article from [source language] to [target language]. Maintain journalistic objectivity and AP/Reuters style. Keep quotes attributed correctly. Adapt date formats, currency, and measurement units for the target audience. Preserve the inverted pyramid structure.\n\nArticle:\n[paste article here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-17",
+    "title": "Poetry Translator",
+    "description": "Translate poetry preserving rhythm, rhyme, and meaning",
+    "category": "translation",
+    "tags": [
+      "poetry",
+      "literary"
+    ],
+    "prompt": "Translate this poem from [source language] to [target language]. Provide two versions:\n1. A faithful translation prioritizing meaning\n2. A creative adaptation preserving rhythm and rhyme scheme where possible\n\nNote any untranslatable wordplay or cultural allusions.\n\nPoem:\n[paste poem here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-18",
+    "title": "Customer Support Script Translator",
+    "description": "Translate support scripts with empathetic tone for local markets",
+    "category": "translation",
+    "tags": [
+      "support",
+      "customer-service"
+    ],
+    "prompt": "Translate these customer support scripts from [source language] to [target language]. Adapt the tone to match [target culture] customer service expectations. Adjust formality level appropriately. Preserve escalation paths and technical troubleshooting steps exactly.\n\nScripts:\n[paste scripts here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-19",
+    "title": "SEO Content Translator",
+    "description": "Translate web content while optimizing for target-language SEO",
+    "category": "translation",
+    "tags": [
+      "seo",
+      "web"
+    ],
+    "prompt": "Translate this web page content from [source language] to [target language]. Research and use high-volume keywords in the target language (don't just translate the English keywords). Adapt meta title (under 60 chars) and meta description (under 155 chars). Keep heading hierarchy. Make CTAs compelling for the local market.\n\nContent:\n[paste content here]\nTarget keywords (English): [keywords]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-20",
+    "title": "Multi-Language Comparison Translator",
+    "description": "Translate text into multiple languages side by side for comparison",
+    "category": "translation",
+    "tags": [
+      "multi-language",
+      "comparison"
+    ],
+    "prompt": "Translate the following text into these languages: [language 1], [language 2], [language 3]. Present results in a table format with the original and all translations side by side. Note any significant differences in meaning or nuance between the translations.\n\nText:\n[paste text here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "market-19",
+    "title": "Landing Page Copy Generator",
+    "description": "Write high-converting landing page copy with clear CTAs",
+    "category": "marketing",
+    "tags": [
+      "landing-page",
+      "copywriting"
+    ],
+    "prompt": "Write landing page copy for [product/service]. Structure: Hero headline (under 10 words), subheadline, 3 benefit blocks with icons, social proof section, FAQ (5 questions), and final CTA. Tone: [professional/casual/bold]. Target audience: [audience]. Key differentiator: [what makes you different].",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "market-20",
+    "title": "Product Hunt Launch Copy",
+    "description": "Craft a compelling Product Hunt launch post",
+    "category": "marketing",
+    "tags": [
+      "product-hunt",
+      "launch"
+    ],
+    "prompt": "Write a Product Hunt launch post for [product]. Include: tagline (under 60 chars), description (under 260 chars), first comment from maker (friendly, authentic, tells the story), and 5 suggested first-day comments to seed engagement. Tone: excited but genuine, not salesy.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "creative-34",
+    "title": "Brand Voice Guide Creator",
+    "description": "Define a consistent brand voice and tone guidelines",
+    "category": "creative",
+    "tags": [
+      "branding",
+      "voice"
+    ],
+    "prompt": "Create a brand voice guide for [brand name]. Include: brand personality (3-5 adjectives), tone spectrum (when to be formal vs casual), vocabulary do's and don'ts, example sentences in our voice vs not our voice, and guidelines for different channels (social, email, support, website). Industry: [industry]. Target audience: [audience].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "code-31",
+    "title": "API Documentation Writer",
+    "description": "Generate clean API docs from endpoint descriptions",
+    "category": "coding",
+    "tags": [
+      "api",
+      "documentation"
+    ],
+    "prompt": "Write API documentation for this endpoint. Include: endpoint URL, method, description, request headers, request body (with JSON schema), response body (with JSON schema), error codes, rate limits, and a curl example. Use OpenAPI/Swagger style.\n\nEndpoint info:\n[describe your endpoint]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "edu-21",
+    "title": "Concept Explainer (Feynman Technique)",
+    "description": "Explain complex topics simply using the Feynman method",
+    "category": "education",
+    "tags": [
+      "learning",
+      "explanation"
+    ],
+    "prompt": "Explain [complex topic] using the Feynman Technique. Start with a simple one-sentence explanation a 12-year-old would understand. Then build up in 3 levels of increasing depth. Use analogies from everyday life. Identify the 3 most common misconceptions about this topic and correct them.",
+    "model": "Any",
+    "isPro": false
   }
 ]

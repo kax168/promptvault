@@ -1,0 +1,52 @@
+[
+  {
+    "id": "market-19",
+    "title": "Landing Page Copy Generator",
+    "description": "Write high-converting landing page copy with clear CTAs",
+    "category": "marketing",
+    "tags": ["landing-page", "copywriting"],
+    "prompt": "Write landing page copy for [product/service]. Structure: Hero headline (under 10 words), subheadline, 3 benefit blocks with icons, social proof section, FAQ (5 questions), and final CTA. Tone: [professional/casual/bold]. Target audience: [audience]. Key differentiator: [what makes you different].",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "market-20",
+    "title": "Product Hunt Launch Copy",
+    "description": "Craft a compelling Product Hunt launch post",
+    "category": "marketing",
+    "tags": ["product-hunt", "launch"],
+    "prompt": "Write a Product Hunt launch post for [product]. Include: tagline (under 60 chars), description (under 260 chars), first comment from maker (friendly, authentic, tells the story), and 5 suggested first-day comments to seed engagement. Tone: excited but genuine, not salesy.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "creative-34",
+    "title": "Brand Voice Guide Creator",
+    "description": "Define a consistent brand voice and tone guidelines",
+    "category": "creative",
+    "tags": ["branding", "voice"],
+    "prompt": "Create a brand voice guide for [brand name]. Include: brand personality (3-5 adjectives), tone spectrum (when to be formal vs casual), vocabulary do's and don'ts, example sentences in our voice vs not our voice, and guidelines for different channels (social, email, support, website). Industry: [industry]. Target audience: [audience].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "code-31",
+    "title": "API Documentation Writer",
+    "description": "Generate clean API docs from endpoint descriptions",
+    "category": "coding",
+    "tags": ["api", "documentation"],
+    "prompt": "Write API documentation for this endpoint. Include: endpoint URL, method, description, request headers, request body (with JSON schema), response body (with JSON schema), error codes, rate limits, and a curl example. Use OpenAPI/Swagger style.\n\nEndpoint info:\n[describe your endpoint]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "edu-21",
+    "title": "Concept Explainer (Feynman Technique)",
+    "description": "Explain complex topics simply using the Feynman method",
+    "category": "education",
+    "tags": ["learning", "explanation"],
+    "prompt": "Explain [complex topic] using the Feynman Technique. Start with a simple one-sentence explanation a 12-year-old would understand. Then build up in 3 levels of increasing depth. Use analogies from everyday life. Identify the 3 most common misconceptions about this topic and correct them.",
+    "model": "Any",
+    "isPro": false
+  }
+]

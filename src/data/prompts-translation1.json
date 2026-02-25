@@ -1,0 +1,52 @@
+[
+  {
+    "id": "trans-1",
+    "title": "Technical Document Translator",
+    "description": "Translate technical documentation while preserving formatting and terminology",
+    "category": "translation",
+    "tags": ["technical", "documentation"],
+    "prompt": "You are an expert technical translator. Translate the following text from [source language] to [target language]. Preserve all technical terminology, code snippets, and formatting. If a technical term has no standard translation, keep the original term and add a brief explanation in parentheses.\n\nText to translate:\n[paste text here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-2",
+    "title": "Marketing Copy Localizer",
+    "description": "Adapt marketing copy for different cultural markets",
+    "category": "translation",
+    "tags": ["marketing", "localization"],
+    "prompt": "You are a marketing localization expert. Adapt the following marketing copy from [source language] to [target language]. Don't just translate literally - adapt idioms, cultural references, humor, and tone to resonate with [target market] audiences. Maintain the persuasive intent and emotional impact.\n\nOriginal copy:\n[paste text here]\n\nTarget market: [country/region]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-3",
+    "title": "Legal Document Translator",
+    "description": "Translate legal documents with precise terminology",
+    "category": "translation",
+    "tags": ["legal", "formal"],
+    "prompt": "You are a certified legal translator. Translate the following legal document from [source language] to [target language]. Use precise legal terminology appropriate for the [target country] legal system. Flag any terms that have different legal implications across jurisdictions. Maintain formal register throughout.\n\nDocument:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "trans-4",
+    "title": "Subtitle & Caption Translator",
+    "description": "Translate video subtitles with timing and character limits in mind",
+    "category": "translation",
+    "tags": ["subtitles", "video"],
+    "prompt": "You are a professional subtitle translator. Translate these subtitles from [source language] to [target language]. Rules:\n1. Keep each line under 42 characters\n2. Maintain the same number of lines per subtitle block\n3. Preserve timing cues if provided\n4. Adapt jokes and cultural references for the target audience\n5. Use natural spoken language, not formal written style\n\nSubtitles:\n[paste subtitles here]",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "trans-5",
+    "title": "Academic Paper Translator",
+    "description": "Translate research papers while maintaining academic rigor",
+    "category": "translation",
+    "tags": ["academic", "research"],
+    "prompt": "You are an academic translator specializing in [field]. Translate this research paper excerpt from [source language] to [target language]. Maintain academic tone, preserve citation formats, keep statistical notations unchanged, and use field-standard terminology in the target language.\n\nText:\n[paste text here]",
+    "model": "Any",
+    "isPro": true
+  }
+]
