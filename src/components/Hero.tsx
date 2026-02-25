@@ -7,17 +7,34 @@ import { ProgressBar } from "@/components/ui/ProgressBar";
 export default function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[85vh] px-6 text-center overflow-hidden">
+      {/* Top announcement bar */}
+      <a
+        href="https://kaixuan2.gumroad.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-amber-600 to-orange-500 py-2 text-center text-sm font-medium text-black hover:opacity-90 transition-opacity"
+      >
+        🚀 We&apos;re live on Gumroad — Check it out →
+      </a>
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[120px]" />
       </div>
 
-      {/* Avatar */}
+      {/* Avatar with slow wobble */}
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="relative w-28 h-28 mb-8 rounded-2xl overflow-hidden border-2 border-amber-500/20 glow-gold"
+        animate={{ 
+          scale: 1, 
+          opacity: 1,
+          rotate: [0, -2, 2, -1, 1, 0],
+        }}
+        transition={{ 
+          scale: { duration: 0.6, ease: "easeOut" },
+          opacity: { duration: 0.6, ease: "easeOut" },
+          rotate: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+        }}
+        className="relative w-28 h-28 mb-8 mt-12 rounded-2xl overflow-hidden border-2 border-amber-500/20 glow-gold"
       >
         <img src="/logo.png" alt="LaerKai" className="w-full h-full object-cover" />
       </motion.div>
