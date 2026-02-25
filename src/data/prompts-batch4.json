@@ -1,0 +1,352 @@
+[
+  {
+    "id": "short-story-generator",
+    "title": "Short Story Generator",
+    "description": "Generate a compelling short story with vivid characters and a satisfying arc.",
+    "category": "creative",
+    "tags": ["fiction", "storytelling", "narrative"],
+    "prompt": "Write a short story (800-1200 words) set in [SETTING] featuring a protagonist who is [CHARACTER_DESCRIPTION]. The central conflict revolves around [CONFLICT]. Use a [TONE] tone throughout. Begin with a hook that immediately draws the reader in, develop tension through the middle, and end with a [ENDING_TYPE] ending. Include at least one moment of sensory detail that grounds the reader in the world. The theme should subtly explore [THEME] without being heavy-handed. Write in [POV] point of view and [TENSE] tense.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "poetry-composer",
+    "title": "Poetry Composer",
+    "description": "Craft original poetry in any style with rich imagery and emotional depth.",
+    "category": "creative",
+    "tags": ["poetry", "verse", "literary"],
+    "prompt": "Compose a poem in the style of [POETRY_FORM] (e.g., sonnet, free verse, haiku sequence, villanelle) about [SUBJECT]. The poem should evoke a feeling of [EMOTION] and use imagery drawn from [IMAGERY_SOURCE]. Incorporate at least two literary devices from the following: metaphor, alliteration, enjambment, anaphora, synesthesia. The poem should be [LENGTH] lines long. If applicable, maintain the formal constraints of the chosen form. End with an image or line that recontextualizes the opening. Avoid clichés and aim for fresh, surprising language.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "song-lyrics-writer",
+    "title": "Song Lyrics Writer",
+    "description": "Write original song lyrics with structure, rhythm, and emotional resonance.",
+    "category": "creative",
+    "tags": ["music", "lyrics", "songwriting"],
+    "prompt": "Write song lyrics in the [GENRE] genre about [TOPIC]. The song should have the following structure: Verse 1, Pre-Chorus, Chorus, Verse 2, Pre-Chorus, Chorus, Bridge, Final Chorus. The mood should shift from [STARTING_MOOD] to [ENDING_MOOD] across the song. The chorus should be catchy and repeatable with a central hook phrase related to [HOOK_CONCEPT]. Use [RHYME_SCHEME] rhyme scheme in the verses. Each verse should be 4-8 lines. Include sensory details and avoid generic phrases. The lyrics should feel natural when sung at a [TEMPO] tempo.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "movie-pitch-creator",
+    "title": "Movie Pitch Creator",
+    "description": "Develop a compelling movie pitch with logline, synopsis, and market positioning.",
+    "category": "creative",
+    "tags": ["film", "screenwriting", "pitch"],
+    "prompt": "Create a professional movie pitch for a [GENRE] film. Start with a one-sentence logline that captures the core conflict and stakes. Then write a 150-word synopsis covering the three-act structure. Include: protagonist ([PROTAGONIST_TYPE]) with a clear flaw, antagonist or opposing force ([ANTAGONIST]), the inciting incident, midpoint reversal, and climax. Describe the target audience and comparable films (e.g., '[COMP_FILM_1] meets [COMP_FILM_2]'). Suggest a tone reference and visual style. The setting is [SETTING] and the theme explores [THEME]. End with a 'why now' statement explaining the cultural relevance.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "character-backstory-builder",
+    "title": "Character Backstory Builder",
+    "description": "Create rich, layered character backstories for fiction or RPG campaigns.",
+    "category": "creative",
+    "tags": ["character", "backstory", "worldbuilding"],
+    "prompt": "Create a detailed backstory for a character named [CHARACTER_NAME] who is a [ROLE/CLASS] in a [GENRE/SETTING] world. Cover the following: childhood and formative experiences, a defining trauma or turning point, key relationships (ally, rival, lost loved one), a secret they keep, their core motivation and deepest fear, and a contradiction in their personality. Include a memorable quirk or habit. Describe how their past connects to their current goal of [CURRENT_GOAL]. The backstory should feel emotionally grounded and provide hooks for future story development. Write in a narrative style, approximately 400-600 words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "world-building-architect",
+    "title": "World Building Architect",
+    "description": "Design immersive fictional worlds with history, culture, and internal logic.",
+    "category": "creative",
+    "tags": ["worldbuilding", "fantasy", "setting"],
+    "prompt": "Design a fictional world for a [GENRE] story. The world is called [WORLD_NAME] and its defining feature is [UNIQUE_ELEMENT]. Cover these aspects: geography and climate (at least 3 distinct regions), dominant cultures and their tensions, a magic/technology system with clear rules and limitations, political structure and current conflicts, economic drivers and trade, a brief historical timeline (5-7 key events), and one looming threat or mystery. Explain how [UNIQUE_ELEMENT] shapes daily life for ordinary people. Include sensory details — what does this world smell, sound, and feel like? Keep the tone [TONE] and ensure internal consistency.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "plot-twist-generator",
+    "title": "Plot Twist Generator",
+    "description": "Generate unexpected yet satisfying plot twists that reframe the entire narrative.",
+    "category": "creative",
+    "tags": ["plot", "twist", "storytelling"],
+    "prompt": "Generate 5 plot twist ideas for a [GENRE] story with the following setup: [STORY_PREMISE]. The main characters are [CHARACTERS] and the current trajectory suggests [EXPECTED_OUTCOME]. For each twist: describe the reveal in one sentence, explain how it was subtly foreshadowed (suggest 2-3 planted clues), assess the emotional impact on the reader, and rate the twist on a surprise scale (1-5) and a fairness scale (1-5, where 5 means all clues were available). At least one twist should recontextualize a sympathetic character, and one should involve a hidden connection between seemingly unrelated plot threads. Avoid cheap tricks — each twist should deepen the theme of [THEME].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "dialogue-polish-editor",
+    "title": "Dialogue Polish Editor",
+    "description": "Refine and elevate dialogue to sound natural, distinct, and purposeful.",
+    "category": "creative",
+    "tags": ["dialogue", "editing", "screenwriting"],
+    "prompt": "Polish the following dialogue between [CHARACTER_A] and [CHARACTER_B]. Context: [SCENE_CONTEXT]. Character A's voice is [A_VOICE_TRAITS] and Character B's voice is [B_VOICE_TRAITS]. Original dialogue:\n\n[PASTE_DIALOGUE]\n\nRevise the dialogue to: give each character a distinct speech pattern, remove on-the-nose exposition and replace with subtext, add beats and pauses that reveal emotion through action rather than words, ensure each line either advances the plot or reveals character, and trim any lines that don't earn their place. Provide the polished version followed by brief notes explaining your key changes and why they strengthen the scene.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "humor-writing-assistant",
+    "title": "Humor Writing Assistant",
+    "description": "Craft comedy writing with timing, misdirection, and authentic voice.",
+    "category": "creative",
+    "tags": ["comedy", "humor", "writing"],
+    "prompt": "Write a humorous piece in the style of [COMEDY_STYLE] (e.g., dry wit, absurdist, observational, satirical, self-deprecating) about [TOPIC]. The format should be [FORMAT] (e.g., essay, monologue, list, fake FAQ, mock review). Use the rule of three, callbacks, and escalation as comedic devices. The humor should be [RATING] (clean / edgy / dark) and target an audience familiar with [AUDIENCE_CONTEXT]. Length: [WORD_COUNT] words. Include at least one running gag and one unexpected punchline that subverts the setup. Avoid punching down. The piece should have a genuine observation or truth at its core that makes the humor resonate beyond the initial laugh.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "horror-scene-writer",
+    "title": "Horror Scene Writer",
+    "description": "Write atmospheric horror scenes that build dread through pacing and sensory detail.",
+    "category": "creative",
+    "tags": ["horror", "suspense", "atmosphere"],
+    "prompt": "Write a horror scene (500-800 words) set in [LOCATION]. The protagonist is [CHARACTER] who is [SITUATION]. The source of horror is [HORROR_ELEMENT] — but do not reveal it directly until the final paragraph. Build dread through: environmental details that feel subtly wrong, the protagonist's growing unease shown through physical sensations, at least three escalating signs that something is off, and sound design (what they hear, and crucially, what goes silent). Use [SUBGENRE] conventions (e.g., cosmic horror, psychological, gothic, folk horror). The pacing should slow down as tension increases. End on a moment of [ENDING_TYPE] — revelation, ambiguity, or visceral shock. Write in present tense for immediacy.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "romance-scene-crafter",
+    "title": "Romance Scene Crafter",
+    "description": "Write emotionally charged romance scenes with chemistry and authentic connection.",
+    "category": "creative",
+    "tags": ["romance", "relationships", "emotion"],
+    "prompt": "Write a romance scene (500-800 words) between [CHARACTER_A] and [CHARACTER_B]. Their relationship dynamic is [DYNAMIC] (e.g., enemies-to-lovers, slow burn, second chance, forbidden). The scene takes place at [SETTING] and the emotional stakes are [STAKES]. This is a [HEAT_LEVEL] scene (sweet / warm / steamy). Show chemistry through: meaningful glances and small gestures, dialogue with subtext and tension, internal thoughts that contrast with external composure, a moment of vulnerability from the less open character, and a physical detail that becomes symbolic. The scene should advance their relationship from [CURRENT_STATE] toward [NEXT_STATE]. Avoid purple prose — keep the language grounded and emotionally honest.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "sci-fi-concept-designer",
+    "title": "Sci-Fi Concept Designer",
+    "description": "Develop original science fiction concepts grounded in plausible speculation.",
+    "category": "creative",
+    "tags": ["sci-fi", "speculation", "technology"],
+    "prompt": "Develop a science fiction concept centered on [CORE_TECHNOLOGY_OR_PHENOMENON]. Set it [TIME_PERIOD] in the future. Describe: the scientific basis or plausible extrapolation behind the concept, how it has transformed society (economy, relationships, identity, power structures), three unintended consequences nobody predicted, a specific ethical dilemma it creates for [CHARACTER_TYPE], and the emerging resistance or counter-movement. Ground the concept with one vivid 'day in the life' vignette showing how an ordinary person interacts with this technology. The tone should be [TONE] and draw inspiration from [INFLUENCE] (e.g., Black Mirror, Asimov, Ursula K. Le Guin). Avoid techno-utopia or pure dystopia — aim for nuanced complexity.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "fantasy-naming-forge",
+    "title": "Fantasy Naming Forge",
+    "description": "Generate linguistically consistent names for fantasy characters, places, and artifacts.",
+    "category": "creative",
+    "tags": ["fantasy", "naming", "linguistics"],
+    "prompt": "Generate a set of fantasy names for a [CULTURE_TYPE] civilization in a [SETTING_TYPE] world. The linguistic feel should evoke [LANGUAGE_INSPIRATION] (e.g., Celtic, Arabic, Japanese, Slavic, or wholly invented). Generate: 10 character names (5 male-coded, 5 female-coded) with meanings, 5 place names (city, river, mountain, forest, ruin) with etymologies, 3 artifact or weapon names with lore snippets, and 2 titles or honorifics with usage context. Establish consistent phonetic rules: preferred consonant clusters, vowel patterns, syllable structure, and naming conventions (e.g., patronymics, clan prefixes). Provide a brief pronunciation guide. Names should be memorable, pronounceable, and distinct from each other.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "art-direction-brief",
+    "title": "Art Direction Brief",
+    "description": "Create detailed art direction briefs for visual projects and creative campaigns.",
+    "category": "creative",
+    "tags": ["art-direction", "visual", "design"],
+    "prompt": "Create an art direction brief for a [PROJECT_TYPE] (e.g., book cover, album art, game concept art, brand campaign, film poster). The subject is [SUBJECT] and the intended emotional response is [EMOTION]. Include: visual style and references (cite 2-3 specific artists or works), color palette (primary, secondary, accent with hex codes or descriptive names), composition guidelines and focal point, typography direction if applicable, texture and material qualities, lighting mood and direction, what to emphasize and what to deliberately exclude, and format specifications [DIMENSIONS]. The brief should be clear enough for an artist or AI image generator to execute. Include a one-sentence 'north star' statement that captures the visual essence.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "game-narrative-designer",
+    "title": "Game Narrative Designer",
+    "description": "Design branching game narratives with player agency and meaningful choices.",
+    "category": "creative",
+    "tags": ["gaming", "narrative", "interactive"],
+    "prompt": "Design a narrative framework for a [GAME_GENRE] game set in [SETTING]. The player character is [PLAYER_CHARACTER]. Create: a central narrative hook (one paragraph), three main story acts with key beats, a branching decision tree with at least 3 major choice points — each offering 2-3 options with distinct consequences, 4 key NPCs with motivations that create natural conflict, a faction or reputation system that tracks player alignment toward [FACTION_A] vs [FACTION_B], two possible endings (one bittersweet, one costly victory), and environmental storytelling opportunities (3 discoverable lore pieces). Each major choice should have no clearly 'right' answer — force genuine moral trade-offs around [THEME]. Note which choices are reversible and which are permanent.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "comic-script-writer",
+    "title": "Comic Script Writer",
+    "description": "Write panel-by-panel comic scripts with visual direction and pacing.",
+    "category": "creative",
+    "tags": ["comics", "visual-storytelling", "script"],
+    "prompt": "Write a [PAGE_COUNT]-page comic script for a [GENRE] story. The scene: [SCENE_DESCRIPTION]. Characters involved: [CHARACTERS]. For each page, specify: panel count and layout (grid, splash, bleed, etc.), panel descriptions with camera angle (close-up, wide, bird's eye, over-shoulder), character positions and expressions, background and environmental details, dialogue and caption boxes with exact text, sound effects where appropriate, and transitions between panels (cut, dissolve, match cut). Page 1 should establish setting and mood. The final page should end on a [ENDING_TYPE] (cliffhanger, emotional beat, reveal). Pace action scenes with more panels and emotional moments with fewer, larger panels. Include notes for the artist on tone and style references.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "monologue-writer",
+    "title": "Dramatic Monologue Writer",
+    "description": "Write powerful monologues for stage, screen, or audition purposes.",
+    "category": "creative",
+    "tags": ["monologue", "theater", "performance"],
+    "prompt": "Write a [DURATION]-minute dramatic monologue for a [CHARACTER_DESCRIPTION] character. The context: [SITUATION]. The character is speaking to [AUDIENCE] (e.g., a jury, a lover, themselves in a mirror, a grave). The emotional arc should move from [STARTING_EMOTION] to [ENDING_EMOTION]. Include: a strong opening line that commands attention, a moment of humor or levity that makes the heavy parts hit harder, a revelation or admission the character didn't plan to make, rhetorical devices (repetition, rhetorical questions, lists of three), and a final line that lingers. The monologue should work as a standalone piece while implying a larger story. Write stage directions sparingly — only where physical action is essential to meaning. Suitable for [AGE_RANGE] performers.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "fairy-tale-remix",
+    "title": "Fairy Tale Remix",
+    "description": "Reimagine classic fairy tales through fresh perspectives and modern lenses.",
+    "category": "creative",
+    "tags": ["fairy-tale", "retelling", "remix"],
+    "prompt": "Reimagine the fairy tale [ORIGINAL_TALE] (e.g., Cinderella, Red Riding Hood, Rapunzel) through the lens of [REMIX_ANGLE] (e.g., told by the villain, set in cyberpunk Tokyo, as a courtroom drama, gender-swapped, from a postcolonial perspective). Write a 600-900 word retelling that preserves the core symbolic elements of the original but transforms their meaning. Keep these fairy tale beats: an ordinary world disrupted, a journey or transformation, a test or trial, and a resolution that carries a moral — but subvert at least two audience expectations. The tone should be [TONE]. Include one iconic image or moment from the original, recontextualized to surprise. The new moral or theme should reflect [MODERN_THEME].",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "satire-piece-writer",
+    "title": "Satire Piece Writer",
+    "description": "Write sharp satirical pieces that critique through humor and exaggeration.",
+    "category": "creative",
+    "tags": ["satire", "social-commentary", "humor"],
+    "prompt": "Write a satirical piece about [TARGET_TOPIC] in the format of [FORMAT] (e.g., fake news article, corporate memo, product launch, self-help guide, TED talk transcript, government press release). The piece should critique [UNDERLYING_ISSUE] through exaggeration, irony, and deadpan delivery. Maintain the authentic voice and conventions of the chosen format — the humor comes from the contrast between the serious format and absurd content. Escalate the absurdity gradually so the reader is drawn in before realizing the satire. Include specific, invented details that feel plausible. Length: [WORD_COUNT] words. The tone should channel [INFLUENCE] (e.g., The Onion, Jonathan Swift, Monty Python). Avoid mean-spiritedness — the best satire punches at systems, not individuals.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "creative-brainstorm-engine",
+    "title": "Creative Brainstorm Engine",
+    "description": "Generate diverse creative ideas using structured ideation techniques.",
+    "category": "creative",
+    "tags": ["brainstorm", "ideation", "creativity"],
+    "prompt": "Run a structured creative brainstorm on [TOPIC/CHALLENGE]. Generate ideas using these five techniques: 1) Random Association — combine [TOPIC] with 3 unrelated domains ([DOMAIN_A], [DOMAIN_B], [DOMAIN_C]) and find unexpected connections. 2) Inversion — what if the opposite of the obvious approach worked? 3) Constraint-based — what if you could only use [CONSTRAINT]? 4) Analogy — what does [ANALOGOUS_FIELD] do that could apply here? 5) 'Yes, and...' — take the weakest idea and build on it three times. For each technique, generate 3 ideas (15 total). Then select the top 5 across all techniques, rate each on novelty (1-5) and feasibility (1-5), and develop the highest-scoring idea into a one-paragraph concept. End with 3 'what if' questions for further exploration.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "brand-story-architect",
+    "title": "Brand Story Architect",
+    "description": "Craft compelling brand origin stories that build emotional connection.",
+    "category": "creative",
+    "tags": ["branding", "storytelling", "marketing"],
+    "prompt": "Write a brand origin story for [BRAND_NAME], a [PRODUCT/SERVICE] company. The founder is [FOUNDER_DESCRIPTION] and the founding moment was [ORIGIN_MOMENT]. Structure the story using the hero's journey: the founder's ordinary world and frustration with [STATUS_QUO], the call to adventure (the insight or 'aha' moment), trials and setbacks during early days, the mentor or ally who helped, the breakthrough, and the mission that drives the brand today. The brand values are [VALUES]. The target audience is [AUDIENCE]. Write in a [TONE] voice that matches the brand personality. Length: 300-500 words. The story should make the reader feel [DESIRED_EMOTION] and naturally lead to the brand's tagline or mission statement: [TAGLINE]. Avoid corporate jargon — make it human.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "memoir-excerpt-writer",
+    "title": "Memoir Excerpt Writer",
+    "description": "Write vivid memoir-style personal narratives with emotional authenticity.",
+    "category": "creative",
+    "tags": ["memoir", "personal-narrative", "nonfiction"],
+    "prompt": "Write a memoir excerpt (600-900 words) about [LIFE_EVENT_OR_THEME]. The narrator is [NARRATOR_AGE] years old at the time of the events. The setting is [PLACE_AND_TIME]. Use these memoir techniques: open with a specific sensory moment (not background exposition), weave between the past event and present-day reflection, include at least one line of remembered dialogue (imperfect, as memory is), use a concrete object or detail as a recurring motif that carries symbolic weight, and end with an insight the narrator only understands now, years later. The emotional tone should be [TONE] — honest but not self-pitying. Write in first person. The excerpt should feel like a chapter from a larger life, implying what came before and after without explaining it.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "travel-writing-composer",
+    "title": "Travel Writing Composer",
+    "description": "Write evocative travel narratives that transport readers to new places.",
+    "category": "creative",
+    "tags": ["travel", "narrative", "places"],
+    "prompt": "Write a travel essay (500-800 words) about [DESTINATION]. The angle or hook is [UNIQUE_ANGLE] (e.g., visiting during an unusual season, following a historical figure's route, eating only street food, getting deliberately lost). Go beyond tourist descriptions — capture the [DESTINATION] through: sounds heard at different times of day, a conversation with a local (real or composite), a meal described with enough detail to taste it, a moment of discomfort or surprise that shifted your perspective, and the gap between expectation and reality. The writing style should channel [INFLUENCE] (e.g., Paul Theroux, Pico Iyer, Anthony Bourdain, Jan Morris). Include one paragraph of practical, opinionated advice that only someone who's been there would know. End with an image that encapsulates the emotional truth of the place.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "food-review-writer",
+    "title": "Food Review Writer",
+    "description": "Write engaging food reviews that capture flavor, atmosphere, and experience.",
+    "category": "creative",
+    "tags": ["food", "review", "culinary"],
+    "prompt": "Write a food review of [RESTAURANT_OR_DISH] in [LOCATION]. The review style should be [STYLE] (e.g., formal critic, casual blog, poetic, humorous, investigative). Cover: the atmosphere and first impression upon arrival, [NUMBER] dishes described with specific flavor notes, textures, and temperatures — use unexpected comparisons to make descriptions vivid, the service experience (one specific interaction), how the meal compares to [COMPARISON] (another restaurant, a home-cooked version, the cuisine's traditional form), and a verdict that goes beyond 'good' or 'bad' to capture who this place is for. Include the price point context. The review should make the reader either desperately want to visit or feel they've already been. Length: 400-600 words. Rating: [X]/5 stars.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "speech-writing-assistant",
+    "title": "Speech Writing Assistant",
+    "description": "Write persuasive, memorable speeches for any occasion and audience.",
+    "category": "creative",
+    "tags": ["speech", "persuasion", "public-speaking"],
+    "prompt": "Write a [DURATION]-minute speech for [OCCASION] (e.g., wedding toast, graduation, keynote, eulogy, product launch, acceptance award). The speaker is [SPEAKER_DESCRIPTION] and the audience is [AUDIENCE]. The core message is [KEY_MESSAGE]. Structure the speech with: a memorable opening (story, question, or surprising fact — not a joke unless the speaker is naturally funny), three supporting points with concrete examples or anecdotes, emotional peaks and valleys (don't stay at one intensity), a callback to the opening that creates a sense of completeness, and a closing line designed to be the one thing people remember. Use rhetorical devices: repetition, tricolon, antithesis. Mark [PAUSE] where the speaker should breathe. The tone is [TONE]. Include stage directions for key moments of delivery.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "weekly-planner-generator",
+    "title": "Weekly Planner Generator",
+    "description": "Create a structured weekly plan that balances priorities, energy, and commitments.",
+    "category": "productivity",
+    "tags": ["planning", "time-management", "organization"],
+    "prompt": "Create a detailed weekly plan for the week of [DATE_RANGE]. My role is [ROLE] and my top 3 priorities this week are: 1) [PRIORITY_1], 2) [PRIORITY_2], 3) [PRIORITY_3]. Fixed commitments: [LIST_MEETINGS_AND_DEADLINES]. My peak energy hours are [PEAK_HOURS] and I prefer deep work in [DEEP_WORK_SLOTS]. For each day (Monday-Friday), provide: a themed focus area, time-blocked schedule with specific tasks mapped to priorities, buffer time for unexpected work (minimum 1 hour/day), and an end-of-day review prompt. Include a Sunday evening prep ritual and a Friday reflection template. Flag any priority conflicts and suggest trade-offs. Mark tasks as 🔴 urgent, 🟡 important, or 🟢 flexible. Add one self-care or recharge block per day.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "meeting-summarizer-pro",
+    "title": "Meeting Summarizer Pro",
+    "description": "Transform meeting notes or transcripts into clear, actionable summaries.",
+    "category": "productivity",
+    "tags": ["meetings", "summary", "action-items"],
+    "prompt": "Summarize the following meeting notes/transcript into a structured format. Meeting: [MEETING_NAME], Date: [DATE], Attendees: [ATTENDEES].\n\nTranscript/Notes:\n[PASTE_NOTES]\n\nProvide: 1) Executive Summary (3-5 sentences capturing the key outcomes), 2) Decisions Made (numbered list with who approved), 3) Action Items (table with columns: Task, Owner, Deadline, Priority), 4) Open Questions (unresolved items needing follow-up), 5) Key Discussion Points (brief bullets of important arguments or context), 6) Parking Lot (topics raised but deferred). Flag any action items without clear owners or deadlines. If deadlines conflict with known constraints, note the risk. End with a suggested follow-up date and pre-read for the next meeting.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "decision-framework-builder",
+    "title": "Decision Framework Builder",
+    "description": "Structure complex decisions with weighted criteria and clear trade-off analysis.",
+    "category": "productivity",
+    "tags": ["decision-making", "analysis", "framework"],
+    "prompt": "Help me make a structured decision about [DECISION]. The options I'm considering are: A) [OPTION_A], B) [OPTION_B], C) [OPTION_C]. My key criteria are: [CRITERIA_LIST] (e.g., cost, speed, quality, risk, team impact). For each criterion, I value it at [WEIGHT] (1-5). Build a decision matrix scoring each option against each weighted criterion (1-10 scale). Then provide: a quantitative ranking with total weighted scores, a qualitative analysis of what the numbers miss (gut feel, politics, timing), a pre-mortem for the top option (imagine it failed — why?), reversibility assessment (how hard is it to undo each option?), and a 'regret minimization' check — which option would I least regret in [TIME_HORIZON]? End with a clear recommendation and the one thing that could change it.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "habit-design-system",
+    "title": "Habit Design System",
+    "description": "Design sustainable habits using behavioral science principles.",
+    "category": "productivity",
+    "tags": ["habits", "behavior-design", "self-improvement"],
+    "prompt": "Design a habit system to help me [DESIRED_OUTCOME]. My current routine: [CURRENT_ROUTINE]. My biggest obstacles are [OBSTACLES]. Using behavioral science (Fogg Behavior Model, habit stacking, implementation intentions), create: 1) A tiny habit version (under 2 minutes) to start with, 2) The cue-routine-reward loop with specific triggers tied to existing habits, 3) An environment design checklist (what to add/remove from my space), 4) A 30-day progression plan scaling from tiny to target behavior, 5) Friction reduction strategies for the habit and friction addition for competing behaviors, 6) A tracking method suited to [MY_STYLE] (visual, digital, minimal), 7) An 'if-then' plan for the 3 most likely failure scenarios. Include a weekly review template and a 'restart protocol' for when I fall off track without guilt.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "goal-decomposition-engine",
+    "title": "Goal Decomposition Engine",
+    "description": "Break ambitious goals into actionable milestones and daily tasks.",
+    "category": "productivity",
+    "tags": ["goals", "planning", "execution"],
+    "prompt": "Decompose the following goal into an actionable plan: [BIG_GOAL]. Timeline: [DEADLINE]. Current starting point: [CURRENT_STATE]. Resources available: [RESOURCES]. Break this down into: 3-5 major milestones with target dates, each milestone into 3-7 specific tasks with estimated effort (hours), dependencies between tasks (what blocks what), a critical path highlighting the sequence that determines the timeline, quick wins I can achieve in the first week for momentum, the single biggest risk to this plan and a mitigation strategy, and a 'minimum viable' version of the goal if time runs short. Present as both a hierarchical list and a simplified timeline view. For each task, note whether it requires [SKILL], [MONEY], [HELP_FROM_OTHERS], or just [TIME]. Flag any tasks I should delegate or automate.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "time-audit-analyzer",
+    "title": "Time Audit Analyzer",
+    "description": "Analyze how you spend time and identify optimization opportunities.",
+    "category": "productivity",
+    "tags": ["time-management", "audit", "optimization"],
+    "prompt": "Conduct a time audit analysis based on the following data. My typical week looks like:\n\n[PASTE_WEEKLY_SCHEDULE_OR_TIME_LOG]\n\nMy stated priorities are: [PRIORITIES]. Analyze: 1) Time allocation by category (deep work, meetings, admin, communication, breaks, personal), 2) Alignment score — what percentage of time serves my top 3 priorities? 3) Time leaks — activities consuming disproportionate time relative to value, 4) Energy mapping — which high-value tasks are scheduled during low-energy periods? 5) Context-switching cost — how many times per day do I shift between different types of work? 6) Meeting audit — which recurring meetings could be emails, shortened, or delegated? Provide a redesigned ideal week template, 3 immediate changes with highest impact, and a 'stop doing' list of 5 activities to eliminate or delegate.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "email-batch-processor",
+    "title": "Email Batch Processor",
+    "description": "Process and draft responses for multiple emails efficiently in batch.",
+    "category": "productivity",
+    "tags": ["email", "communication", "efficiency"],
+    "prompt": "Help me batch-process the following emails. My role is [ROLE] and my communication style is [STYLE] (e.g., concise, warm, formal). For each email below, provide: a priority tag (🔴 respond today, 🟡 respond this week, 🟢 can wait, 🗑️ archive/delete), a one-line summary, and a draft response.\n\nEmails:\n[PASTE_EMAIL_1]\n[PASTE_EMAIL_2]\n[PASTE_EMAIL_3]\n\nFor draft responses: keep them under [MAX_WORDS] words unless the situation demands more, match the sender's formality level, include a clear next action or question, and flag any emails that need information I don't have (mark as [NEED_INPUT]). Group the emails by: requires decision, requires information, FYI only, and delegatable. Suggest which emails could be handled by a template response.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "sop-creator",
+    "title": "SOP Creator",
+    "description": "Create clear standard operating procedures for repeatable processes.",
+    "category": "productivity",
+    "tags": ["documentation", "process", "operations"],
+    "prompt": "Create a Standard Operating Procedure (SOP) for [PROCESS_NAME]. This process is performed by [ROLE] with a frequency of [FREQUENCY]. Current pain points: [PAIN_POINTS]. Structure the SOP with: 1) Purpose and scope (when to use this SOP and when not to), 2) Prerequisites (tools, access, information needed before starting), 3) Step-by-step instructions (numbered, with screenshots/diagram placeholders marked as [SCREENSHOT: description]), 4) Decision points (if X, do Y; if Z, do W), 5) Quality checklist (how to verify the process was done correctly), 6) Common errors and troubleshooting (top 5 failure modes), 7) Escalation path (when and who to contact if stuck), 8) Time estimate per step and total. Use clear, imperative language. Mark optional steps with ⭐. Include a version history table and review schedule. The SOP should be usable by someone with [EXPERIENCE_LEVEL] experience.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "project-kickoff-template",
+    "title": "Project Kickoff Template",
+    "description": "Generate comprehensive project kickoff documents to align teams from day one.",
+    "category": "productivity",
+    "tags": ["project-management", "kickoff", "alignment"],
+    "prompt": "Create a project kickoff document for [PROJECT_NAME]. Project sponsor: [SPONSOR]. Team: [TEAM_MEMBERS_AND_ROLES]. Timeline: [START_DATE] to [END_DATE]. Budget: [BUDGET]. Include these sections: 1) Project charter — problem statement, objectives (SMART format), success metrics, and out-of-scope items, 2) Stakeholder map with influence/interest grid, 3) RACI matrix for key deliverables, 4) High-level timeline with phases and milestones, 5) Risk register (top 5 risks with probability, impact, and mitigation), 6) Communication plan (who gets what update, how often, via what channel), 7) Decision-making framework (who approves what), 8) Definition of Done for the project, 9) Team working agreements (meeting cadence, response times, tools). End with a kickoff meeting agenda template (60 minutes) and pre-read list for attendees.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "delegation-brief-writer",
+    "title": "Delegation Brief Writer",
+    "description": "Write clear delegation briefs that empower others to deliver without micromanagement.",
+    "category": "productivity",
+    "tags": ["delegation", "leadership", "management"],
+    "prompt": "Write a delegation brief for the following task: [TASK_DESCRIPTION]. I'm delegating to [PERSON_AND_ROLE]. Their experience level with this type of work is [EXPERIENCE_LEVEL]. Include: 1) Context — why this matters and how it fits the bigger picture, 2) Desired outcome — what 'done' looks like (specific, measurable), 3) Constraints — budget [BUDGET], deadline [DEADLINE], must-haves vs nice-to-haves, 4) Authority level — what they can decide alone vs what needs my approval, 5) Resources available — tools, contacts, reference materials, 6) Check-in schedule — frequency and format based on their experience level, 7) Known pitfalls — mistakes I've made before on similar tasks, 8) Success criteria — how I'll evaluate the result. The brief should be empowering, not controlling. Adjust detail level to [EXPERIENCE_LEVEL]: more guidance for junior, more autonomy for senior. End with 'Questions to ask me before starting.'",
+    "model": "Any",
+    "isPro": false
+  }
+]
