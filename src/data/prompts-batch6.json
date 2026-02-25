@@ -1,0 +1,72 @@
+[
+  {
+    "id": "pitch-deck-builder",
+    "title": "Pitch Deck Builder",
+    "description": "Create a compelling investor pitch deck outline with key slides and talking points.",
+    "category": "business",
+    "tags": [
+      "fundraising",
+      "startup",
+      "investors"
+    ],
+    "prompt": "You are an experienced startup advisor who has helped companies raise over $500M in funding. Create a comprehensive pitch deck outline for [COMPANY_NAME], a [INDUSTRY] company that [VALUE_PROPOSITION]. The company is at [STAGE] stage with [METRICS_SUMMARY]. Structure the deck with these slides: 1) Title & hook, 2) Problem statement with data, 3) Solution overview, 4) Market opportunity & TAM/SAM/SOM, 5) Business model, 6) Traction & metrics, 7) Competitive landscape, 8) Go-to-market strategy, 9) Team highlights, 10) Financial projections, 11) The ask & use of funds, 12) Vision & closing. For each slide, provide the key message, supporting data points to include, and a suggested visual format. Keep the narrative arc compelling — start with pain, build to opportunity, prove traction, then make the ask.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "investor-update-email",
+    "title": "Investor Update Email",
+    "description": "Draft a concise monthly or quarterly investor update email.",
+    "category": "business",
+    "tags": [
+      "investors",
+      "reporting",
+      "communication"
+    ],
+    "prompt": "You are a founder writing a transparent and professional investor update. Draft a [MONTHLY/QUARTERLY] update email for [COMPANY_NAME]. Key metrics this period: Revenue: [REVENUE], MRR growth: [MRR_GROWTH], Burn rate: [BURN_RATE], Runway: [RUNWAY], Key KPI: [KPI_NAME] at [KPI_VALUE]. Structure the update as: 1) TL;DR — 3 bullet highlights, 2) Key wins this period, 3) Challenges & learnings, 4) Key metrics dashboard (formatted as a clean table), 5) Product updates, 6) Team changes, 7) Asks — specific ways investors can help (intros, advice, hiring). Keep the tone honest and data-driven. Flag risks early. End with one specific ask that investors can act on this week.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "board-meeting-prep",
+    "title": "Board Meeting Prep",
+    "description": "Prepare a structured board meeting agenda and pre-read materials outline.",
+    "category": "business",
+    "tags": [
+      "governance",
+      "leadership",
+      "strategy"
+    ],
+    "prompt": "You are a seasoned Chief of Staff preparing board materials. Create a comprehensive board meeting preparation package for [COMPANY_NAME]'s [Q1/Q2/Q3/Q4] board meeting. The company is in [INDUSTRY] at [STAGE] stage. Key topics to address: [KEY_TOPICS]. Structure the package as: 1) Agenda with time allocations (total [DURATION] hours), 2) Pre-read executive summary (1-page), 3) Financial performance vs. plan with variance analysis, 4) Key metrics dashboard with trends, 5) Strategic initiatives update — status, blockers, decisions needed, 6) Market & competitive update, 7) Team & organizational health, 8) Decisions required from the board (list each with context and recommendation), 9) Appendix items. Flag the top 3 discussion items that need board input. Format decisions as: Context → Options → Recommendation → Risk.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "partnership-proposal-draft",
+    "title": "Partnership Proposal",
+    "description": "Draft a strategic partnership proposal with mutual value proposition.",
+    "category": "business",
+    "tags": [
+      "partnerships",
+      "strategy",
+      "growth"
+    ],
+    "prompt": "You are a business development strategist. Draft a partnership proposal from [YOUR_COMPANY] to [PARTNER_COMPANY]. Your company offers [YOUR_VALUE] and the partner excels at [PARTNER_STRENGTH]. The target customer segment is [TARGET_SEGMENT]. Structure the proposal: 1) Executive summary — why this partnership makes sense now, 2) Market opportunity — the gap neither company can fill alone, 3) Proposed partnership model: [REVENUE_SHARE/INTEGRATION/CO-MARKETING/RESELLER], 4) Value to each party — be specific with projected metrics, 5) Implementation roadmap with phases and milestones, 6) Resource requirements from each side, 7) Success metrics and KPIs, 8) Risk mitigation, 9) Proposed terms and next steps. Tone should be collaborative, not salesy. Lead with what you bring to the table, not what you need.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "pricing-strategy-framework",
+    "title": "Pricing Strategy Framework",
+    "description": "Develop a data-informed pricing strategy for a product or service.",
+    "category": "business",
+    "tags": [
+      "pricing",
+      "revenue",
+      "strategy"
+    ],
+    "prompt": "You are a pricing strategy consultant. Develop a comprehensive pricing framework for [PRODUCT_NAME] in the [INDUSTRY] market. Current pricing: [CURRENT_PRICING]. Target customers: [TARGET_SEGMENT]. Competitors charge: [COMPETITOR_PRICING]. Analyze and recommend: 1) Pricing model — subscription/usage-based/tiered/freemium/hybrid and why, 2) Price anchoring strategy with 3 tiers (name, price, features for each), 3) Value metric — what unit customers should pay per, 4) Willingness-to-pay estimation approach, 5) Discounting policy (annual vs monthly, volume, startup programs), 6) Expansion revenue strategy (upsell triggers, upgrade paths), 7) Competitive positioning — premium/parity/penetration, 8) Price sensitivity testing plan, 9) Implementation timeline and migration plan for existing customers. Include a pricing page mockup structure.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  }
+]
