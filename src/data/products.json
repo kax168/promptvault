@@ -12,10 +12,10 @@
         "Works with ChatGPT, Claude, Gemini",
         "Copy-paste ready"
       ],
-      "cta": "Browse Free",
-      "ctaLink": "#library",
+      "cta": "Get Free →",
+      "ctaLink": "https://kaixuan2.gumroad.com/l/laerkaistarterpack",
       "stripeLink": null,
-      "gumroadLink": null,
+      "gumroadLink": "https://kaixuan2.gumroad.com/l/laerkaistarterpack",
       "featured": false
     },
     {
@@ -30,10 +30,10 @@
         "Regular updates",
         "Lifetime access"
       ],
-      "cta": "Get Pro Pack →",
-      "ctaLink": null,
+      "cta": "Buy Now →",
+      "ctaLink": "https://kaixuan2.gumroad.com/l/LaerKaiProPack",
       "stripeLink": null,
-      "gumroadLink": null,
+      "gumroadLink": "https://kaixuan2.gumroad.com/l/LaerKaiProPack",
       "featured": true
     }
   ]
