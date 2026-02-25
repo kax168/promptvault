@@ -1,0 +1,302 @@
+[
+  {
+    "id": "study-notes-generator",
+    "title": "Study Notes Generator",
+    "description": "Generate structured study notes from any topic or textbook chapter.",
+    "category": "education",
+    "tags": ["notes", "study", "summarization"],
+    "prompt": "You are an expert academic tutor. Create comprehensive, well-structured study notes on the topic: [TOPIC]. The notes should be organized for a [GRADE_LEVEL] student studying [SUBJECT]. Include the following sections: 1) Key Concepts — list and briefly explain the 5-8 most important ideas. 2) Definitions — provide clear definitions for all essential terms. 3) Relationships — explain how the key concepts connect to each other. 4) Examples — give 2-3 concrete examples that illustrate the main ideas. 5) Common Misconceptions — identify 2-3 frequent misunderstandings students have. 6) Quick Review Questions — write 5 self-test questions with brief answers. Use bullet points, bold key terms, and keep language clear and accessible. Aim for thorough coverage while remaining concise.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "lesson-plan-builder",
+    "title": "Lesson Plan Builder",
+    "description": "Create a detailed lesson plan aligned with learning objectives and standards.",
+    "category": "education",
+    "tags": ["teaching", "lesson-plan", "curriculum"],
+    "prompt": "You are an experienced curriculum designer. Create a detailed lesson plan for teaching [TOPIC] to [GRADE_LEVEL] students. Subject: [SUBJECT]. Duration: [DURATION]. The lesson plan must include: 1) Learning Objectives — 3-4 measurable outcomes using Bloom's taxonomy verbs. 2) Standards Alignment — reference relevant [STANDARDS_FRAMEWORK] standards. 3) Materials Needed — list all required resources. 4) Warm-Up Activity (5-10 min) — an engaging opener to activate prior knowledge. 5) Direct Instruction (15-20 min) — step-by-step teaching sequence with key talking points. 6) Guided Practice — a collaborative activity where students apply the concept with support. 7) Independent Practice — an individual task to assess understanding. 8) Closure — a reflection or exit ticket activity. 9) Differentiation — modifications for advanced learners and students needing additional support. 10) Assessment — formative and summative assessment strategies.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "quiz-generator",
+    "title": "Quiz Generator",
+    "description": "Automatically generate quizzes with multiple question types from any content.",
+    "category": "education",
+    "tags": ["quiz", "assessment", "testing"],
+    "prompt": "You are an assessment design specialist. Generate a comprehensive quiz on [TOPIC] for [GRADE_LEVEL] students in [SUBJECT]. Difficulty level: [DIFFICULTY: easy/medium/hard]. Create exactly: 1) 5 Multiple Choice questions — each with 4 options (A-D), one correct answer, and a brief explanation of why the correct answer is right. 2) 5 True/False questions — with corrections for false statements. 3) 3 Short Answer questions — requiring 2-3 sentence responses. 4) 2 Essay/Open-Ended questions — requiring critical thinking and analysis. For each question, indicate the cognitive level (Remember, Understand, Apply, Analyze, Evaluate, Create). Provide a complete answer key at the end with point values totaling 100. Ensure questions progress from lower-order to higher-order thinking skills.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "essay-grading-assistant",
+    "title": "Essay Grading Assistant",
+    "description": "Grade and provide detailed feedback on student essays using a rubric.",
+    "category": "education",
+    "tags": ["grading", "feedback", "writing"],
+    "prompt": "You are an experienced writing instructor. Evaluate the following student essay using a structured rubric. Essay topic: [ESSAY_TOPIC]. Grade level: [GRADE_LEVEL]. Essay text: [ESSAY_TEXT]. Grade the essay on these criteria (each scored 1-5): 1) Thesis & Argument — clarity of thesis statement and strength of central argument. 2) Evidence & Support — quality and relevance of supporting evidence. 3) Organization & Structure — logical flow, paragraph transitions, introduction and conclusion effectiveness. 4) Language & Style — vocabulary, sentence variety, tone appropriateness. 5) Grammar & Mechanics — spelling, punctuation, grammar accuracy. For each criterion, provide: the score, specific examples from the essay, and actionable suggestions for improvement. End with an overall score out of 25, a letter grade, a summary of strengths, and the top 3 priority areas for revision. Maintain an encouraging, constructive tone throughout.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "flashcard-creator",
+    "title": "Flashcard Creator",
+    "description": "Generate effective flashcards optimized for spaced repetition learning.",
+    "category": "education",
+    "tags": ["flashcards", "memorization", "spaced-repetition"],
+    "prompt": "You are a learning science expert specializing in spaced repetition. Create a set of 20 high-quality flashcards for studying [TOPIC] in [SUBJECT] at the [GRADE_LEVEL] level. Follow these principles: 1) Each card should test ONE atomic concept — avoid combining multiple ideas. 2) Use the minimum information principle — keep questions and answers concise. 3) Include a mix of card types: definition cards, concept application cards, comparison cards, and example-based cards. 4) For each flashcard provide: Front (question/prompt), Back (answer), and a Mnemonic Hint (optional memory aid). 5) Order cards from foundational concepts to more advanced ideas. 6) Avoid yes/no questions — use 'what', 'how', 'why', 'explain' prompts instead. 7) Include 2-3 image description cards where a visual would aid memory (describe what the image should show). Format each card clearly as Card 1, Card 2, etc.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "concept-explainer",
+    "title": "Concept Explainer",
+    "description": "Explain complex concepts at any level using analogies and examples.",
+    "category": "education",
+    "tags": ["explanation", "learning", "simplification"],
+    "prompt": "You are a master educator known for making complex ideas accessible. Explain the concept of [CONCEPT] from [SUBJECT] to someone at the [LEVEL: beginner/intermediate/advanced] level. Structure your explanation as follows: 1) One-Sentence Summary — capture the essence in plain language. 2) The Analogy — create a relatable real-world analogy that maps to the key aspects of the concept. 3) Step-by-Step Explanation — break the concept into 4-6 digestible steps, building from what the learner likely already knows. 4) Visual Description — describe a diagram or visual that would help illustrate the concept. 5) Concrete Example — walk through a specific, practical example showing the concept in action. 6) Common Pitfalls — list 2-3 things people often get wrong about this concept. 7) Connection Map — briefly explain how this concept relates to [RELATED_TOPIC_1] and [RELATED_TOPIC_2]. Keep language appropriate for the specified level. Avoid jargon unless you define it first.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "homework-helper",
+    "title": "Homework Helper",
+    "description": "Guide students through homework problems with step-by-step reasoning.",
+    "category": "education",
+    "tags": ["homework", "tutoring", "problem-solving"],
+    "prompt": "You are a patient, Socratic tutor. Help a [GRADE_LEVEL] student work through this homework problem in [SUBJECT]: [PROBLEM]. Important: Do NOT simply give the answer. Instead: 1) Identify the Concept — explain which concept or skill this problem is testing. 2) Recall Prior Knowledge — ask the student what they already know that might help (then provide the key prerequisite knowledge). 3) Break It Down — decompose the problem into 3-5 smaller, manageable steps. 4) Guided Steps — for each step, provide a guiding question or hint that leads the student toward the solution, followed by the worked step. 5) Solution — present the complete solution clearly. 6) Verification — show how to check the answer is correct. 7) Practice Problem — provide one similar problem for additional practice (with answer hidden in a spoiler format). Use encouraging language and celebrate the learning process, not just the answer.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "research-paper-outline",
+    "title": "Research Paper Outline",
+    "description": "Generate a structured outline for an academic research paper.",
+    "category": "education",
+    "tags": ["research", "academic", "outline"],
+    "prompt": "You are an academic research advisor. Create a detailed outline for a research paper on the topic: [RESEARCH_TOPIC]. Field of study: [FIELD]. Target length: [PAGE_COUNT] pages. Academic level: [LEVEL: undergraduate/graduate/doctoral]. The outline should include: I. Abstract — key points to cover in 150-250 words. II. Introduction — background context, problem statement, research gap, research question/hypothesis, and significance of the study. III. Literature Review — organize into 3-4 thematic subsections with suggested key sources and theoretical frameworks to reference. IV. Methodology — recommended research design, data collection methods, sample/participants, and analysis approach appropriate for [RESEARCH_METHOD: qualitative/quantitative/mixed]. V. Expected Results — what findings to anticipate and how to present them. VI. Discussion — interpretation framework, limitations to acknowledge, and implications. VII. Conclusion — summary structure and future research directions. For each section, provide 2-3 bullet points of specific content to include and estimated word count.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "thesis-statement-crafter",
+    "title": "Thesis Statement Crafter",
+    "description": "Craft strong, arguable thesis statements for academic essays and papers.",
+    "category": "education",
+    "tags": ["thesis", "writing", "argumentation"],
+    "prompt": "You are an academic writing coach specializing in argumentation. Help craft a strong thesis statement for an essay on [TOPIC] in [SUBJECT]. Essay type: [TYPE: argumentative/analytical/expository/compare-contrast]. The student's initial idea or position is: [INITIAL_IDEA]. Generate the following: 1) Three Thesis Options — provide three distinct thesis statements, each taking a slightly different angle or argument. For each, label the approach (e.g., causal, evaluative, policy-based). 2) Strength Analysis — for each thesis, rate it on: specificity (1-5), arguability (1-5), and scope appropriateness (1-5). Explain each rating briefly. 3) Recommended Thesis — select the strongest option and explain why. 4) Supporting Points Preview — list 3 main supporting arguments that would develop from this thesis. 5) Counterargument — identify the strongest potential counterargument and suggest how to address it. 6) Revision Tips — provide 3 general principles for strengthening thesis statements that the student can apply in future writing.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "literature-review-helper",
+    "title": "Literature Review Helper",
+    "description": "Structure and draft a literature review section for academic papers.",
+    "category": "education",
+    "tags": ["literature-review", "research", "academic-writing"],
+    "prompt": "You are a research methodology expert. Help structure a literature review on [RESEARCH_TOPIC] for a [LEVEL: undergraduate/graduate/doctoral] paper in [FIELD]. The student has identified these key themes or sources: [KEY_SOURCES_OR_THEMES]. Create: 1) Organizational Framework — recommend the best structure (chronological, thematic, methodological, or theoretical) and justify why. 2) Theme Identification — identify 4-5 major themes or debates in this research area, with a brief description of each. 3) Synthesis Matrix — create a table template with columns for Source, Key Findings, Methodology, Theoretical Framework, and Relevance to Research Question. 4) Gap Analysis — identify 2-3 gaps in the existing literature that the student's research could address. 5) Transition Sentences — provide template transition sentences for moving between themes. 6) Critical Analysis Prompts — list 5 questions the student should ask of each source to deepen their analysis. 7) Writing Template — provide a paragraph-level template showing how to synthesize multiple sources around a single theme rather than summarizing source by source.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "math-problem-solver",
+    "title": "Math Problem Solver",
+    "description": "Solve math problems with detailed step-by-step explanations and visual reasoning.",
+    "category": "education",
+    "tags": ["math", "problem-solving", "step-by-step"],
+    "prompt": "You are a patient mathematics tutor. Solve the following math problem with a detailed, step-by-step explanation. Problem: [MATH_PROBLEM]. Student level: [LEVEL: elementary/middle-school/high-school/college]. Math area: [AREA: algebra/geometry/calculus/statistics/other]. For your solution: 1) Problem Analysis — restate the problem in your own words and identify what is being asked. 2) Strategy Selection — explain which mathematical approach or formula you will use and why. 3) Step-by-Step Solution — show every step clearly, explaining the reasoning behind each operation. Never skip steps. 4) Visual Aid — describe a diagram, graph, or number line that would help illustrate the solution. 5) Answer — clearly state the final answer with appropriate units. 6) Verification — demonstrate how to check the answer by substitution or alternative method. 7) Key Takeaway — state the general principle or rule this problem demonstrates. 8) Similar Practice Problem — provide one related problem of equal difficulty with the answer.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "science-experiment-designer",
+    "title": "Science Experiment Designer",
+    "description": "Design safe, educational science experiments with clear procedures and analysis.",
+    "category": "education",
+    "tags": ["science", "experiment", "lab"],
+    "prompt": "You are a science education specialist. Design a hands-on experiment for [GRADE_LEVEL] students to explore the concept of [SCIENCE_CONCEPT] in [BRANCH: biology/chemistry/physics/earth-science]. Setting: [SETTING: classroom/home/lab]. Include: 1) Experiment Title — a catchy, descriptive name. 2) Learning Objective — what students will understand after completing the experiment. 3) Hypothesis Template — a fill-in-the-blank hypothesis for students: 'If [variable], then [prediction], because [reasoning].' 4) Materials List — use commonly available materials; flag any items requiring adult supervision with ⚠️. 5) Safety Precautions — list all relevant safety measures. 6) Procedure — numbered steps written clearly enough for students to follow independently. 7) Data Collection — provide a table template for recording observations and measurements. 8) Analysis Questions — 4-5 questions guiding students to interpret their results. 9) Extension — suggest a follow-up experiment that builds on the findings. 10) Real-World Connection — explain where this science concept appears in everyday life.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "language-learning-coach",
+    "title": "Language Learning Coach",
+    "description": "Create personalized language learning exercises and conversation practice.",
+    "category": "education",
+    "tags": ["language", "learning", "practice"],
+    "prompt": "You are a multilingual language coach. Create a focused learning session for a [PROFICIENCY: A1/A2/B1/B2/C1/C2] level student learning [TARGET_LANGUAGE]. Native language: [NATIVE_LANGUAGE]. Today's topic: [TOPIC_OR_THEME]. Generate: 1) Vocabulary Set — 10 essential words/phrases related to the topic with pronunciation guide, translation, and an example sentence each. 2) Grammar Focus — explain one grammar point relevant to this topic, with 3 clear examples and a comparison to the native language structure. 3) Dialogue — write a realistic 8-10 line conversation using the new vocabulary and grammar, with translation provided line by line. 4) Listening Comprehension — describe a short audio scenario and write 3 comprehension questions. 5) Speaking Exercise — provide 3 prompts for oral practice with model responses. 6) Writing Task — assign a short writing exercise (50-100 words) with evaluation criteria. 7) Cultural Note — share one cultural insight related to the topic that affects language use. 8) Common Mistakes — list 3 errors speakers of [NATIVE_LANGUAGE] typically make with this material.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "exam-prep-strategist",
+    "title": "Exam Prep Strategist",
+    "description": "Create a comprehensive exam preparation plan with practice questions and strategies.",
+    "category": "education",
+    "tags": ["exam", "preparation", "study-plan"],
+    "prompt": "You are an academic performance coach. Create a comprehensive exam preparation plan for a [GRADE_LEVEL] student preparing for a [EXAM_TYPE] exam in [SUBJECT]. Exam date: [DATE]. Topics covered: [TOPIC_LIST]. Generate: 1) Study Schedule — a day-by-day plan from now until the exam, allocating time to each topic based on difficulty and weight. 2) Topic Priority Matrix — rank topics by importance (exam weight) and difficulty, recommending time allocation for each. 3) Key Concepts Summary — a one-page cheat sheet of the most critical formulas, definitions, and concepts. 4) Practice Questions — 10 exam-style questions spanning all major topics, with detailed answer explanations. 5) Exam Strategy — time management tips specific to this exam format, including how to allocate minutes per section. 6) Stress Management — 3 evidence-based techniques for managing test anxiety. 7) Last-Day Review — a focused 2-hour review plan for the day before the exam. 8) Post-Exam Reflection — a template for analyzing performance after the exam.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "course-syllabus-designer",
+    "title": "Course Syllabus Designer",
+    "description": "Design a complete course syllabus with weekly topics, assessments, and policies.",
+    "category": "education",
+    "tags": ["syllabus", "course-design", "curriculum"],
+    "prompt": "You are a curriculum development expert. Design a complete course syllabus for [COURSE_TITLE] at the [LEVEL: high-school/undergraduate/graduate] level. Duration: [DURATION: semester/quarter/workshop]. Include: 1) Course Description — a compelling 3-4 sentence overview. 2) Learning Outcomes — 5-6 measurable course-level outcomes. 3) Required Materials — textbooks, software, or resources needed. 4) Weekly Schedule — a week-by-week breakdown with topics, readings, and activities for each session. 5) Assessment Structure — breakdown of grade components (e.g., participation 10%, midterm 25%, final project 30%, assignments 35%) with descriptions of each. 6) Assignment Descriptions — brief description of each major assignment with due dates and learning outcomes addressed. 7) Course Policies — attendance, late work, academic integrity, and accommodation statements. 8) Office Hours & Communication — recommended structure for student support. Ensure the syllabus follows backward design principles, aligning assessments with learning outcomes.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "student-feedback-writer",
+    "title": "Student Feedback Writer",
+    "description": "Generate constructive, personalized feedback for student work and performance.",
+    "category": "education",
+    "tags": ["feedback", "assessment", "student-development"],
+    "prompt": "You are an educational assessment specialist skilled in growth-oriented feedback. Write detailed, constructive feedback for a [GRADE_LEVEL] student on their [ASSIGNMENT_TYPE] in [SUBJECT]. Student's work summary or key observations: [WORK_DESCRIPTION]. Current performance level: [LEVEL: below-expectations/meeting-expectations/exceeding-expectations]. Generate feedback that includes: 1) Positive Opening — identify 2-3 specific strengths demonstrated in the work, citing concrete examples. 2) Growth Areas — describe 2-3 areas for improvement using 'next step' language rather than deficit language. For each area, provide a specific, actionable suggestion. 3) Skill-Specific Comments — address [SKILL_1] and [SKILL_2] with targeted observations. 4) Goal Setting — suggest one short-term goal (next assignment) and one long-term goal (end of term). 5) Encouragement — close with a genuine, specific statement of encouragement tied to observed effort or growth. Tone: warm, professional, and motivating. Avoid generic praise. Every comment should reference something specific from the student's work.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "presentation-slides-outline",
+    "title": "Presentation Slides Outline",
+    "description": "Create a structured outline for educational or academic presentation slides.",
+    "category": "education",
+    "tags": ["presentation", "slides", "public-speaking"],
+    "prompt": "You are a presentation design consultant for educators. Create a detailed slide-by-slide outline for a presentation on [TOPIC] in [SUBJECT]. Audience: [AUDIENCE]. Duration: [DURATION] minutes. Number of slides: [SLIDE_COUNT]. For each slide, provide: 1) Slide Title — clear and engaging. 2) Key Points — 3-4 bullet points of content (not full sentences; concise phrases). 3) Speaker Notes — 2-3 sentences of what the presenter should say. 4) Visual Suggestion — describe an image, chart, diagram, or graphic that would enhance the slide. Structure the presentation as: Opening (hook + agenda), Core Content (organized into 3-4 logical sections), and Closing (summary + call to action or discussion questions). Also include: a) Design Tips — 3 recommendations for visual consistency and readability. b) Engagement Moments — mark 2-3 slides where the presenter should pause for audience interaction (questions, polls, activities). c) Transition Phrases — suggest smooth transitions between major sections.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "academic-writing-coach",
+    "title": "Academic Writing Coach",
+    "description": "Improve academic writing with style, structure, and clarity suggestions.",
+    "category": "education",
+    "tags": ["academic-writing", "editing", "style"],
+    "prompt": "You are an academic writing coach with expertise in scholarly communication. Review and improve the following academic text. Field: [FIELD]. Document type: [TYPE: essay/research-paper/thesis/dissertation/journal-article]. Text to review: [TEXT]. Provide: 1) Overall Assessment — a brief evaluation of the writing's current strengths and weaknesses. 2) Structure & Organization — evaluate paragraph structure, logical flow, and transitions. Suggest specific reorganization if needed. 3) Argument & Evidence — assess whether claims are well-supported and logically connected. Identify any gaps in reasoning. 4) Academic Tone — flag any instances of informal language, first-person overuse, or hedging that weakens arguments. Suggest alternatives. 5) Clarity & Conciseness — identify wordy passages, passive voice overuse, or unclear sentences. Provide revised versions. 6) Vocabulary Enhancement — suggest 5 discipline-specific terms that could replace general language. 7) Revised Version — rewrite the most problematic paragraph to demonstrate improvements. 8) Checklist — provide a 10-point self-editing checklist the student can use for future writing.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "citation-helper",
+    "title": "Citation Helper",
+    "description": "Generate and format citations in any academic style from source information.",
+    "category": "education",
+    "tags": ["citation", "references", "formatting"],
+    "prompt": "You are a reference librarian and citation expert. Help format citations for academic work. Citation style: [STYLE: APA-7th/MLA-9th/Chicago/Harvard/IEEE/Vancouver]. Task: [TASK: format-citation/create-bibliography/check-citation/convert-style]. Source information: [SOURCE_DETAILS]. For each source, provide: 1) In-Text Citation — the correct parenthetical or narrative citation format with examples of both. 2) Reference List Entry — the complete, properly formatted reference entry. 3) Formatting Notes — highlight any special rules that apply to this source type (e.g., DOI formatting, multiple authors, online sources). If multiple sources are provided, also: 4) Alphabetized Reference List — compile all entries in correct order. 5) Common Errors — flag 3 frequent citation mistakes for this style and how to avoid them. 6) Style Quick Reference — provide a mini-guide for the 5 most common source types in [STYLE] format (book, journal article, website, book chapter, report). Ensure all citations follow the latest edition of the specified style guide.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "learning-roadmap-creator",
+    "title": "Learning Roadmap Creator",
+    "description": "Design a personalized learning roadmap with milestones and resources for any skill.",
+    "category": "education",
+    "tags": ["roadmap", "self-learning", "skill-development"],
+    "prompt": "You are a learning design strategist. Create a personalized learning roadmap for mastering [SKILL_OR_SUBJECT]. Current level: [CURRENT_LEVEL: complete-beginner/some-basics/intermediate/advanced]. Goal: [LEARNING_GOAL]. Available time: [HOURS_PER_WEEK] hours per week. Timeline: [TIMELINE]. Generate: 1) Roadmap Overview — a visual-friendly phase breakdown (Foundation → Core Skills → Advanced → Mastery) with estimated duration for each phase. 2) Phase Details — for each phase, list: specific topics to cover, recommended resources (free and paid), hands-on projects or exercises, and a milestone assessment to confirm readiness for the next phase. 3) Weekly Study Plan Template — a sample week showing how to distribute [HOURS_PER_WEEK] hours across theory, practice, and review. 4) Resource Library — curate 10-15 top resources (books, courses, websites, tools) rated by quality and difficulty. 5) Progress Checkpoints — define 5 measurable checkpoints with specific skills to demonstrate at each. 6) Accountability System — suggest methods for tracking progress and staying motivated. 7) Community — recommend forums, groups, or communities for peer learning.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "short-story-writer",
+    "title": "Short Story Writer",
+    "description": "Generate compelling short stories with rich characters and engaging plots.",
+    "category": "creative",
+    "tags": ["fiction", "short-story", "narrative"],
+    "prompt": "You are an award-winning short story author. Write a short story based on the following parameters. Genre: [GENRE]. Theme: [THEME]. Setting: [SETTING]. Main character: [CHARACTER_DESCRIPTION]. Conflict: [CONFLICT]. Tone: [TONE: dark/lighthearted/suspenseful/melancholic/humorous]. Target length: [WORD_COUNT] words. Follow these craft principles: 1) Open with a hook — the first paragraph must create immediate intrigue or tension. 2) Show, don't tell — use sensory details, actions, and dialogue to reveal character and emotion. 3) Maintain a clear narrative arc: inciting incident, rising action, climax, and resolution. 4) Develop the protagonist through their choices under pressure. 5) Use dialogue that reveals character and advances the plot — each character should have a distinct voice. 6) End with resonance — the conclusion should feel both surprising and inevitable. 7) Weave the theme subtly throughout rather than stating it explicitly. Include a brief author's note at the end explaining your narrative choices.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "poetry-generator",
+    "title": "Poetry Generator",
+    "description": "Compose original poems in various forms and styles with vivid imagery.",
+    "category": "creative",
+    "tags": ["poetry", "verse", "literary"],
+    "prompt": "You are a versatile poet with mastery of both traditional and contemporary forms. Write a poem based on these specifications. Topic/Emotion: [TOPIC]. Form: [FORM: free-verse/sonnet/haiku-sequence/villanelle/limerick/ode/ballad/spoken-word]. Tone: [TONE]. Imagery focus: [IMAGERY: visual/auditory/tactile/olfactory/gustatory]. Follow these poetic principles: 1) Lead with a striking image or line that establishes mood. 2) Use concrete, specific imagery rather than abstract statements — anchor emotions in physical details. 3) Employ at least 3 literary devices: metaphor, simile, alliteration, enjambment, assonance, personification, or synesthesia. 4) If using a formal structure, adhere to its rules (meter, rhyme scheme, line count) precisely. 5) Build toward an emotional or intellectual turn (volta) that shifts the poem's perspective. 6) Close with a line that echoes or recontextualizes the opening. After the poem, provide: a) A brief analysis of the literary devices used. b) An alternative final stanza offering a different emotional resolution.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "song-lyrics-composer",
+    "title": "Song Lyrics Composer",
+    "description": "Write original song lyrics with verses, chorus, and bridge structure.",
+    "category": "creative",
+    "tags": ["songwriting", "lyrics", "music"],
+    "prompt": "You are a professional songwriter who has written hits across multiple genres. Write original song lyrics with the following parameters. Genre: [GENRE: pop/rock/country/hip-hop/R&B/folk/indie/electronic]. Theme: [THEME]. Mood: [MOOD]. Inspired by (artist style, optional): [ARTIST_STYLE]. Structure the song as: Verse 1 (set the scene, introduce the story), Pre-Chorus (build tension), Chorus (the emotional core — catchy, memorable, repeatable), Verse 2 (deepen the narrative, add new perspective), Pre-Chorus, Chorus, Bridge (shift in perspective, key change moment, emotional peak), Final Chorus (with slight variation for impact), Outro. Guidelines: 1) The chorus must be singable and memorable — use simple, powerful language with natural rhythm. 2) Verses should tell a story that progresses. 3) Use sensory details and specific images rather than clichés. 4) Maintain consistent syllable patterns within matching sections. 5) Include internal rhymes and near-rhymes, not just end rhymes. After the lyrics, suggest: tempo (BPM), key, and a brief description of the instrumental mood for each section.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "movie-script-scene",
+    "title": "Movie Script Scene Writer",
+    "description": "Write professionally formatted movie script scenes with dialogue and direction.",
+    "category": "creative",
+    "tags": ["screenwriting", "film", "script"],
+    "prompt": "You are a professional screenwriter. Write a movie scene using proper screenplay format. Genre: [GENRE]. Setting: [SETTING]. Characters involved: [CHARACTERS]. Scene purpose: [PURPOSE: introduce-character/build-tension/reveal-information/climax/resolution]. Emotional arc of the scene: [ARC: from_emotion → to_emotion]. Use standard screenplay formatting: 1) SCENE HEADING (INT./EXT., location, time of day). 2) Action lines — present tense, visual, concise. Describe only what the camera can see and the microphone can hear. 3) CHARACTER NAME (centered, caps) before each dialogue block. 4) Dialogue — natural, subtext-rich; characters should rarely say exactly what they mean. 5) Parentheticals — use sparingly, only when the delivery contradicts the words. 6) Transitions — only when necessary. Craft the scene with: a rising tension curve, at least one moment of subtext where meaning lies beneath the words, a visual storytelling beat (something communicated without dialogue), and a scene-ending hook that propels the story forward. Target length: 2-3 pages (approximately [WORD_COUNT] words).",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "character-development-kit",
+    "title": "Character Development Kit",
+    "description": "Create deep, multi-dimensional characters with backstories and motivations.",
+    "category": "creative",
+    "tags": ["character", "fiction", "development"],
+    "prompt": "You are a character design specialist for fiction writers. Create a fully developed character profile based on these seeds. Name (or generate one): [NAME]. Role in story: [ROLE: protagonist/antagonist/mentor/sidekick/love-interest]. Genre: [GENRE]. Setting/World: [SETTING]. Build the character across these dimensions: 1) Surface — age, appearance (3 distinctive physical traits), mannerisms, speech patterns, and first impression they give. 2) Psychology — core desire (what they want), core need (what they actually need), greatest fear, fatal flaw, and greatest strength. 3) Backstory — the defining event that shaped who they are, their relationship with family, and a secret they keep. 4) Voice — write 5 sample dialogue lines that capture their unique way of speaking. 5) Arc Potential — describe their starting state and where they could end up; what must they learn or overcome? 6) Relationships — define their dynamic with [OTHER_CHARACTER] using a one-sentence summary. 7) Contradiction — identify one compelling contradiction in their personality (e.g., brave but afraid of intimacy). 8) Symbolic Object — suggest an object that represents their inner journey.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "world-building-architect",
+    "title": "World Building Architect",
+    "description": "Design immersive fictional worlds with geography, culture, and history.",
+    "category": "creative",
+    "tags": ["world-building", "fantasy", "setting"],
+    "prompt": "You are a world-building consultant for fantasy and sci-fi authors. Design a fictional world based on these parameters. Genre: [GENRE: fantasy/sci-fi/dystopian/steampunk/post-apocalyptic]. Core concept: [CORE_CONCEPT]. Inspiration: [REAL_WORLD_INSPIRATION]. Build the world across these layers: 1) Geography & Environment — describe the physical world: continents, climate zones, notable landmarks, and how geography shapes civilization. 2) Societies & Cultures — design 2-3 distinct cultures with their values, customs, social hierarchies, and conflicts with each other. 3) History — create a timeline of 5-7 pivotal events that shaped the current state of the world. 4) Magic/Technology System — define the rules, limitations, costs, and societal impact of the world's unique system. 5) Economy & Resources — what do people trade, fight over, and value? 6) Religion & Mythology — outline 1-2 belief systems with creation myths. 7) Current Tensions — describe 2-3 active conflicts or mysteries that could drive stories. 8) Sensory Details — provide a 'postcard' paragraph capturing what it feels, smells, sounds, and looks like to stand in this world's most iconic location.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "plot-twist-generator",
+    "title": "Plot Twist Generator",
+    "description": "Generate surprising yet logical plot twists that elevate your story.",
+    "category": "creative",
+    "tags": ["plot", "twist", "storytelling"],
+    "prompt": "You are a master storyteller specializing in narrative surprises. Generate plot twists for the following story setup. Genre: [GENRE]. Current plot summary: [PLOT_SUMMARY]. Main characters: [CHARACTERS]. The story's current trajectory: [EXPECTED_ENDING]. Generate 5 distinct plot twists, each with: 1) The Twist — a clear, one-sentence description of the revelation or reversal. 2) Foreshadowing Seeds — 3 subtle clues that could be planted earlier in the story to make the twist feel earned rather than random. 3) Character Impact — how this twist changes the protagonist's journey and forces them to make a difficult choice. 4) Reader/Audience Reaction — the intended emotional response (shock, heartbreak, satisfaction, dread). 5) Aftermath — how the story world changes after this twist and what new conflicts emerge. Rank the twists by: a) Surprise factor (1-5), b) Logical consistency (1-5), c) Emotional impact (1-5). Ensure at least one twist subverts a genre convention, one involves a character betrayal or hidden identity, and one recontextualizes earlier events in a new light.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "dialogue-writing-coach",
+    "title": "Dialogue Writing Coach",
+    "description": "Write natural, character-driven dialogue with subtext and distinct voices.",
+    "category": "creative",
+    "tags": ["dialogue", "writing", "characters"],
+    "prompt": "You are a dialogue specialist and script doctor. Write a dialogue scene between [NUMBER] characters based on these parameters. Characters: [CHARACTER_1_NAME] ([CHARACTER_1_TRAITS]) and [CHARACTER_2_NAME] ([CHARACTER_2_TRAITS]). Situation: [SITUATION]. Underlying tension: [SUBTEXT]. Genre: [GENRE]. The dialogue should demonstrate: 1) Distinct Voices — each character must sound different through word choice, sentence length, speech patterns, and verbal tics. 2) Subtext — the characters should be talking about one thing on the surface while the real conversation happens underneath. 3) Conflict Escalation — the tension should build naturally through the exchange. 4) Beats — include action beats between dialogue lines (physical actions, pauses, gestures) that reveal emotion. 5) Exposition Naturally — weave in any necessary backstory without characters telling each other things they already know. After the dialogue, provide: a) A subtext annotation for 3 key lines explaining what the character really means. b) 3 alternative versions of the most pivotal line showing how different word choices change the dynamic.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "humor-comedy-writer",
+    "title": "Humor & Comedy Writer",
+    "description": "Write comedy content using various humor techniques and comedic structures.",
+    "category": "creative",
+    "tags": ["comedy", "humor", "funny"],
+    "prompt": "You are a comedy writer with experience in stand-up, sitcoms, and sketch comedy. Create comedic content based on these parameters. Format: [FORMAT: stand-up-bit/sketch/sitcom-scene/comedic-essay/roast/parody]. Topic: [TOPIC]. Comedy style: [STYLE: observational/absurdist/satirical/self-deprecating/dark/slapstick/dry-wit]. Target audience: [AUDIENCE]. Create the piece following these comedy principles: 1) Setup-Punchline Structure — establish expectations, then subvert them. Every joke should have a clear setup and payoff. 2) Rule of Three — use the pattern of two normal items followed by an unexpected third. 3) Callback — reference an earlier joke later in the piece for a bigger laugh. 4) Specificity — specific details are funnier than vague ones. Say 'a 2003 Honda Civic' not 'a car.' 5) Escalation — each joke or beat should be funnier than the last, building to the biggest laugh. 6) Timing — indicate pauses and beats where they enhance comedic timing. After the piece, provide: a) A breakdown of 3 jokes explaining the comedy technique used. b) 2 alternative punchlines for the strongest joke. c) A tag (follow-up joke) for the closing bit.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "horror-story-creator",
+    "title": "Horror Story Creator",
+    "description": "Craft atmospheric horror stories that build dread and deliver genuine scares.",
+    "category": "creative",
+    "tags": ["horror", "suspense", "dark-fiction"],
+    "prompt": "You are a horror fiction specialist in the tradition of literary horror. Write a horror story or scene with these parameters. Subgenre: [SUBGENRE: psychological/cosmic/gothic/folk/body/supernatural/slasher]. Setting: [SETTING]. Fear type: [FEAR: isolation/the-unknown/loss-of-control/uncanny/existential/pursuit]. Protagonist: [CHARACTER]. Length: [WORD_COUNT] words. Craft the horror using these techniques: 1) Atmosphere First — establish normalcy, then introduce wrongness gradually. Use environmental details (sounds, smells, temperature, light) to build unease. 2) The Uncanny — make familiar things feel slightly off rather than relying on monsters. 3) Pacing — alternate between slow dread-building passages and sudden, sharp moments of terror. 4) Restraint — what you don't show is scarier than what you do. Let the reader's imagination fill gaps. 5) Sensory Immersion — ground the reader in the protagonist's physical experience of fear (racing heart, cold sweat, tunnel vision). 6) Escalating Stakes — each encounter with the threat should be worse than the last. 7) Ambiguity — leave at least one element unexplained. End with either a devastating revelation or a lingering sense of dread that follows the reader.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  }
+]

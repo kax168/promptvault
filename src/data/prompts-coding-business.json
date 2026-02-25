@@ -1,0 +1,302 @@
+[
+  {
+    "id": "code-review-best-practices",
+    "title": "Code Review Assistant",
+    "description": "Perform a thorough code review with actionable feedback on quality, security, and maintainability.",
+    "category": "coding",
+    "tags": ["code-review", "quality", "best-practices"],
+    "prompt": "You are a senior software engineer conducting a code review. Analyze the following code written in [LANGUAGE] for a [PROJECT_TYPE] project.\n\nCode to review:\n```\n[PASTE_CODE_HERE]\n```\n\nPlease evaluate the code across these dimensions:\n1. **Correctness**: Are there any bugs, logic errors, or edge cases not handled?\n2. **Security**: Identify potential vulnerabilities (injection, XSS, auth issues, etc.)\n3. **Performance**: Flag any inefficient patterns, unnecessary computations, or memory leaks.\n4. **Readability**: Assess naming conventions, code structure, and clarity.\n5. **Maintainability**: Evaluate modularity, DRY principles, and coupling.\n6. **Testing**: Suggest what unit tests should cover this code.\n\nFor each issue found, provide:\n- Severity: Critical / Warning / Suggestion\n- Line reference or code snippet\n- Explanation of the problem\n- Recommended fix with code example\n\nEnd with a summary score (1-10) and top 3 priority improvements.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "debugging-systematic-approach",
+    "title": "Systematic Debugging Guide",
+    "description": "Diagnose and resolve bugs using a structured root-cause analysis approach.",
+    "category": "coding",
+    "tags": ["debugging", "troubleshooting", "root-cause"],
+    "prompt": "You are an expert debugger. Help me systematically diagnose and fix a bug in my [LANGUAGE/FRAMEWORK] application.\n\n**Bug Description**: [DESCRIBE_THE_BUG]\n**Expected Behavior**: [WHAT_SHOULD_HAPPEN]\n**Actual Behavior**: [WHAT_ACTUALLY_HAPPENS]\n**Environment**: [OS/RUNTIME/VERSION]\n**Error Message (if any)**: [PASTE_ERROR]\n**Relevant Code**:\n```\n[PASTE_CODE]\n```\n\nPlease follow this debugging methodology:\n1. **Reproduce**: Clarify the exact steps to reproduce the issue.\n2. **Isolate**: Narrow down the root cause by analyzing the code path and error trace.\n3. **Hypothesize**: List the top 3 most likely causes ranked by probability.\n4. **Verify**: For each hypothesis, suggest a specific test or logging statement to confirm or rule it out.\n5. **Fix**: Provide the corrected code with explanation of what was wrong.\n6. **Prevent**: Recommend how to prevent this class of bug in the future (tests, linting rules, patterns).\n\nBe specific and reference exact lines or functions in your analysis.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "refactoring-legacy-code",
+    "title": "Legacy Code Refactoring",
+    "description": "Refactor legacy code into clean, modern, and maintainable architecture.",
+    "category": "coding",
+    "tags": ["refactoring", "clean-code", "legacy"],
+    "prompt": "You are a refactoring specialist. I need to modernize the following legacy [LANGUAGE] code while preserving its existing behavior.\n\nLegacy Code:\n```\n[PASTE_LEGACY_CODE]\n```\n\nContext: This code is part of a [DESCRIBE_SYSTEM] and currently [DESCRIBE_WHAT_IT_DOES].\n\nPlease refactor with these goals:\n1. **Extract**: Break monolithic functions into smaller, single-responsibility functions.\n2. **Modernize**: Replace deprecated patterns with modern [LANGUAGE] idioms and features.\n3. **Type Safety**: Add proper type annotations/interfaces where applicable.\n4. **Error Handling**: Replace silent failures with proper error handling.\n5. **Naming**: Improve variable and function names for clarity.\n6. **DRY**: Eliminate code duplication.\n\nProvide:\n- The fully refactored code\n- A changelog summarizing each change and why it was made\n- Any breaking changes or migration notes\n- Suggested tests to verify the refactored code behaves identically to the original",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "api-design-restful",
+    "title": "RESTful API Designer",
+    "description": "Design a complete RESTful API with endpoints, schemas, and documentation.",
+    "category": "coding",
+    "tags": ["api-design", "rest", "openapi"],
+    "prompt": "You are an API architect. Design a comprehensive RESTful API for a [APPLICATION_TYPE] application.\n\n**Core Resources**: [LIST_MAIN_ENTITIES, e.g., users, products, orders]\n**Key Features**: [LIST_FEATURES]\n**Authentication**: [AUTH_METHOD, e.g., JWT, OAuth2, API Key]\n**Target Consumers**: [WHO_WILL_USE_THIS_API]\n\nFor each resource, provide:\n1. **Endpoints**: Full CRUD operations with HTTP methods, paths, and descriptions.\n2. **Request/Response Schemas**: JSON examples with field types and validation rules.\n3. **Query Parameters**: Filtering, sorting, pagination support.\n4. **Status Codes**: Appropriate HTTP status codes for success and error scenarios.\n5. **Error Response Format**: Standardized error object structure.\n6. **Rate Limiting**: Suggested limits per endpoint.\n7. **Versioning Strategy**: How to handle API versions.\n\nAlso include:\n- Authentication flow diagram\n- Relationship between resources\n- Webhook events (if applicable)\n- OpenAPI 3.0 snippet for the most complex endpoint",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "database-schema-design",
+    "title": "Database Schema Architect",
+    "description": "Design an optimized database schema with tables, relationships, and indexes.",
+    "category": "coding",
+    "tags": ["database", "schema", "sql"],
+    "prompt": "You are a database architect. Design an optimized [DATABASE_TYPE, e.g., PostgreSQL/MySQL/MongoDB] schema for a [APPLICATION_DESCRIPTION].\n\n**Key Entities**: [LIST_ENTITIES]\n**Expected Scale**: [ESTIMATED_ROWS/USERS]\n**Read/Write Ratio**: [e.g., 80/20 read-heavy]\n**Key Queries**: [LIST_MOST_COMMON_QUERIES]\n\nPlease provide:\n1. **Table/Collection Definitions**: All fields with data types, constraints (NOT NULL, UNIQUE, CHECK), and defaults.\n2. **Relationships**: Foreign keys, junction tables for many-to-many, with ON DELETE/UPDATE behavior.\n3. **Indexes**: Primary, unique, composite, and partial indexes with justification for each.\n4. **Normalization**: Ensure at least 3NF; note any intentional denormalization with reasoning.\n5. **Migration SQL**: CREATE TABLE statements ready to execute.\n6. **Seed Data**: Sample INSERT statements for testing.\n7. **Performance Notes**: Query optimization tips, partitioning strategy if needed.\n\nInclude an ER diagram description showing all relationships.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "unit-test-generator",
+    "title": "Unit Test Generator",
+    "description": "Generate comprehensive unit tests with edge cases and mocking strategies.",
+    "category": "coding",
+    "tags": ["testing", "unit-tests", "tdd"],
+    "prompt": "You are a test engineering expert. Write comprehensive unit tests for the following [LANGUAGE] code using [TEST_FRAMEWORK, e.g., Jest/pytest/JUnit].\n\nCode to test:\n```\n[PASTE_CODE]\n```\n\nRequirements:\n1. **Happy Path Tests**: Cover all normal execution paths with valid inputs.\n2. **Edge Cases**: Test boundary values, empty inputs, null/undefined, max values.\n3. **Error Cases**: Verify proper error handling and error messages.\n4. **Mocking**: Mock external dependencies ([LIST_DEPENDENCIES]) using [MOCK_LIBRARY].\n5. **Async Tests**: Handle promises/async operations correctly if applicable.\n6. **Test Organization**: Use describe/it blocks with clear, descriptive test names.\n\nFor each test, include:\n- Arrange: Setup test data and mocks\n- Act: Execute the function under test\n- Assert: Verify expected outcomes\n\nAim for >90% code coverage. Include a coverage summary at the end noting any intentionally uncovered lines and why.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "technical-documentation-writer",
+    "title": "Technical Documentation Writer",
+    "description": "Create clear, structured technical documentation for codebases and APIs.",
+    "category": "coding",
+    "tags": ["documentation", "readme", "technical-writing"],
+    "prompt": "You are a technical writer specializing in developer documentation. Create comprehensive documentation for [PROJECT_NAME], a [PROJECT_DESCRIPTION].\n\n**Tech Stack**: [LIST_TECHNOLOGIES]\n**Target Audience**: [e.g., junior devs, API consumers, open-source contributors]\n**Documentation Type**: [README / API Docs / Architecture Guide / Contributing Guide]\n\nGenerate documentation that includes:\n1. **Overview**: What the project does, why it exists, and key features.\n2. **Quick Start**: Step-by-step setup in under 5 minutes (prerequisites, install, run).\n3. **Configuration**: All environment variables and config options in a table format.\n4. **Usage Examples**: At least 3 practical code examples from simple to advanced.\n5. **API Reference**: Function signatures, parameters, return types, and examples.\n6. **Architecture**: High-level system diagram description and key design decisions.\n7. **Troubleshooting**: Common issues and their solutions.\n8. **Contributing**: How to set up dev environment, coding standards, PR process.\n\nUse clear headings, code blocks with syntax highlighting, and callout boxes for warnings/tips.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "regex-pattern-builder",
+    "title": "Regex Pattern Builder",
+    "description": "Build and explain complex regular expressions with test cases.",
+    "category": "coding",
+    "tags": ["regex", "pattern-matching", "validation"],
+    "prompt": "You are a regex expert. Help me build a regular expression for the following requirement.\n\n**What to match**: [DESCRIBE_PATTERN, e.g., email addresses, phone numbers, URLs]\n**Language/Engine**: [e.g., JavaScript, Python, PCRE, .NET]\n**Must match examples**: [LIST_VALID_EXAMPLES]\n**Must NOT match examples**: [LIST_INVALID_EXAMPLES]\n**Special requirements**: [e.g., capture groups needed, case-insensitive, multiline]\n\nPlease provide:\n1. **The regex pattern** with proper escaping for the target language.\n2. **Character-by-character explanation** of what each part of the pattern does.\n3. **Named capture groups** if applicable, with descriptions.\n4. **Test results** showing the pattern against all provided examples.\n5. **Edge cases** I might not have considered.\n6. **Performance notes**: Is the pattern susceptible to catastrophic backtracking? If so, provide an optimized version.\n7. **Code snippet**: Ready-to-use implementation in [LANGUAGE] showing match, search, and replace operations.\n\nIf the requirement is ambiguous, state your assumptions clearly.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "sql-query-optimizer",
+    "title": "SQL Query Optimizer",
+    "description": "Write and optimize complex SQL queries for performance and correctness.",
+    "category": "coding",
+    "tags": ["sql", "database", "optimization"],
+    "prompt": "You are a SQL performance expert working with [DATABASE, e.g., PostgreSQL/MySQL/SQL Server]. Help me write and optimize a query.\n\n**Goal**: [DESCRIBE_WHAT_DATA_YOU_NEED]\n**Tables involved**:\n```sql\n[PASTE_TABLE_SCHEMAS_OR_DESCRIBE_THEM]\n```\n**Current query (if any)**:\n```sql\n[PASTE_EXISTING_QUERY]\n```\n**Performance issue**: [e.g., slow execution, full table scan, timeout]\n**Data volume**: [APPROXIMATE_ROW_COUNTS]\n\nPlease provide:\n1. **Optimized Query**: The most efficient SQL to achieve the goal.\n2. **Explain Plan Analysis**: Walk through the expected execution plan.\n3. **Index Recommendations**: What indexes would improve this query, with CREATE INDEX statements.\n4. **Alternative Approaches**: CTEs vs subqueries vs JOINs — which is best here and why.\n5. **Pagination**: If returning many rows, add efficient cursor-based pagination.\n6. **Common Pitfalls**: N+1 issues, implicit type casting, NULL handling.\n\nFormat the SQL with proper indentation and comments explaining complex joins or conditions.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "python-script-generator",
+    "title": "Python Script Generator",
+    "description": "Generate production-ready Python scripts with error handling and logging.",
+    "category": "coding",
+    "tags": ["python", "scripting", "automation"],
+    "prompt": "You are a senior Python developer. Write a production-ready Python script that [DESCRIBE_TASK].\n\n**Input**: [DESCRIBE_INPUT_DATA_OR_SOURCE]\n**Output**: [DESCRIBE_EXPECTED_OUTPUT]\n**Dependencies**: [ANY_REQUIRED_LIBRARIES]\n**Python Version**: [e.g., 3.10+]\n\nRequirements for the script:\n1. **CLI Interface**: Use argparse with clear help text for all arguments.\n2. **Error Handling**: Comprehensive try/except with specific exception types, not bare except.\n3. **Logging**: Use the logging module with configurable verbosity (--verbose flag).\n4. **Type Hints**: Full type annotations on all functions.\n5. **Docstrings**: Google-style docstrings for all functions and the module.\n6. **Configuration**: Support both CLI args and environment variables for sensitive values.\n7. **Progress**: Show progress for long-running operations (tqdm or custom).\n8. **Exit Codes**: Return appropriate exit codes (0 success, 1 error, 2 invalid args).\n\nInclude a requirements.txt and example usage in the docstring. Follow PEP 8 and use pathlib for file operations.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "react-component-builder",
+    "title": "React Component Builder",
+    "description": "Build reusable, accessible React components with TypeScript and hooks.",
+    "category": "coding",
+    "tags": ["react", "javascript", "components"],
+    "prompt": "You are a senior React developer. Build a reusable React component for [COMPONENT_DESCRIPTION].\n\n**Component Name**: [COMPONENT_NAME]\n**Framework**: React with TypeScript\n**Styling**: [CSS Modules / Tailwind / Styled Components]\n**State Management**: [useState / useReducer / Zustand / Redux]\n\nRequirements:\n1. **Props Interface**: Define a comprehensive TypeScript interface with required and optional props, JSDoc comments for each.\n2. **Accessibility**: ARIA attributes, keyboard navigation, focus management, screen reader support.\n3. **Responsive**: Mobile-first design that works across breakpoints.\n4. **States**: Handle loading, error, empty, and success states gracefully.\n5. **Hooks**: Extract complex logic into custom hooks with proper dependency arrays.\n6. **Memoization**: Use React.memo, useMemo, useCallback where appropriate with justification.\n7. **Testing**: Include a test file with React Testing Library covering user interactions.\n8. **Storybook**: Provide a stories file with variants (default, loading, error, edge cases).\n\nFollow React best practices: composition over inheritance, controlled components, proper key usage in lists.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "system-design-architecture",
+    "title": "System Design Blueprint",
+    "description": "Design scalable system architecture with components, data flow, and trade-offs.",
+    "category": "coding",
+    "tags": ["system-design", "architecture", "scalability"],
+    "prompt": "You are a principal systems architect. Design a scalable system for [SYSTEM_DESCRIPTION].\n\n**Requirements**:\n- Expected users: [NUMBER_OF_USERS]\n- Peak QPS: [QUERIES_PER_SECOND]\n- Data volume: [ESTIMATED_DATA_SIZE]\n- Latency target: [e.g., p99 < 200ms]\n- Availability target: [e.g., 99.9%]\n\n**Key Features**: [LIST_CORE_FEATURES]\n\nProvide a complete system design covering:\n1. **High-Level Architecture**: Components and their interactions (describe a diagram).\n2. **API Design**: Key endpoints with request/response formats.\n3. **Data Model**: Database choice (SQL vs NoSQL) with schema and justification.\n4. **Caching Strategy**: What to cache, TTL policies, invalidation approach.\n5. **Message Queue**: Async processing needs, queue technology choice.\n6. **Scaling Plan**: Horizontal vs vertical, auto-scaling triggers, sharding strategy.\n7. **Failure Handling**: Circuit breakers, retries, fallbacks, graceful degradation.\n8. **Monitoring**: Key metrics, alerting thresholds, logging strategy.\n9. **Trade-offs**: Explicitly state CAP theorem choices and other design trade-offs.\n10. **Cost Estimate**: Rough infrastructure cost at target scale.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "algorithm-problem-solver",
+    "title": "Algorithm Problem Solver",
+    "description": "Solve algorithmic problems with optimal solutions and complexity analysis.",
+    "category": "coding",
+    "tags": ["algorithms", "data-structures", "optimization"],
+    "prompt": "You are an algorithms expert. Help me solve the following problem optimally.\n\n**Problem**: [DESCRIBE_THE_PROBLEM]\n**Input Format**: [DESCRIBE_INPUT]\n**Output Format**: [DESCRIBE_OUTPUT]\n**Constraints**: [SIZE_LIMITS, TIME_LIMITS]\n**Example**:\n  Input: [EXAMPLE_INPUT]\n  Output: [EXAMPLE_OUTPUT]\n\nPlease provide:\n1. **Brute Force**: Start with the simplest correct solution. State its time and space complexity.\n2. **Optimized Solution**: Improve using appropriate data structures or algorithms. Explain the key insight.\n3. **Optimal Solution**: If different from #2, provide the best possible approach.\n4. **Code**: Clean implementation in [LANGUAGE] with comments explaining each step.\n5. **Complexity Analysis**: Detailed Big-O for time and space, including best/average/worst cases.\n6. **Dry Run**: Walk through the algorithm step-by-step with the example input.\n7. **Edge Cases**: List and handle all edge cases (empty input, single element, duplicates, overflow).\n8. **Follow-up**: How would the solution change if [VARIATION, e.g., data is streaming, distributed]?",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "cicd-pipeline-setup",
+    "title": "CI/CD Pipeline Configuration",
+    "description": "Set up a complete CI/CD pipeline with testing, building, and deployment stages.",
+    "category": "coding",
+    "tags": ["cicd", "devops", "automation"],
+    "prompt": "You are a DevOps engineer. Set up a complete CI/CD pipeline for a [PROJECT_TYPE] project.\n\n**Repository**: [GITHUB/GITLAB/BITBUCKET]\n**Language/Framework**: [TECH_STACK]\n**Deployment Target**: [e.g., AWS ECS, Kubernetes, Vercel, Heroku]\n**CI/CD Platform**: [GitHub Actions / GitLab CI / Jenkins / CircleCI]\n\nCreate a pipeline configuration that includes:\n1. **Trigger Rules**: On push to main, on PR, on tag creation.\n2. **Lint Stage**: Code formatting and linting checks.\n3. **Test Stage**: Unit tests, integration tests with coverage thresholds (minimum [X]%).\n4. **Security Stage**: Dependency vulnerability scanning, SAST analysis.\n5. **Build Stage**: Compile/bundle with caching for faster builds.\n6. **Docker Stage**: Build and push container image with proper tagging (SHA + semver).\n7. **Deploy Staging**: Auto-deploy to staging on main branch merge.\n8. **Deploy Production**: Manual approval gate, blue-green or canary deployment.\n9. **Notifications**: Slack/email alerts on failure.\n10. **Rollback**: One-click rollback procedure.\n\nProvide the complete YAML configuration file with comments explaining each section.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "dockerfile-optimization",
+    "title": "Dockerfile Optimizer",
+    "description": "Create optimized, secure, multi-stage Dockerfiles for production deployments.",
+    "category": "coding",
+    "tags": ["docker", "containers", "devops"],
+    "prompt": "You are a Docker expert. Create an optimized, production-ready Dockerfile for a [APPLICATION_TYPE] application.\n\n**Language/Runtime**: [e.g., Node.js 20, Python 3.12, Go 1.21]\n**Application Framework**: [e.g., Express, FastAPI, Gin]\n**Build Requirements**: [e.g., npm build, pip install, go build]\n**Runtime Dependencies**: [LIST_SYSTEM_DEPS]\n\nOptimize the Dockerfile for:\n1. **Multi-stage Build**: Separate builder and runtime stages to minimize final image size.\n2. **Layer Caching**: Order instructions to maximize Docker layer cache hits.\n3. **Security**: Run as non-root user, use specific image tags (not :latest), scan for vulnerabilities.\n4. **Size**: Use slim/alpine base images, remove build artifacts, combine RUN commands.\n5. **.dockerignore**: Provide a comprehensive .dockerignore file.\n6. **Health Check**: Add HEALTHCHECK instruction with appropriate intervals.\n7. **Labels**: OCI-standard labels for metadata.\n8. **Signals**: Handle SIGTERM gracefully for zero-downtime deployments.\n\nAlso provide:\n- docker-compose.yml for local development with hot-reload\n- Estimated final image size\n- Build and run commands with common flags explained",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "security-audit-checklist",
+    "title": "Security Audit Checklist",
+    "description": "Perform a comprehensive security audit on application code and infrastructure.",
+    "category": "coding",
+    "tags": ["security", "audit", "vulnerabilities"],
+    "prompt": "You are a cybersecurity expert. Perform a security audit on my [APPLICATION_TYPE] application.\n\n**Tech Stack**: [LIST_TECHNOLOGIES]\n**Authentication**: [AUTH_METHOD]\n**Data Sensitivity**: [e.g., PII, financial, healthcare]\n**Deployment**: [INFRASTRUCTURE_DESCRIPTION]\n**Code to audit**:\n```\n[PASTE_CODE_OR_DESCRIBE_ARCHITECTURE]\n```\n\nAudit across these categories:\n1. **OWASP Top 10**: Check for injection, broken auth, XSS, CSRF, SSRF, insecure deserialization.\n2. **Authentication & Authorization**: Token handling, session management, RBAC implementation.\n3. **Data Protection**: Encryption at rest and in transit, PII handling, secrets management.\n4. **Input Validation**: Sanitization, parameterized queries, file upload restrictions.\n5. **API Security**: Rate limiting, CORS policy, input size limits, API key rotation.\n6. **Dependencies**: Known CVEs in packages, outdated libraries, supply chain risks.\n7. **Infrastructure**: HTTPS enforcement, security headers, CSP policy.\n8. **Logging**: Sensitive data in logs, audit trail completeness.\n\nFor each finding, provide: Severity (Critical/High/Medium/Low), Description, Impact, Remediation code example, and OWASP reference.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "performance-optimization-guide",
+    "title": "Performance Optimization Guide",
+    "description": "Identify and fix performance bottlenecks in application code.",
+    "category": "coding",
+    "tags": ["performance", "optimization", "profiling"],
+    "prompt": "You are a performance engineering specialist. Analyze and optimize the performance of my [LANGUAGE/FRAMEWORK] application.\n\n**Performance Issue**: [DESCRIBE_SYMPTOM, e.g., slow page load, high memory usage, API timeout]\n**Current Metrics**: [RESPONSE_TIME, THROUGHPUT, MEMORY_USAGE]\n**Target Metrics**: [DESIRED_PERFORMANCE_GOALS]\n**Code/Architecture**:\n```\n[PASTE_RELEVANT_CODE_OR_DESCRIBE_ARCHITECTURE]\n```\n\nProvide optimization recommendations in these areas:\n1. **Profiling Strategy**: How to identify the exact bottleneck (tools, techniques).\n2. **Algorithm Optimization**: Replace O(n²) with O(n log n) or better where possible.\n3. **Database**: Query optimization, N+1 detection, connection pooling, read replicas.\n4. **Caching**: What to cache, cache invalidation strategy, cache warming.\n5. **Async/Concurrency**: Parallelize independent operations, use worker threads/processes.\n6. **Memory**: Fix memory leaks, reduce allocations, use streaming for large data.\n7. **Network**: Reduce payload size, compression, CDN, HTTP/2 multiplexing.\n8. **Frontend** (if applicable): Bundle size, lazy loading, image optimization, Core Web Vitals.\n\nFor each recommendation, estimate the expected improvement and implementation effort (hours).",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "error-handling-patterns",
+    "title": "Error Handling Patterns",
+    "description": "Implement robust error handling with custom errors, logging, and recovery strategies.",
+    "category": "coding",
+    "tags": ["error-handling", "resilience", "patterns"],
+    "prompt": "You are a software reliability expert. Design a comprehensive error handling strategy for my [LANGUAGE/FRAMEWORK] application.\n\n**Application Type**: [e.g., REST API, CLI tool, web app]\n**Current Pain Points**: [DESCRIBE_ERROR_HANDLING_ISSUES]\n**External Dependencies**: [LIST_APIS, DATABASES, SERVICES]\n\nPlease provide:\n1. **Error Hierarchy**: Custom error/exception class hierarchy with error codes, HTTP status mapping, and user-friendly messages.\n2. **Global Handler**: Centralized error handling middleware/interceptor that catches unhandled errors.\n3. **Retry Logic**: Implement exponential backoff with jitter for transient failures. Specify which errors are retryable.\n4. **Circuit Breaker**: Pattern implementation for external service calls with open/half-open/closed states.\n5. **Validation Errors**: Structured validation error responses with field-level detail.\n6. **Logging Strategy**: What to log at each level (error, warn, info), structured logging format.\n7. **Error Response Format**: Standardized JSON error response with correlation ID for tracing.\n8. **Graceful Degradation**: Fallback strategies when dependencies are unavailable.\n\nProvide complete code examples in [LANGUAGE] for each pattern, ready to integrate into an existing project.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "code-comments-documentation",
+    "title": "Code Comments Generator",
+    "description": "Add meaningful comments and inline documentation to existing code.",
+    "category": "coding",
+    "tags": ["comments", "documentation", "readability"],
+    "prompt": "You are a documentation specialist. Add comprehensive, meaningful comments to the following [LANGUAGE] code.\n\nCode:\n```\n[PASTE_CODE]\n```\n\nContext: This code is part of [DESCRIBE_PROJECT] and handles [DESCRIBE_FUNCTIONALITY].\n\nComments should follow these guidelines:\n1. **File Header**: Module purpose, author placeholder, date, and dependencies.\n2. **Function/Method Docs**: Use [DOCSTRING_STYLE, e.g., JSDoc/Google/NumPy] format with parameters, return types, exceptions, and usage examples.\n3. **Why, Not What**: Explain the reasoning behind non-obvious decisions, not what the code literally does.\n4. **Complex Logic**: Break down complex algorithms or business rules into step-by-step explanations.\n5. **TODO/FIXME**: Flag areas that need improvement with actionable descriptions.\n6. **Constants**: Explain magic numbers and their origin.\n7. **Warnings**: Note any gotchas, side effects, or assumptions.\n\nDo NOT add comments that merely restate the code (e.g., `// increment i` for `i++`). Every comment should add value. Return the fully commented code.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "database-migration-scripts",
+    "title": "Database Migration Scripts",
+    "description": "Generate safe, reversible database migration scripts with rollback support.",
+    "category": "coding",
+    "tags": ["migration", "database", "schema-changes"],
+    "prompt": "You are a database migration expert. Create migration scripts for the following schema change in [DATABASE, e.g., PostgreSQL/MySQL].\n\n**Current Schema**:\n```sql\n[PASTE_CURRENT_SCHEMA]\n```\n\n**Desired Change**: [DESCRIBE_WHAT_NEEDS_TO_CHANGE]\n**Migration Tool**: [e.g., Flyway, Liquibase, Knex, Alembic, Prisma]\n**Data Volume**: [APPROXIMATE_ROWS_IN_AFFECTED_TABLES]\n**Downtime Tolerance**: [ZERO_DOWNTIME / MAINTENANCE_WINDOW]\n\nProvide:\n1. **Up Migration**: Forward migration script with proper ordering of operations.\n2. **Down Migration**: Rollback script that perfectly reverses the up migration.\n3. **Data Migration**: If data transformation is needed, include the DML statements.\n4. **Zero-Downtime Strategy**: If required, use expand-contract pattern (add new → migrate data → remove old).\n5. **Validation Queries**: SQL to verify the migration succeeded (row counts, constraint checks).\n6. **Performance Considerations**: Will this lock tables? Estimated execution time? Should it run in batches?\n7. **Backup Command**: Pre-migration backup command.\n\nEnsure all migrations are idempotent (safe to run multiple times) and wrapped in transactions where supported.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "cli-tool-builder",
+    "title": "CLI Tool Builder",
+    "description": "Build a professional command-line tool with argument parsing and user-friendly output.",
+    "category": "coding",
+    "tags": ["cli", "terminal", "developer-tools"],
+    "prompt": "You are a CLI tool developer. Build a command-line tool in [LANGUAGE] that [DESCRIBE_TOOL_PURPOSE].\n\n**Tool Name**: [TOOL_NAME]\n**Target Users**: [e.g., developers, sysadmins, data engineers]\n**Key Commands/Subcommands**: [LIST_COMMANDS]\n**Input Sources**: [e.g., stdin, files, API calls]\n**Output Formats**: [e.g., table, JSON, CSV, plain text]\n\nRequirements:\n1. **Argument Parsing**: Use [LIBRARY, e.g., argparse/cobra/clap] with subcommands, flags, and positional args.\n2. **Help Text**: Comprehensive --help with examples for every command.\n3. **Configuration**: Support config file (~/.toolrc), environment variables, and CLI flags (in that priority order).\n4. **Output**: Colored terminal output, --json flag for machine-readable output, --quiet flag.\n5. **Progress**: Progress bars or spinners for long operations.\n6. **Error Messages**: Human-friendly errors with suggested fixes.\n7. **Shell Completion**: Generate bash/zsh/fish completion scripts.\n8. **Versioning**: --version flag with semantic versioning.\n\nProvide the complete source code, a README with installation instructions, and example usage for each command.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "web-scraping-script",
+    "title": "Web Scraping Script",
+    "description": "Build a robust web scraper with rate limiting, error handling, and data extraction.",
+    "category": "coding",
+    "tags": ["web-scraping", "data-extraction", "automation"],
+    "prompt": "You are a web scraping expert. Build a scraper in [LANGUAGE, e.g., Python/Node.js] to extract data from [TARGET_WEBSITE_OR_TYPE].\n\n**Data to Extract**: [LIST_FIELDS, e.g., title, price, rating, URL]\n**Pages to Scrape**: [DESCRIBE_SCOPE, e.g., search results, product listings, paginated content]\n**Output Format**: [CSV / JSON / Database]\n**Library**: [e.g., BeautifulSoup, Scrapy, Puppeteer, Playwright]\n\nThe scraper must include:\n1. **Rate Limiting**: Configurable delay between requests (default 1-3 seconds random).\n2. **User-Agent Rotation**: Rotate through realistic user-agent strings.\n3. **Retry Logic**: Retry failed requests with exponential backoff (max 3 retries).\n4. **Proxy Support**: Optional proxy configuration for IP rotation.\n5. **Data Validation**: Validate extracted data before saving (required fields, type checks).\n6. **Pagination**: Automatically follow pagination links or handle infinite scroll.\n7. **Deduplication**: Skip already-scraped items based on unique identifier.\n8. **Resume Support**: Save progress so interrupted scrapes can resume.\n9. **Logging**: Log progress, errors, and statistics (items scraped, success rate).\n\nInclude ethical scraping notes: respect robots.txt, terms of service, and rate limits.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "data-pipeline-design",
+    "title": "Data Pipeline Architect",
+    "description": "Design an ETL/ELT data pipeline with scheduling, monitoring, and error recovery.",
+    "category": "coding",
+    "tags": ["data-pipeline", "etl", "data-engineering"],
+    "prompt": "You are a data engineer. Design a data pipeline for [DESCRIBE_DATA_FLOW].\n\n**Source(s)**: [e.g., REST API, S3 bucket, PostgreSQL, Kafka topic]\n**Destination**: [e.g., data warehouse, analytics DB, data lake]\n**Volume**: [DATA_SIZE_PER_DAY]\n**Frequency**: [REAL_TIME / HOURLY / DAILY]\n**Orchestrator**: [Airflow / Prefect / Dagster / Step Functions]\n\nDesign the pipeline with:\n1. **Extract**: Connection handling, incremental extraction (CDC or timestamp-based), schema detection.\n2. **Transform**: Data cleaning, type casting, deduplication, business logic transformations.\n3. **Load**: Upsert strategy, partitioning, compression, schema evolution handling.\n4. **Orchestration**: DAG definition with task dependencies, scheduling, and SLA monitoring.\n5. **Idempotency**: Ensure re-runs produce the same result without duplicates.\n6. **Error Handling**: Dead letter queues, alerting on failures, automatic retry policies.\n7. **Monitoring**: Data quality checks (row counts, null rates, freshness), pipeline metrics dashboard.\n8. **Backfill**: Strategy for reprocessing historical data.\n\nProvide the orchestrator configuration (DAG file), key transformation code, and a data lineage description.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "microservices-architecture",
+    "title": "Microservices Architecture",
+    "description": "Design a microservices architecture with service boundaries, communication, and deployment.",
+    "category": "coding",
+    "tags": ["microservices", "architecture", "distributed-systems"],
+    "prompt": "You are a microservices architect. Design a microservices architecture for [APPLICATION_DESCRIPTION].\n\n**Current State**: [MONOLITH / EXISTING_SERVICES]\n**Key Business Domains**: [LIST_DOMAINS]\n**Team Size**: [NUMBER_OF_TEAMS]\n**Scale Requirements**: [TRAFFIC_PATTERNS]\n\nProvide a complete architecture:\n1. **Service Decomposition**: Define each service with its bounded context, responsibilities, and data ownership.\n2. **Communication**: Sync (REST/gRPC) vs async (events/messages) for each interaction, with justification.\n3. **API Gateway**: Routing, authentication, rate limiting, request aggregation.\n4. **Data Strategy**: Database per service, eventual consistency patterns, saga pattern for distributed transactions.\n5. **Service Discovery**: How services find each other (DNS, service mesh, registry).\n6. **Resilience**: Circuit breakers, bulkheads, timeouts, retry policies per service.\n7. **Observability**: Distributed tracing (OpenTelemetry), centralized logging, metrics per service.\n8. **Deployment**: Container orchestration, service mesh, blue-green deployment per service.\n9. **Migration Plan**: If decomposing a monolith, provide a strangler fig pattern roadmap.\n\nInclude a service interaction diagram description and highlight potential distributed system pitfalls.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "graphql-schema-design",
+    "title": "GraphQL Schema Designer",
+    "description": "Design a complete GraphQL schema with types, queries, mutations, and subscriptions.",
+    "category": "coding",
+    "tags": ["graphql", "api", "schema"],
+    "prompt": "You are a GraphQL expert. Design a complete GraphQL schema for a [APPLICATION_TYPE] application.\n\n**Core Entities**: [LIST_ENTITIES_AND_RELATIONSHIPS]\n**Key Operations**: [LIST_MAIN_USE_CASES]\n**Real-time Needs**: [DESCRIBE_SUBSCRIPTION_REQUIREMENTS]\n**Auth Model**: [e.g., role-based, attribute-based]\n\nProvide:\n1. **Type Definitions**: All types, input types, enums, interfaces, and unions with descriptions.\n2. **Queries**: All query fields with arguments, return types, and pagination (cursor-based).\n3. **Mutations**: All mutations with input validation, return types including user errors.\n4. **Subscriptions**: Real-time event types and filtering options.\n5. **Custom Scalars**: DateTime, JSON, URL, Email with validation.\n6. **Directives**: Auth directives (@auth, @hasRole), caching (@cacheControl), deprecation.\n7. **N+1 Prevention**: DataLoader patterns for each relationship.\n8. **Error Handling**: Typed error unions vs error extensions approach.\n9. **Complexity Limiting**: Query depth and complexity analysis configuration.\n\nProvide the complete SDL (Schema Definition Language) file and example resolver implementations for the most complex query and mutation.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "rest-api-implementation",
+    "title": "REST API Implementation",
+    "description": "Implement a complete REST API with middleware, validation, and error handling.",
+    "category": "coding",
+    "tags": ["rest-api", "backend", "implementation"],
+    "prompt": "You are a backend developer. Implement a complete REST API for [RESOURCE_NAME] in [FRAMEWORK, e.g., Express/FastAPI/Spring Boot/Gin].\n\n**Resource Fields**: [LIST_FIELDS_WITH_TYPES]\n**Business Rules**: [LIST_VALIDATION_RULES]\n**Authentication**: [AUTH_METHOD]\n**Database**: [DATABASE_AND_ORM]\n\nImplement the following:\n1. **Routes**: Full CRUD (GET list, GET by ID, POST, PUT/PATCH, DELETE) with proper HTTP methods and status codes.\n2. **Controller Layer**: Request parsing, response formatting, HTTP-specific logic only.\n3. **Service Layer**: Business logic, validation, orchestration between repositories.\n4. **Repository Layer**: Database queries with proper parameterization.\n5. **Middleware**: Authentication, request logging, CORS, rate limiting, request ID.\n6. **Validation**: Input validation with detailed error messages per field.\n7. **Pagination**: Cursor-based pagination with configurable page size.\n8. **Filtering & Sorting**: Query parameter-based filtering and multi-field sorting.\n9. **Tests**: Integration tests for each endpoint covering happy path and error cases.\n\nFollow the framework's conventions and best practices. Include proper project structure with separation of concerns.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "typescript-types-advanced",
+    "title": "Advanced TypeScript Types",
+    "description": "Design advanced TypeScript types with generics, utility types, and type guards.",
+    "category": "coding",
+    "tags": ["typescript", "types", "generics"],
+    "prompt": "You are a TypeScript expert. Help me design type-safe TypeScript types for [DESCRIBE_DOMAIN/USE_CASE].\n\n**Current Code**:\n```typescript\n[PASTE_CODE_OR_DESCRIBE_DATA_STRUCTURES]\n```\n\n**Pain Points**: [e.g., too many 'any' types, runtime type errors, poor autocomplete]\n\nPlease provide:\n1. **Base Types**: Interfaces and type aliases for all domain entities with readonly where appropriate.\n2. **Generics**: Generic types for reusable patterns (API responses, paginated lists, form state).\n3. **Utility Types**: Custom utility types using Pick, Omit, Partial, Required, Record, and mapped types.\n4. **Discriminated Unions**: Tagged unions for state machines or variant types with exhaustive checking.\n5. **Type Guards**: User-defined type guard functions with proper type narrowing.\n6. **Template Literals**: Template literal types for string patterns (routes, event names).\n7. **Conditional Types**: Infer return types based on input types.\n8. **Branded Types**: Nominal typing for IDs, currencies, or other primitives that shouldn't mix.\n\nFor each type, include a usage example and explain why this approach is better than alternatives. Ensure zero use of 'any'.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "css-tailwind-component",
+    "title": "CSS/Tailwind Component Styling",
+    "description": "Create responsive, accessible UI component styles with CSS or Tailwind CSS.",
+    "category": "coding",
+    "tags": ["css", "tailwind", "ui-design"],
+    "prompt": "You are a CSS/UI expert. Create the styling for a [COMPONENT_NAME] component.\n\n**Design Requirements**: [DESCRIBE_VISUAL_DESIGN]\n**Styling Approach**: [Tailwind CSS / CSS Modules / Vanilla CSS / SCSS]\n**Breakpoints**: Mobile (< 640px), Tablet (640-1024px), Desktop (> 1024px)\n**Theme**: [DESCRIBE_COLOR_SCHEME, TYPOGRAPHY]\n**States**: [e.g., default, hover, focus, active, disabled, loading, error]\n\nProvide:\n1. **Base Styles**: Core component layout using Flexbox or Grid with justification.\n2. **Responsive Design**: Mobile-first approach with styles for each breakpoint.\n3. **Interactive States**: Hover, focus-visible, active, and disabled styles with smooth transitions.\n4. **Dark Mode**: Dark mode variant using CSS custom properties or Tailwind dark: prefix.\n5. **Animations**: Subtle entrance/exit animations and micro-interactions.\n6. **Accessibility**: Focus indicators meeting WCAG contrast ratios, reduced-motion media query.\n7. **RTL Support**: Logical properties (margin-inline-start vs margin-left) for bidirectional text.\n8. **Component Variants**: Size variants (sm, md, lg) and style variants (primary, secondary, ghost).\n\nIf using Tailwind, extract repeated patterns into @apply classes. Include the HTML structure alongside the styles.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "git-workflow-strategy",
+    "title": "Git Workflow Strategy",
+    "description": "Design a Git branching strategy with PR templates, hooks, and release management.",
+    "category": "coding",
+    "tags": ["git", "workflow", "version-control"],
+    "prompt": "You are a DevOps lead. Design a Git workflow strategy for a [TEAM_SIZE]-person team working on a [PROJECT_TYPE].\n\n**Current Issues**: [DESCRIBE_PAIN_POINTS, e.g., merge conflicts, unclear process, broken main branch]\n**Release Cadence**: [e.g., weekly, bi-weekly, continuous]\n**Environments**: [e.g., dev, staging, production]\n**CI/CD**: [CURRENT_CI_SYSTEM]\n\nProvide a complete Git strategy:\n1. **Branching Model**: Git Flow, GitHub Flow, or Trunk-Based — recommend one with justification.\n2. **Branch Naming**: Convention with prefixes (feature/, bugfix/, hotfix/, release/).\n3. **Commit Messages**: Conventional Commits format with scope, type, and breaking change notation.\n4. **PR Process**: Template with checklist, required reviewers, auto-assignment rules.\n5. **Code Review**: Guidelines for reviewers (response time SLA, approval requirements).\n6. **Merge Strategy**: Squash, rebase, or merge commit — when to use each.\n7. **Release Process**: Tagging, changelog generation, semantic versioning automation.\n8. **Git Hooks**: Pre-commit (lint, format), commit-msg (validate format), pre-push (tests).\n9. **Protection Rules**: Branch protection settings for main and release branches.\n\nInclude a .gitconfig snippet, PR template file, and pre-commit hook script.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "code-architecture-patterns",
+    "title": "Code Architecture Patterns",
+    "description": "Design clean code architecture with proper layering, patterns, and SOLID principles.",
+    "category": "coding",
+    "tags": ["architecture", "design-patterns", "clean-code"],
+    "prompt": "You are a software architect. Design the code architecture for a [APPLICATION_TYPE] application in [LANGUAGE/FRAMEWORK].\n\n**Key Features**: [LIST_FEATURES]\n**Team Experience Level**: [JUNIOR / MIXED / SENIOR]\n**Expected Growth**: [HOW_THE_APP_WILL_EVOLVE]\n**Current Pain Points**: [DESCRIBE_ARCHITECTURAL_ISSUES]\n\nDesign an architecture covering:\n1. **Project Structure**: Directory layout with clear separation of concerns. Explain what goes where.\n2. **Layered Architecture**: Define layers (presentation, application, domain, infrastructure) with dependency rules.\n3. **Design Patterns**: Recommend specific patterns (Repository, Factory, Strategy, Observer) with use cases in this project.\n4. **Dependency Injection**: DI container setup and how to wire dependencies.\n5. **SOLID Principles**: Concrete examples of each principle applied to this project's domain.\n6. **Error Boundary**: Where errors are caught, transformed, and reported at each layer.\n7. **Configuration Management**: How to handle environment-specific config, feature flags, secrets.\n8. **Module Boundaries**: Define public APIs between modules, prevent circular dependencies.\n\nProvide a skeleton implementation showing the architecture in action with a single feature end-to-end (from HTTP request to database and back).",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  }
+]

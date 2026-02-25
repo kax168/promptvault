@@ -1,0 +1,400 @@
+[
+  {
+    "id": "blog-post-comprehensive",
+    "title": "Comprehensive Blog Post",
+    "description": "Generate a well-structured, SEO-friendly blog post on any topic.",
+    "category": "writing",
+    "tags": ["blog", "content", "SEO"],
+    "prompt": "Write a comprehensive blog post about [TOPIC] targeting [AUDIENCE]. The post should be approximately [WORD_COUNT] words long. Structure it with an engaging introduction that hooks the reader, [NUMBER] main sections with descriptive H2 headings, and a compelling conclusion with a call to action. Include relevant statistics or data points where appropriate. The tone should be [TONE: professional/casual/conversational]. Naturally incorporate these keywords: [KEYWORDS]. End with a thought-provoking question to encourage comments. Format the post with proper markdown, bullet points for key takeaways, and short paragraphs for readability.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "persuasive-essay",
+    "title": "Persuasive Essay",
+    "description": "Craft a compelling persuasive essay with strong arguments and evidence.",
+    "category": "writing",
+    "tags": ["essay", "academic", "persuasion"],
+    "prompt": "Write a persuasive essay arguing [POSITION] on the topic of [TOPIC]. Target audience: [AUDIENCE]. Begin with a powerful hook that establishes the urgency of the issue. Present your thesis clearly in the introduction. Develop [NUMBER] body paragraphs, each with a distinct supporting argument backed by evidence, examples, or logical reasoning. Address and refute at least one counterargument to strengthen your position. Use rhetorical devices such as ethos, pathos, and logos strategically. Maintain a [TONE] tone throughout. Conclude by reinforcing your thesis and issuing a clear call to action. The essay should be approximately [WORD_COUNT] words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "professional-email",
+    "title": "Professional Email",
+    "description": "Draft a polished professional email for any business context.",
+    "category": "writing",
+    "tags": ["email", "business", "communication"],
+    "prompt": "Draft a professional email for the following context: [CONTEXT]. The email is from [SENDER_ROLE] to [RECIPIENT_ROLE] at [COMPANY/ORGANIZATION]. Purpose: [PURPOSE]. Key points to cover: [KEY_POINTS]. The tone should be [TONE: formal/friendly/urgent/diplomatic]. Include a clear and specific subject line that encourages opening. Structure the email with a brief greeting, concise body paragraphs (no more than 3), and a clear call to action or next steps. Keep the total length under 250 words. End with an appropriate sign-off matching the level of formality. If applicable, mention any deadlines or time-sensitive information prominently.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "newsletter-engaging",
+    "title": "Engaging Newsletter",
+    "description": "Create a captivating newsletter that drives reader engagement and clicks.",
+    "category": "writing",
+    "tags": ["newsletter", "email marketing", "engagement"],
+    "prompt": "Create an engaging newsletter for [BRAND/COMPANY] targeting [AUDIENCE]. Theme for this edition: [THEME]. Include the following sections: 1) A compelling headline and preview text that maximizes open rates, 2) A personal greeting or editor's note (2-3 sentences), 3) Featured story or announcement about [MAIN_TOPIC], 4) [NUMBER] curated tips or insights related to [INDUSTRY], 5) A product spotlight or resource recommendation, 6) An interactive element (poll question, quiz, or reader challenge), 7) Upcoming events or dates to remember. Tone: [TONE]. Include clear CTAs for each section. Keep each section concise — scannable in under 10 seconds. Total newsletter should take approximately 3-4 minutes to read.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "social-media-caption",
+    "title": "Social Media Caption",
+    "description": "Write scroll-stopping social media captions for any platform.",
+    "category": "writing",
+    "tags": ["social media", "caption", "engagement"],
+    "prompt": "Write [NUMBER] engaging social media captions for [PLATFORM: Instagram/Twitter/LinkedIn/Facebook/TikTok] about [TOPIC] for [BRAND/PERSON]. Target audience: [AUDIENCE]. Each caption should: open with a hook that stops the scroll (question, bold statement, or surprising fact), deliver value or evoke emotion in the body, include a clear call to action (comment, share, save, or click link), and end with [NUMBER] relevant hashtags. Tone: [TONE: witty/inspirational/educational/casual]. For Instagram, keep captions between 125-200 words. For Twitter/X, stay under 280 characters. For LinkedIn, aim for 150-300 words with line breaks for readability. Include emoji suggestions where appropriate.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "product-description-converting",
+    "title": "High-Converting Product Description",
+    "description": "Write product descriptions that highlight benefits and drive purchases.",
+    "category": "writing",
+    "tags": ["product", "ecommerce", "copywriting"],
+    "prompt": "Write a high-converting product description for [PRODUCT_NAME], a [PRODUCT_TYPE] sold by [BRAND]. Target customer: [CUSTOMER_PERSONA]. Price point: [PRICE_RANGE]. Key features: [FEATURES]. Start with a benefit-driven headline that speaks to the customer's desire or pain point. Write an opening paragraph that paints a picture of life with this product. List [NUMBER] key features, each translated into a tangible benefit using the 'Feature → So What → Benefit' framework. Include sensory language and power words that trigger emotion. Address the top [NUMBER] objections or hesitations a buyer might have. Add social proof placeholders [TESTIMONIAL/RATING]. Close with urgency and a compelling CTA. Keep total length between 150-300 words.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "press-release-professional",
+    "title": "Professional Press Release",
+    "description": "Draft a newsworthy press release following AP style guidelines.",
+    "category": "writing",
+    "tags": ["press release", "PR", "media"],
+    "prompt": "Write a professional press release for [COMPANY] announcing [NEWS/EVENT]. Location: [CITY, STATE]. Date: [DATE]. Follow standard AP style press release format: Start with a compelling headline (under 10 words) and a subheadline providing additional context. Open with a strong lead paragraph answering Who, What, When, Where, Why, and How. Include a quote from [SPOKESPERSON_NAME], [TITLE] at [COMPANY], that adds a human element and forward-looking perspective. Provide supporting details, background context, and relevant data in the body paragraphs. Include a second quote from [PARTNER/CUSTOMER] if applicable. Add a boilerplate 'About [COMPANY]' section at the end. Include media contact information placeholder. Keep the total release between 400-500 words. Tone: authoritative yet accessible.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "speech-keynote",
+    "title": "Keynote Speech",
+    "description": "Write an impactful keynote speech that inspires and moves the audience.",
+    "category": "writing",
+    "tags": ["speech", "public speaking", "keynote"],
+    "prompt": "Write a keynote speech for [SPEAKER_NAME], [SPEAKER_TITLE], to be delivered at [EVENT_NAME] for an audience of [AUDIENCE_DESCRIPTION]. Topic: [TOPIC]. Duration: approximately [MINUTES] minutes. Structure the speech with: 1) A powerful opening — use a story, startling statistic, or provocative question to grab attention in the first 30 seconds, 2) Establish credibility and connection with the audience, 3) Present [NUMBER] main ideas or arguments, each supported by stories, data, or examples, 4) Include at least one personal anecdote that makes the message relatable, 5) Build to an emotional climax or 'aha moment', 6) Close with a memorable call to action and a callback to the opening. Include stage direction notes [PAUSE], [EMPHASIZE], [AUDIENCE INTERACTION] where appropriate. Tone: [TONE: inspirational/thought-provoking/motivational].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "book-outline-detailed",
+    "title": "Book Outline Generator",
+    "description": "Create a detailed book outline with chapters, sections, and key points.",
+    "category": "writing",
+    "tags": ["book", "outline", "planning"],
+    "prompt": "Create a detailed book outline for a [GENRE: non-fiction/fiction/self-help/business] book titled '[WORKING_TITLE]' by [AUTHOR_NAME]. Target reader: [TARGET_READER]. Core premise or thesis: [PREMISE]. The book should have [NUMBER] chapters. For each chapter, provide: 1) A compelling chapter title, 2) A 2-3 sentence summary of what the chapter covers, 3) 3-5 key points or scenes to be developed, 4) One story, case study, or example to include, 5) The key takeaway or transformation for the reader. Also include: a suggested book subtitle, a 100-word back cover blurb, the narrative arc or progression logic connecting chapters, and a note on the ideal word count per chapter. Ensure the outline builds momentum and each chapter naturally leads to the next.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "creative-short-story",
+    "title": "Creative Short Story",
+    "description": "Generate an original short story with vivid characters and compelling plot.",
+    "category": "writing",
+    "tags": ["creative writing", "fiction", "storytelling"],
+    "prompt": "Write an original short story in the [GENRE: literary fiction/sci-fi/mystery/romance/horror/fantasy] genre. Setting: [SETTING]. Time period: [TIME_PERIOD]. Main character: [CHARACTER_DESCRIPTION] who wants [DESIRE] but faces [OBSTACLE]. Theme to explore: [THEME]. The story should be approximately [WORD_COUNT] words. Include: a hook that draws the reader in within the first paragraph, vivid sensory details that bring the setting to life, natural dialogue that reveals character, rising tension building to a climax, and a resolution that is [ENDING_TYPE: surprising/bittersweet/hopeful/ambiguous]. Write in [POV: first person/third person limited/omniscient] point of view with a [TONE] tone. Show, don't tell — use action and detail rather than exposition to convey emotion.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "sales-copywriting",
+    "title": "Sales Copywriting",
+    "description": "Write persuasive sales copy that converts readers into buyers.",
+    "category": "writing",
+    "tags": ["copywriting", "sales", "conversion"],
+    "prompt": "Write persuasive sales copy for [PRODUCT/SERVICE] offered by [BRAND]. Target customer: [CUSTOMER_PERSONA] who struggles with [PAIN_POINT]. Use the PAS (Problem-Agitate-Solution) framework. Start by clearly identifying the problem your audience faces. Agitate by describing the consequences of inaction — make the pain vivid and relatable. Present [PRODUCT/SERVICE] as the solution with [NUMBER] key benefits. Include power words that trigger urgency and desire. Add [NUMBER] bullet points highlighting specific outcomes or results customers can expect. Incorporate social proof: '[TESTIMONIAL_PLACEHOLDER]'. Address the top objection: [OBJECTION]. Create a risk-reversal statement (guarantee). End with a strong, time-sensitive CTA. Tone: [TONE: confident/empathetic/bold]. Length: 300-500 words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "technical-documentation",
+    "title": "Technical Documentation",
+    "description": "Create clear, structured technical documentation for any product or API.",
+    "category": "writing",
+    "tags": ["technical writing", "documentation", "developer"],
+    "prompt": "Write technical documentation for [PRODUCT/FEATURE/API]. Audience: [AUDIENCE: developers/end-users/system administrators] with [SKILL_LEVEL: beginner/intermediate/advanced] experience. Include the following sections: 1) Overview — what it does and why it matters (2-3 sentences), 2) Prerequisites — what the user needs before starting, 3) Quick Start — minimal steps to get up and running, 4) Detailed Configuration — all available options with descriptions and defaults, 5) Usage Examples — [NUMBER] practical code examples or step-by-step workflows, 6) Troubleshooting — [NUMBER] common issues and their solutions, 7) FAQ — [NUMBER] frequently asked questions. Use consistent formatting with code blocks, tables for parameters, and callout boxes for warnings or tips. Write in present tense, active voice, second person ('you'). Keep sentences under 25 words where possible.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "resume-cv-professional",
+    "title": "Professional Resume/CV",
+    "description": "Craft a tailored, ATS-friendly resume that highlights achievements.",
+    "category": "writing",
+    "tags": ["resume", "career", "job search"],
+    "prompt": "Write a professional resume for [NAME], applying for the role of [JOB_TITLE] at [COMPANY]. Years of experience: [YEARS]. Industry: [INDUSTRY]. Current role: [CURRENT_ROLE] at [CURRENT_COMPANY]. Key skills: [SKILLS]. Education: [EDUCATION]. Structure the resume with: 1) A powerful professional summary (3-4 lines) tailored to the target role, highlighting unique value proposition, 2) Core competencies section with [NUMBER] relevant keywords for ATS optimization, 3) Professional experience — for each role, write [NUMBER] bullet points using the CAR format (Challenge-Action-Result) with quantified achievements (percentages, dollar amounts, metrics), 4) Education and certifications, 5) Optional: notable projects or publications. Prioritize relevance to [JOB_TITLE]. Use strong action verbs. Avoid personal pronouns. Keep to [NUMBER] page(s).",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "cover-letter-tailored",
+    "title": "Tailored Cover Letter",
+    "description": "Write a compelling cover letter customized to a specific job posting.",
+    "category": "writing",
+    "tags": ["cover letter", "job application", "career"],
+    "prompt": "Write a tailored cover letter for [NAME] applying to [JOB_TITLE] at [COMPANY]. Key qualifications: [QUALIFICATIONS]. Relevant experience: [EXPERIENCE_HIGHLIGHTS]. The job posting emphasizes: [JOB_REQUIREMENTS]. Structure: Opening paragraph — grab attention with a specific connection to the company (recent news, mission, product) and state the role you're applying for. Second paragraph — highlight your most relevant achievement with measurable results that directly maps to their top requirement. Third paragraph — demonstrate cultural fit by connecting your values to [COMPANY]'s mission: [COMPANY_MISSION]. Closing — express enthusiasm, restate your value, and include a confident CTA for next steps. Tone: [TONE: confident/enthusiastic/professional]. Keep under 350 words. Avoid generic phrases like 'I am writing to apply for...'",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "linkedin-post-thought-leadership",
+    "title": "LinkedIn Thought Leadership Post",
+    "description": "Create engaging LinkedIn posts that build authority and drive engagement.",
+    "category": "writing",
+    "tags": ["LinkedIn", "thought leadership", "personal brand"],
+    "prompt": "Write a LinkedIn post for [NAME], a [TITLE] in the [INDUSTRY] industry, about [TOPIC]. Post type: [TYPE: story/opinion/lesson learned/industry insight/career advice]. Start with a bold first line that stops the scroll — use a contrarian take, surprising number, or provocative question. Break the post into short paragraphs (1-2 sentences each) with line breaks for mobile readability. Include a personal story or specific example that illustrates your point. Share [NUMBER] actionable takeaways the reader can implement immediately. End with a question that invites comments and discussion. Tone: [TONE: authentic/bold/reflective/inspiring]. Length: 150-250 words. Do NOT use hashtags in the body — add 3-5 relevant hashtags at the very end. Avoid corporate jargon. Write like you're talking to a smart colleague over coffee.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "youtube-script-engaging",
+    "title": "YouTube Video Script",
+    "description": "Write a structured YouTube script that retains viewers and drives engagement.",
+    "category": "writing",
+    "tags": ["YouTube", "video", "script"],
+    "prompt": "Write a YouTube video script for a [VIDEO_LENGTH]-minute video about [TOPIC] for the channel [CHANNEL_NAME]. Target audience: [AUDIENCE]. Video style: [STYLE: educational/entertainment/tutorial/vlog/review]. Structure: 1) HOOK (first 15 seconds) — open with a compelling question, shocking fact, or bold promise that prevents clicking away, 2) INTRO (30 seconds) — briefly introduce the topic and what viewers will learn/gain, include a subscribe CTA, 3) MAIN CONTENT — break into [NUMBER] clear sections with transitions, include B-roll suggestions in [brackets], 4) ENGAGEMENT BOOST — at the midpoint, add an interactive element (poll, question, challenge), 5) CLIMAX — deliver the most valuable insight or payoff, 6) OUTRO — summarize key points, strong CTA (like, subscribe, comment), and tease next video. Include on-screen text suggestions and thumbnail title ideas. Tone: [TONE].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "podcast-script-episode",
+    "title": "Podcast Episode Script",
+    "description": "Create a structured podcast episode script with talking points and transitions.",
+    "category": "writing",
+    "tags": ["podcast", "audio", "script"],
+    "prompt": "Write a podcast episode script for '[PODCAST_NAME]' — Episode: '[EPISODE_TITLE]'. Host: [HOST_NAME]. Guest (if applicable): [GUEST_NAME], [GUEST_TITLE]. Episode length: [DURATION] minutes. Topic: [TOPIC]. Format: [FORMAT: solo/interview/co-hosted/storytelling]. Include: 1) Cold open teaser (30 seconds) — a compelling soundbite or question from later in the episode, 2) Intro with music cue and episode overview, 3) [NUMBER] main segments with talking points, transition phrases, and suggested follow-up questions for interviews, 4) Mid-roll ad break placement with natural transition, 5) Listener Q&A or interactive segment, 6) Key takeaways summary, 7) Outro with CTA (review, subscribe, visit website). Add [MUSIC CUE] and [SFX] notes. Include time stamps for each segment. Tone: [TONE: conversational/educational/entertaining]. Write in natural spoken language, not written prose.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "ad-copy-multi-platform",
+    "title": "Multi-Platform Ad Copy",
+    "description": "Generate ad copy variations optimized for different advertising platforms.",
+    "category": "writing",
+    "tags": ["advertising", "ad copy", "paid media"],
+    "prompt": "Write ad copy for [PRODUCT/SERVICE] by [BRAND] across multiple platforms. Target audience: [AUDIENCE]. Key benefit: [MAIN_BENEFIT]. Offer: [OFFER/PROMOTION]. Generate variations for: 1) Google Search Ads — 3 headlines (30 chars each), 2 descriptions (90 chars each), 2) Facebook/Instagram Ads — primary text (125 words), headline (5-7 words), description (1 sentence), CTA button suggestion, 3) LinkedIn Ads — intro text (150 words), headline, CTA for B2B angle, 4) YouTube Pre-roll — 15-second script with hook in first 5 seconds. For each platform, follow its best practices and character limits. Use the AIDA framework (Attention-Interest-Desire-Action). Include emotional triggers relevant to [AUDIENCE]. A/B test suggestion: provide 2 headline variations per platform with different angles (benefit-led vs. curiosity-led). Tone: [TONE].",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "tagline-slogan-generator",
+    "title": "Tagline & Slogan Generator",
+    "description": "Create memorable taglines and slogans that capture brand essence.",
+    "category": "writing",
+    "tags": ["tagline", "branding", "slogan"],
+    "prompt": "Generate [NUMBER] tagline and slogan options for [BRAND/PRODUCT]. Industry: [INDUSTRY]. Brand personality: [PERSONALITY: bold/playful/sophisticated/trustworthy/innovative]. Target audience: [AUDIENCE]. Key brand values: [VALUES]. Unique selling proposition: [USP]. Competitor taglines to differentiate from: [COMPETITOR_TAGLINES]. For each tagline: 1) The tagline itself (3-8 words maximum), 2) The technique used (rhyme, alliteration, metaphor, wordplay, contrast, imperative), 3) One sentence explaining why it works. Organize the options into categories: a) Benefit-focused (what the customer gains), b) Emotion-focused (how it makes them feel), c) Identity-focused (who they become), d) Action-focused (what to do). Ensure all taglines are original, easy to remember, and sound natural when spoken aloud. Flag the top 3 recommendations with reasoning.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "brand-storytelling-narrative",
+    "title": "Brand Storytelling Narrative",
+    "description": "Craft a compelling brand origin story that builds emotional connection.",
+    "category": "writing",
+    "tags": ["storytelling", "brand", "narrative"],
+    "prompt": "Write a compelling brand story for [BRAND/COMPANY]. Founder(s): [FOUNDER_NAMES]. Founded: [YEAR]. Industry: [INDUSTRY]. The story should follow the classic narrative arc: 1) The Origin — what problem or frustration inspired the founding? What was the 'aha moment'? 2) The Struggle — what obstacles, failures, or doubts did the founders face? Make this real and vulnerable, 3) The Breakthrough — what turning point changed everything? 4) The Mission — what drives the company today beyond profit? 5) The Vision — where is the brand heading and why should the audience care? Weave in the brand values: [VALUES]. Target audience for this story: [AUDIENCE]. The narrative should make readers feel [DESIRED_EMOTION: inspired/connected/trusting/excited]. Use vivid, specific details rather than generic statements. Length: [WORD_COUNT] words. This story will be used on: [PLACEMENT: website about page/investor deck/social media/press kit].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "email-cold-outreach",
+    "title": "Cold Outreach Email",
+    "description": "Write a cold email that gets opened, read, and replied to.",
+    "category": "writing",
+    "tags": ["email", "outreach", "sales"],
+    "prompt": "Write a cold outreach email from [SENDER_NAME], [SENDER_TITLE] at [COMPANY], to [RECIPIENT_ROLE] at [TARGET_COMPANY]. Goal: [GOAL: book a meeting/start a conversation/introduce a product]. Research hook: [SPECIFIC_DETAIL about the recipient or their company]. Structure: 1) Subject line — personalized, under 7 words, curiosity-driven (provide 3 options), 2) Opening line — reference something specific about them (NOT 'I hope this finds you well'), 3) Value proposition — one sentence connecting their likely pain point [PAIN_POINT] to your solution, 4) Proof — one brief credibility marker (client result, metric, or name-drop), 5) CTA — one low-friction ask (specific day/time suggestion or simple yes/no question). Total length: under 120 words. Tone: [TONE: casual-professional/direct/consultative]. Write as a peer, not a salesperson. No attachments mentioned. P.S. line optional for a second hook.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "whitepaper-outline",
+    "title": "Whitepaper Outline & Draft",
+    "description": "Create an authoritative whitepaper that establishes thought leadership.",
+    "category": "writing",
+    "tags": ["whitepaper", "B2B", "thought leadership"],
+    "prompt": "Write a whitepaper for [COMPANY] on the topic of [TOPIC]. Target reader: [AUDIENCE: C-suite/technical decision-makers/industry professionals]. Industry: [INDUSTRY]. Purpose: [PURPOSE: educate/persuade/generate leads]. Structure: 1) Title page with a compelling title and subtitle, 2) Executive Summary (200 words) — key findings and why they matter, 3) Introduction — define the problem or industry challenge with current data, 4) [NUMBER] main sections exploring different facets of the topic, each with data, analysis, and expert insights, 5) Case study or real-world example demonstrating the concepts, 6) Recommendations or framework for action, 7) Conclusion with forward-looking perspective, 8) References/sources placeholder. Include pull quotes, data visualization suggestions, and callout boxes for key statistics. Tone: authoritative, data-driven, objective. Length: approximately [WORD_COUNT] words.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "social-media-thread",
+    "title": "Twitter/X Thread",
+    "description": "Write a viral-worthy Twitter/X thread that educates and engages.",
+    "category": "writing",
+    "tags": ["Twitter", "thread", "social media"],
+    "prompt": "Write a Twitter/X thread of [NUMBER] tweets about [TOPIC]. Author persona: [NAME], a [TITLE] in [INDUSTRY]. Thread type: [TYPE: how-to/lessons learned/myth-busting/story/analysis]. Tweet 1 (Hook): Start with a bold claim, surprising stat, or contrarian opinion that makes people stop scrolling. Include 'Thread 🧵' at the end. Tweets 2-[N-1]: Each tweet should deliver one clear idea, use simple language, and flow naturally to the next. Include specific examples, numbers, or mini-stories. Use line breaks within tweets for readability. Vary tweet structure (some with lists, some narrative, some with a single punchy line). Final tweet: Summarize the key takeaway, ask for engagement (retweet/follow), and link to [RESOURCE] if applicable. Each tweet must be under 280 characters. Tone: [TONE: authoritative/conversational/provocative].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "case-study-writing",
+    "title": "Customer Case Study",
+    "description": "Write a compelling case study showcasing customer success and results.",
+    "category": "writing",
+    "tags": ["case study", "B2B", "social proof"],
+    "prompt": "Write a customer case study for [COMPANY] featuring client [CLIENT_NAME] in the [CLIENT_INDUSTRY] industry. Product/service used: [PRODUCT/SERVICE]. Follow the Problem-Solution-Results framework: 1) Client Overview — who they are, size, and what they do (2-3 sentences), 2) The Challenge — describe the specific pain points and business impact before using [PRODUCT/SERVICE]. Use quotes from [CLIENT_CONTACT_NAME], [TITLE], 3) Why They Chose [COMPANY] — what made them select this solution over alternatives, 4) The Solution — how [PRODUCT/SERVICE] was implemented, timeline, and key features used, 5) The Results — [NUMBER] quantified outcomes (revenue increase, time saved, cost reduction, efficiency gains) with specific numbers, 6) Looking Ahead — future plans and expansion. Include a sidebar with key metrics at a glance. Length: [WORD_COUNT] words. Tone: professional, credible, story-driven.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "website-copy-homepage",
+    "title": "Homepage Website Copy",
+    "description": "Write conversion-optimized homepage copy that communicates value instantly.",
+    "category": "writing",
+    "tags": ["website", "copywriting", "homepage"],
+    "prompt": "Write homepage copy for [COMPANY], a [DESCRIPTION] serving [TARGET_AUDIENCE]. Main value proposition: [VALUE_PROP]. Structure the page sections: 1) Hero Section — headline (under 10 words, benefit-driven), subheadline (1-2 sentences expanding on the promise), primary CTA button text, and secondary CTA, 2) Social Proof Bar — suggest types of logos/badges/numbers to display, 3) Problem Section — articulate the audience's pain in their own words, 4) Solution Section — how [COMPANY] solves it, with [NUMBER] key features/benefits using icons, 5) How It Works — 3-4 simple steps, 6) Testimonial Section — [NUMBER] testimonial placeholders with specific prompts for what each should address, 7) FAQ Section — [NUMBER] common questions and answers, 8) Final CTA Section — urgency-driven closing with headline and button. Tone: [TONE]. Write for scanning — short paragraphs, clear hierarchy.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "grant-proposal-writing",
+    "title": "Grant Proposal",
+    "description": "Write a persuasive grant proposal for funding applications.",
+    "category": "writing",
+    "tags": ["grant", "nonprofit", "proposal"],
+    "prompt": "Write a grant proposal for [ORGANIZATION_NAME], a [TYPE: nonprofit/research institution/startup] seeking [AMOUNT] in funding from [FUNDER_NAME] for [PROJECT_NAME]. Mission: [MISSION]. Project summary: [PROJECT_DESCRIPTION]. Include: 1) Cover Letter — personalized to the funder's priorities, 2) Executive Summary — the problem, your solution, expected impact, and funding request in 250 words, 3) Statement of Need — data-driven description of the problem with local/national statistics, 4) Project Description — goals, objectives (SMART format), methodology, timeline with milestones, 5) Organizational Capacity — why your team is qualified, key personnel bios, 6) Budget Summary — line items with justification for major expenses, 7) Evaluation Plan — how you will measure success with specific KPIs, 8) Sustainability Plan — how the project continues after funding ends. Tone: compelling yet professional. Align language with [FUNDER_NAME]'s stated priorities: [FUNDER_PRIORITIES].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "product-review-article",
+    "title": "Product Review Article",
+    "description": "Write a balanced, in-depth product review that helps readers decide.",
+    "category": "writing",
+    "tags": ["review", "content", "product"],
+    "prompt": "Write a detailed product review article for [PRODUCT_NAME] by [BRAND]. Product category: [CATEGORY]. Price: [PRICE]. Target reader: [AUDIENCE] considering purchasing this product. Structure: 1) Introduction — what the product is and who it's for, your overall verdict upfront (star rating out of 5), 2) First Impressions — unboxing, design, build quality, 3) Key Features Deep Dive — test and evaluate [NUMBER] main features with specific observations, 4) Performance — real-world usage scenarios and results, 5) Pros and Cons — honest, balanced list of [NUMBER] each, 6) Comparison — briefly compare to [NUMBER] alternatives in the same price range: [COMPETITORS], 7) Who Should Buy This — and who shouldn't, 8) Final Verdict — summary rating with breakdown (value, performance, design, ease of use). Include a specs table. Tone: honest, knowledgeable, conversational. Length: [WORD_COUNT] words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "internal-memo-business",
+    "title": "Business Internal Memo",
+    "description": "Draft a clear internal memo for organizational communication.",
+    "category": "writing",
+    "tags": ["memo", "business", "internal communication"],
+    "prompt": "Write an internal memo from [SENDER_NAME], [SENDER_TITLE] to [RECIPIENTS: all staff/department/leadership team] at [COMPANY]. Subject: [SUBJECT]. Purpose: [PURPOSE: announce a change/share an update/request action/address a concern]. Date: [DATE]. Structure: 1) Header — TO, FROM, DATE, RE fields, 2) Opening — state the purpose clearly in the first sentence, 3) Background/Context — why this matters, what led to this (2-3 sentences), 4) Key Information — the main message with specific details, dates, numbers, or policy changes, 5) Impact — how this affects the recipients and what changes they should expect, 6) Action Required — specific steps recipients need to take with deadlines, 7) Resources/Support — where to go for questions or more information. Tone: [TONE: direct/empathetic/motivational/formal]. Keep under 400 words. Use bullet points for action items. Avoid jargon and ambiguity.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "ebook-chapter-draft",
+    "title": "eBook Chapter Draft",
+    "description": "Write a complete eBook chapter with actionable content and engaging flow.",
+    "category": "writing",
+    "tags": ["ebook", "content", "long-form"],
+    "prompt": "Write Chapter [NUMBER] of an eBook titled '[EBOOK_TITLE]' for [BRAND/AUTHOR]. Chapter title: '[CHAPTER_TITLE]'. Target reader: [AUDIENCE]. The chapter should cover [TOPIC] and fit within the broader eBook theme of [OVERALL_THEME]. Include: 1) Chapter opening — a story, scenario, or question that draws the reader in, 2) [NUMBER] main sections with clear subheadings, 3) Practical examples, frameworks, or step-by-step instructions the reader can apply immediately, 4) At least one visual element suggestion (diagram, chart, checklist, or infographic description), 5) A 'Key Takeaways' box summarizing the chapter in [NUMBER] bullet points, 6) Transition to the next chapter topic: [NEXT_CHAPTER_TOPIC]. Write in a [TONE: conversational/authoritative/friendly] tone. Use 'you' to address the reader directly. Length: approximately [WORD_COUNT] words. Include callout boxes for tips, warnings, or pro tips.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "apology-letter-business",
+    "title": "Business Apology Letter",
+    "description": "Write a sincere, professional apology letter that rebuilds trust.",
+    "category": "writing",
+    "tags": ["apology", "customer service", "communication"],
+    "prompt": "Write a professional apology letter from [COMPANY/PERSON] to [RECIPIENT: customers/client/partner/employees] regarding [INCIDENT/ISSUE]. What happened: [DESCRIPTION_OF_ISSUE]. Impact on recipients: [IMPACT]. Structure: 1) Opening — acknowledge the issue directly without deflection or minimizing, 2) Take responsibility — use 'we' language, no passive voice or blame-shifting, 3) Explain (briefly) — what went wrong and why, without making excuses, 4) Empathize — show you understand how this affected them specifically, 5) Action taken — concrete steps already implemented to fix the immediate problem, 6) Prevention — specific measures to ensure this doesn't happen again, 7) Make it right — offer compensation, remedy, or goodwill gesture: [COMPENSATION_OFFER], 8) Closing — reaffirm commitment to the relationship. Tone: sincere, humble, action-oriented. Length: 200-350 words. This will be sent via [CHANNEL: email/letter/social media post].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "seo-content-strategy",
+    "title": "SEO Content Strategy",
+    "description": "Develop a comprehensive SEO content plan targeting high-value keywords.",
+    "category": "marketing",
+    "tags": ["SEO", "content strategy", "keywords"],
+    "prompt": "Create a comprehensive SEO content strategy for [BRAND/WEBSITE] in the [INDUSTRY] niche. Target audience: [AUDIENCE]. Business goal: [GOAL: increase organic traffic/generate leads/build authority]. Include: 1) Keyword Research Framework — identify [NUMBER] primary keywords and [NUMBER] long-tail variations for [TOPIC_CLUSTER], categorized by search intent (informational, navigational, transactional, commercial), 2) Content Pillar Strategy — define [NUMBER] pillar pages with supporting cluster content mapped to each, 3) Content Calendar — monthly publishing schedule with content types (blog posts, guides, listicles, comparisons), 4) On-Page SEO Checklist — title tag formulas, meta description templates, header structure, internal linking strategy, 5) Content Brief Template — for each priority piece, outline target keyword, secondary keywords, word count, competing URLs to outrank, and unique angle. Prioritize topics by search volume vs. competition difficulty.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "email-campaign-sequence",
+    "title": "Email Campaign Sequence",
+    "description": "Design a multi-email campaign sequence that nurtures leads to conversion.",
+    "category": "marketing",
+    "tags": ["email marketing", "automation", "nurture"],
+    "prompt": "Design a [NUMBER]-email campaign sequence for [BRAND] to [GOAL: nurture leads/onboard users/re-engage inactive customers/promote a launch]. Target segment: [AUDIENCE_SEGMENT]. Trigger: [TRIGGER: sign-up/purchase/abandonment/download]. For each email, provide: 1) Send timing (delay from trigger or previous email), 2) Subject line (with A/B variant), 3) Preview text, 4) Email purpose and key message, 5) Body copy outline with personalization tokens [FIRST_NAME], [COMPANY], etc., 6) Primary CTA (button text and destination), 7) Design notes (layout, images, colors). Overall sequence strategy: define the narrative arc — how does the relationship progress from email 1 to the final email? Include a decision branch: if recipient [OPENS/CLICKS/DOESN'T_OPEN] email [NUMBER], send [ALTERNATIVE]. Metrics to track per email: open rate, CTR, conversion benchmarks for [INDUSTRY].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "social-media-strategy",
+    "title": "Social Media Strategy",
+    "description": "Build a complete social media strategy with platform-specific tactics.",
+    "category": "marketing",
+    "tags": ["social media", "strategy", "content planning"],
+    "prompt": "Develop a 90-day social media strategy for [BRAND] targeting [AUDIENCE] across [PLATFORMS: Instagram/LinkedIn/Twitter/TikTok/Facebook]. Business objectives: [OBJECTIVES]. Current followers: [FOLLOWER_COUNT]. Budget: [BUDGET]. Include: 1) Platform Prioritization — rank platforms by ROI potential for this brand with reasoning, 2) Content Pillars — [NUMBER] recurring themes with example post ideas for each, 3) Content Mix — percentage breakdown (educational/entertaining/promotional/community), 4) Posting Frequency — optimal schedule per platform with best times, 5) Content Formats — platform-specific formats to prioritize (Reels, carousels, Stories, polls, etc.), 6) Engagement Strategy — how to grow community (comment strategy, DM approach, collaboration tactics), 7) Hashtag Strategy — [NUMBER] hashtag sets for different content types, 8) KPIs and Targets — specific metrics to track with monthly growth targets, 9) Paid Amplification — which organic posts to boost and budget allocation. Include a sample week content calendar.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "brand-voice-guidelines",
+    "title": "Brand Voice Guidelines",
+    "description": "Define a distinctive brand voice with clear dos, don'ts, and examples.",
+    "category": "marketing",
+    "tags": ["brand voice", "branding", "tone"],
+    "prompt": "Create comprehensive brand voice guidelines for [BRAND] in the [INDUSTRY] industry. Target audience: [AUDIENCE]. Brand personality traits: [TRAITS: e.g., bold, approachable, witty, trustworthy]. Brand values: [VALUES]. Include: 1) Voice Overview — describe the brand voice in 2-3 sentences as if describing a person, 2) Voice Attributes — [NUMBER] core attributes, each with a scale (e.g., 'Formal ←→ Casual: We sit at 7/10 toward casual'), 3) Tone Variations — how the voice adapts across contexts (social media, customer support, crisis, celebration), 4) Vocabulary — words we love, words we avoid, industry jargon policy, 5) Grammar & Style — sentence length preference, contraction usage, emoji policy, punctuation style, 6) Do's and Don'ts — [NUMBER] specific examples of each with before/after rewrites, 7) Channel-Specific Guidelines — how voice manifests on website, email, social, ads, support. Include [NUMBER] sample paragraphs written in the brand voice for different scenarios.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "competitor-analysis-framework",
+    "title": "Competitor Analysis",
+    "description": "Conduct a structured competitor analysis to identify opportunities and threats.",
+    "category": "marketing",
+    "tags": ["competitor analysis", "strategy", "market research"],
+    "prompt": "Create a comprehensive competitor analysis for [BRAND] in the [INDUSTRY] market. Analyze [NUMBER] key competitors: [COMPETITOR_1], [COMPETITOR_2], [COMPETITOR_3]. For each competitor, evaluate: 1) Company Overview — size, funding, market position, target audience, 2) Product/Service Comparison — features, pricing, unique selling points vs. ours, 3) Marketing Strategy — channels used, content approach, messaging themes, ad spend estimates, 4) Digital Presence — website UX assessment, SEO performance (estimated domain authority, top keywords), social media following and engagement rates, 5) Strengths and Weaknesses — honest SWOT for each, 6) Customer Sentiment — what their reviews/testimonials reveal (common praise and complaints). Synthesize into: a) Competitive positioning map (suggest axes), b) [NUMBER] gaps/opportunities we can exploit, c) Threats to monitor, d) Strategic recommendations for differentiation. Format as an executive-ready report with clear headers and data tables.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "customer-persona-builder",
+    "title": "Customer Persona Builder",
+    "description": "Build detailed customer personas based on data and market insights.",
+    "category": "marketing",
+    "tags": ["persona", "audience", "research"],
+    "prompt": "Create [NUMBER] detailed customer personas for [BRAND/PRODUCT] in the [INDUSTRY] market. For each persona, include: 1) Name and Photo Description — a realistic, relatable character, 2) Demographics — age range, gender, location, income, education, job title, 3) Psychographics — values, interests, lifestyle, personality traits, 4) Goals — what they want to achieve (both professional and personal), 5) Pain Points — [NUMBER] specific frustrations related to [PRODUCT_CATEGORY], 6) Buying Behavior — how they research, decision-making process, price sensitivity, preferred channels, 7) Media Consumption — social platforms, publications, podcasts, influencers they follow, 8) Objections — top [NUMBER] reasons they might NOT buy, 9) Messaging Angle — the key message that would resonate most with this persona, 10) Day-in-the-Life Scenario — a brief narrative showing when/how they'd encounter and need [PRODUCT]. Differentiate personas by their primary motivation for purchasing.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "ab-test-copy-variants",
+    "title": "A/B Test Copy Variants",
+    "description": "Generate strategic A/B test copy variations with clear hypotheses.",
+    "category": "marketing",
+    "tags": ["A/B testing", "conversion", "optimization"],
+    "prompt": "Generate A/B test copy variants for [ELEMENT: headline/CTA/email subject/landing page/ad copy] on [PAGE/CAMPAIGN] for [BRAND]. Current copy (Control): '[CURRENT_COPY]'. Current conversion rate: [RATE]%. Target audience: [AUDIENCE]. Create [NUMBER] test variants, each based on a different psychological principle: 1) Social Proof — leverage numbers, testimonials, or popularity, 2) Urgency/Scarcity — time limits or limited availability, 3) Benefit-Focused — lead with the outcome, not the feature, 4) Curiosity Gap — create an information gap that compels action, 5) Loss Aversion — frame around what they'll miss. For each variant provide: a) The copy itself, b) The hypothesis ('We believe [CHANGE] will [EFFECT] because [REASON]'), c) The psychological trigger being tested, d) Expected impact (low/medium/high), e) Minimum sample size recommendation. Also suggest the testing priority order and statistical significance threshold.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "landing-page-copy",
+    "title": "Landing Page Copy",
+    "description": "Write high-converting landing page copy with strategic section flow.",
+    "category": "marketing",
+    "tags": ["landing page", "conversion", "copywriting"],
+    "prompt": "Write conversion-optimized landing page copy for [PRODUCT/SERVICE/OFFER] by [BRAND]. Campaign goal: [GOAL: sign-ups/purchases/demo requests/downloads]. Traffic source: [SOURCE: paid ads/email/social/organic]. Target audience: [AUDIENCE] with pain point: [PAIN_POINT]. Page sections: 1) Hero — headline (benefit-driven, under 10 words), subheadline (expand the promise), primary CTA, hero image description, 2) Problem — agitate the pain with [NUMBER] specific scenarios, 3) Solution — introduce [PRODUCT] as the answer with key differentiator, 4) Features/Benefits — [NUMBER] features each paired with a tangible benefit and icon suggestion, 5) Social Proof — testimonial layout, logos, stats ([NUMBER] customers, [METRIC]), 6) How It Works — 3 simple steps, 7) Objection Handling — FAQ addressing top [NUMBER] concerns, 8) Pricing/Offer — present the offer with anchoring and value stack, 9) Final CTA — urgency-driven close with guarantee. Include micro-copy for form fields and button states.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "sales-page-long-form",
+    "title": "Long-Form Sales Page",
+    "description": "Create a long-form sales page that takes readers on a persuasive journey.",
+    "category": "marketing",
+    "tags": ["sales page", "direct response", "copywriting"],
+    "prompt": "Write a long-form sales page for [PRODUCT/COURSE/SERVICE] priced at [PRICE] by [BRAND/CREATOR]. Target buyer: [BUYER_PERSONA]. Primary desire: [DESIRE]. Primary fear: [FEAR]. Use this proven structure: 1) Pre-headline — call out the audience, 2) Headline — big promise with specificity, 3) Opening Story — relatable struggle that mirrors the reader's situation, 4) Problem Amplification — deepen the pain, show the cost of inaction, 5) Failed Solutions — why other approaches haven't worked, 6) The Discovery — your unique mechanism or approach, 7) Introduce the Offer — what's included with perceived value for each component, 8) Bonuses — [NUMBER] bonuses with individual value, 9) Social Proof — diverse testimonials (skeptic-turned-believer, quick win, transformation), 10) Price Justification — compare to alternatives and ROI, 11) Guarantee — risk reversal ([NUMBER]-day guarantee), 12) FAQ — overcome final objections, 13) Closing — final emotional appeal and CTA. Include value stack totaling [TOTAL_VALUE] vs. actual price.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "lead-magnet-creation",
+    "title": "Lead Magnet Creation",
+    "description": "Design and outline a high-value lead magnet that attracts ideal prospects.",
+    "category": "marketing",
+    "tags": ["lead magnet", "lead generation", "funnel"],
+    "prompt": "Design a lead magnet for [BRAND] targeting [AUDIENCE] in the [INDUSTRY] space. Goal: capture email addresses and begin nurturing toward [END_GOAL: product purchase/demo request/consultation]. Lead magnet type: [TYPE: checklist/template/guide/toolkit/quiz/cheat sheet/swipe file/calculator]. Topic: [TOPIC] — solving the specific problem of [PROBLEM]. Include: 1) Title — benefit-driven, specific (e.g., 'The [NUMBER]-Step [OUTCOME] [TYPE]'), 2) Landing Page Headline and Subheadline for the opt-in page, 3) [NUMBER] bullet points describing what's inside (use 'curiosity + benefit' format), 4) Complete outline of the lead magnet content with [NUMBER] sections, 5) Design notes — format, length, branding elements, 6) Delivery email copy — subject line and body for the automated delivery, 7) Follow-up sequence brief — [NUMBER] emails to send after delivery with topics and timing, 8) Promotion plan — [NUMBER] channels and tactics to drive opt-ins. The lead magnet should be completable in under [TIME] and deliver a quick win."
+  }
+]

@@ -1,0 +1,1400 @@
+[
+  {
+    "id": "code-review-best-practices",
+    "title": "Code Review Assistant",
+    "description": "Perform a thorough code review with actionable feedback on quality, security, and maintainability.",
+    "category": "coding",
+    "tags": [
+      "code-review",
+      "quality",
+      "best-practices"
+    ],
+    "prompt": "You are a senior software engineer conducting a code review. Analyze the following code written in [LANGUAGE] for a [PROJECT_TYPE] project.\n\nCode to review:\n```\n[PASTE_CODE_HERE]\n```\n\nPlease evaluate the code across these dimensions:\n1. **Correctness**: Are there any bugs, logic errors, or edge cases not handled?\n2. **Security**: Identify potential vulnerabilities (injection, XSS, auth issues, etc.)\n3. **Performance**: Flag any inefficient patterns, unnecessary computations, or memory leaks.\n4. **Readability**: Assess naming conventions, code structure, and clarity.\n5. **Maintainability**: Evaluate modularity, DRY principles, and coupling.\n6. **Testing**: Suggest what unit tests should cover this code.\n\nFor each issue found, provide:\n- Severity: Critical / Warning / Suggestion\n- Line reference or code snippet\n- Explanation of the problem\n- Recommended fix with code example\n\nEnd with a summary score (1-10) and top 3 priority improvements.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "debugging-systematic-approach",
+    "title": "Systematic Debugging Guide",
+    "description": "Diagnose and resolve bugs using a structured root-cause analysis approach.",
+    "category": "coding",
+    "tags": [
+      "debugging",
+      "troubleshooting",
+      "root-cause"
+    ],
+    "prompt": "You are an expert debugger. Help me systematically diagnose and fix a bug in my [LANGUAGE/FRAMEWORK] application.\n\n**Bug Description**: [DESCRIBE_THE_BUG]\n**Expected Behavior**: [WHAT_SHOULD_HAPPEN]\n**Actual Behavior**: [WHAT_ACTUALLY_HAPPENS]\n**Environment**: [OS/RUNTIME/VERSION]\n**Error Message (if any)**: [PASTE_ERROR]\n**Relevant Code**:\n```\n[PASTE_CODE]\n```\n\nPlease follow this debugging methodology:\n1. **Reproduce**: Clarify the exact steps to reproduce the issue.\n2. **Isolate**: Narrow down the root cause by analyzing the code path and error trace.\n3. **Hypothesize**: List the top 3 most likely causes ranked by probability.\n4. **Verify**: For each hypothesis, suggest a specific test or logging statement to confirm or rule it out.\n5. **Fix**: Provide the corrected code with explanation of what was wrong.\n6. **Prevent**: Recommend how to prevent this class of bug in the future (tests, linting rules, patterns).\n\nBe specific and reference exact lines or functions in your analysis.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "refactoring-legacy-code",
+    "title": "Legacy Code Refactoring",
+    "description": "Refactor legacy code into clean, modern, and maintainable architecture.",
+    "category": "coding",
+    "tags": [
+      "refactoring",
+      "clean-code",
+      "legacy"
+    ],
+    "prompt": "You are a refactoring specialist. I need to modernize the following legacy [LANGUAGE] code while preserving its existing behavior.\n\nLegacy Code:\n```\n[PASTE_LEGACY_CODE]\n```\n\nContext: This code is part of a [DESCRIBE_SYSTEM] and currently [DESCRIBE_WHAT_IT_DOES].\n\nPlease refactor with these goals:\n1. **Extract**: Break monolithic functions into smaller, single-responsibility functions.\n2. **Modernize**: Replace deprecated patterns with modern [LANGUAGE] idioms and features.\n3. **Type Safety**: Add proper type annotations/interfaces where applicable.\n4. **Error Handling**: Replace silent failures with proper error handling.\n5. **Naming**: Improve variable and function names for clarity.\n6. **DRY**: Eliminate code duplication.\n\nProvide:\n- The fully refactored code\n- A changelog summarizing each change and why it was made\n- Any breaking changes or migration notes\n- Suggested tests to verify the refactored code behaves identically to the original",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "api-design-restful",
+    "title": "RESTful API Designer",
+    "description": "Design a complete RESTful API with endpoints, schemas, and documentation.",
+    "category": "coding",
+    "tags": [
+      "api-design",
+      "rest",
+      "openapi"
+    ],
+    "prompt": "You are an API architect. Design a comprehensive RESTful API for a [APPLICATION_TYPE] application.\n\n**Core Resources**: [LIST_MAIN_ENTITIES, e.g., users, products, orders]\n**Key Features**: [LIST_FEATURES]\n**Authentication**: [AUTH_METHOD, e.g., JWT, OAuth2, API Key]\n**Target Consumers**: [WHO_WILL_USE_THIS_API]\n\nFor each resource, provide:\n1. **Endpoints**: Full CRUD operations with HTTP methods, paths, and descriptions.\n2. **Request/Response Schemas**: JSON examples with field types and validation rules.\n3. **Query Parameters**: Filtering, sorting, pagination support.\n4. **Status Codes**: Appropriate HTTP status codes for success and error scenarios.\n5. **Error Response Format**: Standardized error object structure.\n6. **Rate Limiting**: Suggested limits per endpoint.\n7. **Versioning Strategy**: How to handle API versions.\n\nAlso include:\n- Authentication flow diagram\n- Relationship between resources\n- Webhook events (if applicable)\n- OpenAPI 3.0 snippet for the most complex endpoint",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "database-schema-design",
+    "title": "Database Schema Architect",
+    "description": "Design an optimized database schema with tables, relationships, and indexes.",
+    "category": "coding",
+    "tags": [
+      "database",
+      "schema",
+      "sql"
+    ],
+    "prompt": "You are a database architect. Design an optimized [DATABASE_TYPE, e.g., PostgreSQL/MySQL/MongoDB] schema for a [APPLICATION_DESCRIPTION].\n\n**Key Entities**: [LIST_ENTITIES]\n**Expected Scale**: [ESTIMATED_ROWS/USERS]\n**Read/Write Ratio**: [e.g., 80/20 read-heavy]\n**Key Queries**: [LIST_MOST_COMMON_QUERIES]\n\nPlease provide:\n1. **Table/Collection Definitions**: All fields with data types, constraints (NOT NULL, UNIQUE, CHECK), and defaults.\n2. **Relationships**: Foreign keys, junction tables for many-to-many, with ON DELETE/UPDATE behavior.\n3. **Indexes**: Primary, unique, composite, and partial indexes with justification for each.\n4. **Normalization**: Ensure at least 3NF; note any intentional denormalization with reasoning.\n5. **Migration SQL**: CREATE TABLE statements ready to execute.\n6. **Seed Data**: Sample INSERT statements for testing.\n7. **Performance Notes**: Query optimization tips, partitioning strategy if needed.\n\nInclude an ER diagram description showing all relationships.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "unit-test-generator",
+    "title": "Unit Test Generator",
+    "description": "Generate comprehensive unit tests with edge cases and mocking strategies.",
+    "category": "coding",
+    "tags": [
+      "testing",
+      "unit-tests",
+      "tdd"
+    ],
+    "prompt": "You are a test engineering expert. Write comprehensive unit tests for the following [LANGUAGE] code using [TEST_FRAMEWORK, e.g., Jest/pytest/JUnit].\n\nCode to test:\n```\n[PASTE_CODE]\n```\n\nRequirements:\n1. **Happy Path Tests**: Cover all normal execution paths with valid inputs.\n2. **Edge Cases**: Test boundary values, empty inputs, null/undefined, max values.\n3. **Error Cases**: Verify proper error handling and error messages.\n4. **Mocking**: Mock external dependencies ([LIST_DEPENDENCIES]) using [MOCK_LIBRARY].\n5. **Async Tests**: Handle promises/async operations correctly if applicable.\n6. **Test Organization**: Use describe/it blocks with clear, descriptive test names.\n\nFor each test, include:\n- Arrange: Setup test data and mocks\n- Act: Execute the function under test\n- Assert: Verify expected outcomes\n\nAim for >90% code coverage. Include a coverage summary at the end noting any intentionally uncovered lines and why.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "technical-documentation-writer",
+    "title": "Technical Documentation Writer",
+    "description": "Create clear, structured technical documentation for codebases and APIs.",
+    "category": "coding",
+    "tags": [
+      "documentation",
+      "readme",
+      "technical-writing"
+    ],
+    "prompt": "You are a technical writer specializing in developer documentation. Create comprehensive documentation for [PROJECT_NAME], a [PROJECT_DESCRIPTION].\n\n**Tech Stack**: [LIST_TECHNOLOGIES]\n**Target Audience**: [e.g., junior devs, API consumers, open-source contributors]\n**Documentation Type**: [README / API Docs / Architecture Guide / Contributing Guide]\n\nGenerate documentation that includes:\n1. **Overview**: What the project does, why it exists, and key features.\n2. **Quick Start**: Step-by-step setup in under 5 minutes (prerequisites, install, run).\n3. **Configuration**: All environment variables and config options in a table format.\n4. **Usage Examples**: At least 3 practical code examples from simple to advanced.\n5. **API Reference**: Function signatures, parameters, return types, and examples.\n6. **Architecture**: High-level system diagram description and key design decisions.\n7. **Troubleshooting**: Common issues and their solutions.\n8. **Contributing**: How to set up dev environment, coding standards, PR process.\n\nUse clear headings, code blocks with syntax highlighting, and callout boxes for warnings/tips.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "regex-pattern-builder",
+    "title": "Regex Pattern Builder",
+    "description": "Build and explain complex regular expressions with test cases.",
+    "category": "coding",
+    "tags": [
+      "regex",
+      "pattern-matching",
+      "validation"
+    ],
+    "prompt": "You are a regex expert. Help me build a regular expression for the following requirement.\n\n**What to match**: [DESCRIBE_PATTERN, e.g., email addresses, phone numbers, URLs]\n**Language/Engine**: [e.g., JavaScript, Python, PCRE, .NET]\n**Must match examples**: [LIST_VALID_EXAMPLES]\n**Must NOT match examples**: [LIST_INVALID_EXAMPLES]\n**Special requirements**: [e.g., capture groups needed, case-insensitive, multiline]\n\nPlease provide:\n1. **The regex pattern** with proper escaping for the target language.\n2. **Character-by-character explanation** of what each part of the pattern does.\n3. **Named capture groups** if applicable, with descriptions.\n4. **Test results** showing the pattern against all provided examples.\n5. **Edge cases** I might not have considered.\n6. **Performance notes**: Is the pattern susceptible to catastrophic backtracking? If so, provide an optimized version.\n7. **Code snippet**: Ready-to-use implementation in [LANGUAGE] showing match, search, and replace operations.\n\nIf the requirement is ambiguous, state your assumptions clearly.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "sql-query-optimizer",
+    "title": "SQL Query Optimizer",
+    "description": "Write and optimize complex SQL queries for performance and correctness.",
+    "category": "coding",
+    "tags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "prompt": "You are a SQL performance expert working with [DATABASE, e.g., PostgreSQL/MySQL/SQL Server]. Help me write and optimize a query.\n\n**Goal**: [DESCRIBE_WHAT_DATA_YOU_NEED]\n**Tables involved**:\n```sql\n[PASTE_TABLE_SCHEMAS_OR_DESCRIBE_THEM]\n```\n**Current query (if any)**:\n```sql\n[PASTE_EXISTING_QUERY]\n```\n**Performance issue**: [e.g., slow execution, full table scan, timeout]\n**Data volume**: [APPROXIMATE_ROW_COUNTS]\n\nPlease provide:\n1. **Optimized Query**: The most efficient SQL to achieve the goal.\n2. **Explain Plan Analysis**: Walk through the expected execution plan.\n3. **Index Recommendations**: What indexes would improve this query, with CREATE INDEX statements.\n4. **Alternative Approaches**: CTEs vs subqueries vs JOINs — which is best here and why.\n5. **Pagination**: If returning many rows, add efficient cursor-based pagination.\n6. **Common Pitfalls**: N+1 issues, implicit type casting, NULL handling.\n\nFormat the SQL with proper indentation and comments explaining complex joins or conditions.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "python-script-generator",
+    "title": "Python Script Generator",
+    "description": "Generate production-ready Python scripts with error handling and logging.",
+    "category": "coding",
+    "tags": [
+      "python",
+      "scripting",
+      "automation"
+    ],
+    "prompt": "You are a senior Python developer. Write a production-ready Python script that [DESCRIBE_TASK].\n\n**Input**: [DESCRIBE_INPUT_DATA_OR_SOURCE]\n**Output**: [DESCRIBE_EXPECTED_OUTPUT]\n**Dependencies**: [ANY_REQUIRED_LIBRARIES]\n**Python Version**: [e.g., 3.10+]\n\nRequirements for the script:\n1. **CLI Interface**: Use argparse with clear help text for all arguments.\n2. **Error Handling**: Comprehensive try/except with specific exception types, not bare except.\n3. **Logging**: Use the logging module with configurable verbosity (--verbose flag).\n4. **Type Hints**: Full type annotations on all functions.\n5. **Docstrings**: Google-style docstrings for all functions and the module.\n6. **Configuration**: Support both CLI args and environment variables for sensitive values.\n7. **Progress**: Show progress for long-running operations (tqdm or custom).\n8. **Exit Codes**: Return appropriate exit codes (0 success, 1 error, 2 invalid args).\n\nInclude a requirements.txt and example usage in the docstring. Follow PEP 8 and use pathlib for file operations.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "react-component-builder",
+    "title": "React Component Builder",
+    "description": "Build reusable, accessible React components with TypeScript and hooks.",
+    "category": "coding",
+    "tags": [
+      "react",
+      "javascript",
+      "components"
+    ],
+    "prompt": "You are a senior React developer. Build a reusable React component for [COMPONENT_DESCRIPTION].\n\n**Component Name**: [COMPONENT_NAME]\n**Framework**: React with TypeScript\n**Styling**: [CSS Modules / Tailwind / Styled Components]\n**State Management**: [useState / useReducer / Zustand / Redux]\n\nRequirements:\n1. **Props Interface**: Define a comprehensive TypeScript interface with required and optional props, JSDoc comments for each.\n2. **Accessibility**: ARIA attributes, keyboard navigation, focus management, screen reader support.\n3. **Responsive**: Mobile-first design that works across breakpoints.\n4. **States**: Handle loading, error, empty, and success states gracefully.\n5. **Hooks**: Extract complex logic into custom hooks with proper dependency arrays.\n6. **Memoization**: Use React.memo, useMemo, useCallback where appropriate with justification.\n7. **Testing**: Include a test file with React Testing Library covering user interactions.\n8. **Storybook**: Provide a stories file with variants (default, loading, error, edge cases).\n\nFollow React best practices: composition over inheritance, controlled components, proper key usage in lists.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "system-design-architecture",
+    "title": "System Design Blueprint",
+    "description": "Design scalable system architecture with components, data flow, and trade-offs.",
+    "category": "coding",
+    "tags": [
+      "system-design",
+      "architecture",
+      "scalability"
+    ],
+    "prompt": "You are a principal systems architect. Design a scalable system for [SYSTEM_DESCRIPTION].\n\n**Requirements**:\n- Expected users: [NUMBER_OF_USERS]\n- Peak QPS: [QUERIES_PER_SECOND]\n- Data volume: [ESTIMATED_DATA_SIZE]\n- Latency target: [e.g., p99 < 200ms]\n- Availability target: [e.g., 99.9%]\n\n**Key Features**: [LIST_CORE_FEATURES]\n\nProvide a complete system design covering:\n1. **High-Level Architecture**: Components and their interactions (describe a diagram).\n2. **API Design**: Key endpoints with request/response formats.\n3. **Data Model**: Database choice (SQL vs NoSQL) with schema and justification.\n4. **Caching Strategy**: What to cache, TTL policies, invalidation approach.\n5. **Message Queue**: Async processing needs, queue technology choice.\n6. **Scaling Plan**: Horizontal vs vertical, auto-scaling triggers, sharding strategy.\n7. **Failure Handling**: Circuit breakers, retries, fallbacks, graceful degradation.\n8. **Monitoring**: Key metrics, alerting thresholds, logging strategy.\n9. **Trade-offs**: Explicitly state CAP theorem choices and other design trade-offs.\n10. **Cost Estimate**: Rough infrastructure cost at target scale.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "algorithm-problem-solver",
+    "title": "Algorithm Problem Solver",
+    "description": "Solve algorithmic problems with optimal solutions and complexity analysis.",
+    "category": "coding",
+    "tags": [
+      "algorithms",
+      "data-structures",
+      "optimization"
+    ],
+    "prompt": "You are an algorithms expert. Help me solve the following problem optimally.\n\n**Problem**: [DESCRIBE_THE_PROBLEM]\n**Input Format**: [DESCRIBE_INPUT]\n**Output Format**: [DESCRIBE_OUTPUT]\n**Constraints**: [SIZE_LIMITS, TIME_LIMITS]\n**Example**:\n  Input: [EXAMPLE_INPUT]\n  Output: [EXAMPLE_OUTPUT]\n\nPlease provide:\n1. **Brute Force**: Start with the simplest correct solution. State its time and space complexity.\n2. **Optimized Solution**: Improve using appropriate data structures or algorithms. Explain the key insight.\n3. **Optimal Solution**: If different from #2, provide the best possible approach.\n4. **Code**: Clean implementation in [LANGUAGE] with comments explaining each step.\n5. **Complexity Analysis**: Detailed Big-O for time and space, including best/average/worst cases.\n6. **Dry Run**: Walk through the algorithm step-by-step with the example input.\n7. **Edge Cases**: List and handle all edge cases (empty input, single element, duplicates, overflow).\n8. **Follow-up**: How would the solution change if [VARIATION, e.g., data is streaming, distributed]?",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "cicd-pipeline-setup",
+    "title": "CI/CD Pipeline Configuration",
+    "description": "Set up a complete CI/CD pipeline with testing, building, and deployment stages.",
+    "category": "coding",
+    "tags": [
+      "cicd",
+      "devops",
+      "automation"
+    ],
+    "prompt": "You are a DevOps engineer. Set up a complete CI/CD pipeline for a [PROJECT_TYPE] project.\n\n**Repository**: [GITHUB/GITLAB/BITBUCKET]\n**Language/Framework**: [TECH_STACK]\n**Deployment Target**: [e.g., AWS ECS, Kubernetes, Vercel, Heroku]\n**CI/CD Platform**: [GitHub Actions / GitLab CI / Jenkins / CircleCI]\n\nCreate a pipeline configuration that includes:\n1. **Trigger Rules**: On push to main, on PR, on tag creation.\n2. **Lint Stage**: Code formatting and linting checks.\n3. **Test Stage**: Unit tests, integration tests with coverage thresholds (minimum [X]%).\n4. **Security Stage**: Dependency vulnerability scanning, SAST analysis.\n5. **Build Stage**: Compile/bundle with caching for faster builds.\n6. **Docker Stage**: Build and push container image with proper tagging (SHA + semver).\n7. **Deploy Staging**: Auto-deploy to staging on main branch merge.\n8. **Deploy Production**: Manual approval gate, blue-green or canary deployment.\n9. **Notifications**: Slack/email alerts on failure.\n10. **Rollback**: One-click rollback procedure.\n\nProvide the complete YAML configuration file with comments explaining each section.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "dockerfile-optimization",
+    "title": "Dockerfile Optimizer",
+    "description": "Create optimized, secure, multi-stage Dockerfiles for production deployments.",
+    "category": "coding",
+    "tags": [
+      "docker",
+      "containers",
+      "devops"
+    ],
+    "prompt": "You are a Docker expert. Create an optimized, production-ready Dockerfile for a [APPLICATION_TYPE] application.\n\n**Language/Runtime**: [e.g., Node.js 20, Python 3.12, Go 1.21]\n**Application Framework**: [e.g., Express, FastAPI, Gin]\n**Build Requirements**: [e.g., npm build, pip install, go build]\n**Runtime Dependencies**: [LIST_SYSTEM_DEPS]\n\nOptimize the Dockerfile for:\n1. **Multi-stage Build**: Separate builder and runtime stages to minimize final image size.\n2. **Layer Caching**: Order instructions to maximize Docker layer cache hits.\n3. **Security**: Run as non-root user, use specific image tags (not :latest), scan for vulnerabilities.\n4. **Size**: Use slim/alpine base images, remove build artifacts, combine RUN commands.\n5. **.dockerignore**: Provide a comprehensive .dockerignore file.\n6. **Health Check**: Add HEALTHCHECK instruction with appropriate intervals.\n7. **Labels**: OCI-standard labels for metadata.\n8. **Signals**: Handle SIGTERM gracefully for zero-downtime deployments.\n\nAlso provide:\n- docker-compose.yml for local development with hot-reload\n- Estimated final image size\n- Build and run commands with common flags explained",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "security-audit-checklist",
+    "title": "Security Audit Checklist",
+    "description": "Perform a comprehensive security audit on application code and infrastructure.",
+    "category": "coding",
+    "tags": [
+      "security",
+      "audit",
+      "vulnerabilities"
+    ],
+    "prompt": "You are a cybersecurity expert. Perform a security audit on my [APPLICATION_TYPE] application.\n\n**Tech Stack**: [LIST_TECHNOLOGIES]\n**Authentication**: [AUTH_METHOD]\n**Data Sensitivity**: [e.g., PII, financial, healthcare]\n**Deployment**: [INFRASTRUCTURE_DESCRIPTION]\n**Code to audit**:\n```\n[PASTE_CODE_OR_DESCRIBE_ARCHITECTURE]\n```\n\nAudit across these categories:\n1. **OWASP Top 10**: Check for injection, broken auth, XSS, CSRF, SSRF, insecure deserialization.\n2. **Authentication & Authorization**: Token handling, session management, RBAC implementation.\n3. **Data Protection**: Encryption at rest and in transit, PII handling, secrets management.\n4. **Input Validation**: Sanitization, parameterized queries, file upload restrictions.\n5. **API Security**: Rate limiting, CORS policy, input size limits, API key rotation.\n6. **Dependencies**: Known CVEs in packages, outdated libraries, supply chain risks.\n7. **Infrastructure**: HTTPS enforcement, security headers, CSP policy.\n8. **Logging**: Sensitive data in logs, audit trail completeness.\n\nFor each finding, provide: Severity (Critical/High/Medium/Low), Description, Impact, Remediation code example, and OWASP reference.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "performance-optimization-guide",
+    "title": "Performance Optimization Guide",
+    "description": "Identify and fix performance bottlenecks in application code.",
+    "category": "coding",
+    "tags": [
+      "performance",
+      "optimization",
+      "profiling"
+    ],
+    "prompt": "You are a performance engineering specialist. Analyze and optimize the performance of my [LANGUAGE/FRAMEWORK] application.\n\n**Performance Issue**: [DESCRIBE_SYMPTOM, e.g., slow page load, high memory usage, API timeout]\n**Current Metrics**: [RESPONSE_TIME, THROUGHPUT, MEMORY_USAGE]\n**Target Metrics**: [DESIRED_PERFORMANCE_GOALS]\n**Code/Architecture**:\n```\n[PASTE_RELEVANT_CODE_OR_DESCRIBE_ARCHITECTURE]\n```\n\nProvide optimization recommendations in these areas:\n1. **Profiling Strategy**: How to identify the exact bottleneck (tools, techniques).\n2. **Algorithm Optimization**: Replace O(n²) with O(n log n) or better where possible.\n3. **Database**: Query optimization, N+1 detection, connection pooling, read replicas.\n4. **Caching**: What to cache, cache invalidation strategy, cache warming.\n5. **Async/Concurrency**: Parallelize independent operations, use worker threads/processes.\n6. **Memory**: Fix memory leaks, reduce allocations, use streaming for large data.\n7. **Network**: Reduce payload size, compression, CDN, HTTP/2 multiplexing.\n8. **Frontend** (if applicable): Bundle size, lazy loading, image optimization, Core Web Vitals.\n\nFor each recommendation, estimate the expected improvement and implementation effort (hours).",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "error-handling-patterns",
+    "title": "Error Handling Patterns",
+    "description": "Implement robust error handling with custom errors, logging, and recovery strategies.",
+    "category": "coding",
+    "tags": [
+      "error-handling",
+      "resilience",
+      "patterns"
+    ],
+    "prompt": "You are a software reliability expert. Design a comprehensive error handling strategy for my [LANGUAGE/FRAMEWORK] application.\n\n**Application Type**: [e.g., REST API, CLI tool, web app]\n**Current Pain Points**: [DESCRIBE_ERROR_HANDLING_ISSUES]\n**External Dependencies**: [LIST_APIS, DATABASES, SERVICES]\n\nPlease provide:\n1. **Error Hierarchy**: Custom error/exception class hierarchy with error codes, HTTP status mapping, and user-friendly messages.\n2. **Global Handler**: Centralized error handling middleware/interceptor that catches unhandled errors.\n3. **Retry Logic**: Implement exponential backoff with jitter for transient failures. Specify which errors are retryable.\n4. **Circuit Breaker**: Pattern implementation for external service calls with open/half-open/closed states.\n5. **Validation Errors**: Structured validation error responses with field-level detail.\n6. **Logging Strategy**: What to log at each level (error, warn, info), structured logging format.\n7. **Error Response Format**: Standardized JSON error response with correlation ID for tracing.\n8. **Graceful Degradation**: Fallback strategies when dependencies are unavailable.\n\nProvide complete code examples in [LANGUAGE] for each pattern, ready to integrate into an existing project.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "code-comments-documentation",
+    "title": "Code Comments Generator",
+    "description": "Add meaningful comments and inline documentation to existing code.",
+    "category": "coding",
+    "tags": [
+      "comments",
+      "documentation",
+      "readability"
+    ],
+    "prompt": "You are a documentation specialist. Add comprehensive, meaningful comments to the following [LANGUAGE] code.\n\nCode:\n```\n[PASTE_CODE]\n```\n\nContext: This code is part of [DESCRIBE_PROJECT] and handles [DESCRIBE_FUNCTIONALITY].\n\nComments should follow these guidelines:\n1. **File Header**: Module purpose, author placeholder, date, and dependencies.\n2. **Function/Method Docs**: Use [DOCSTRING_STYLE, e.g., JSDoc/Google/NumPy] format with parameters, return types, exceptions, and usage examples.\n3. **Why, Not What**: Explain the reasoning behind non-obvious decisions, not what the code literally does.\n4. **Complex Logic**: Break down complex algorithms or business rules into step-by-step explanations.\n5. **TODO/FIXME**: Flag areas that need improvement with actionable descriptions.\n6. **Constants**: Explain magic numbers and their origin.\n7. **Warnings**: Note any gotchas, side effects, or assumptions.\n\nDo NOT add comments that merely restate the code (e.g., `// increment i` for `i++`). Every comment should add value. Return the fully commented code.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "database-migration-scripts",
+    "title": "Database Migration Scripts",
+    "description": "Generate safe, reversible database migration scripts with rollback support.",
+    "category": "coding",
+    "tags": [
+      "migration",
+      "database",
+      "schema-changes"
+    ],
+    "prompt": "You are a database migration expert. Create migration scripts for the following schema change in [DATABASE, e.g., PostgreSQL/MySQL].\n\n**Current Schema**:\n```sql\n[PASTE_CURRENT_SCHEMA]\n```\n\n**Desired Change**: [DESCRIBE_WHAT_NEEDS_TO_CHANGE]\n**Migration Tool**: [e.g., Flyway, Liquibase, Knex, Alembic, Prisma]\n**Data Volume**: [APPROXIMATE_ROWS_IN_AFFECTED_TABLES]\n**Downtime Tolerance**: [ZERO_DOWNTIME / MAINTENANCE_WINDOW]\n\nProvide:\n1. **Up Migration**: Forward migration script with proper ordering of operations.\n2. **Down Migration**: Rollback script that perfectly reverses the up migration.\n3. **Data Migration**: If data transformation is needed, include the DML statements.\n4. **Zero-Downtime Strategy**: If required, use expand-contract pattern (add new → migrate data → remove old).\n5. **Validation Queries**: SQL to verify the migration succeeded (row counts, constraint checks).\n6. **Performance Considerations**: Will this lock tables? Estimated execution time? Should it run in batches?\n7. **Backup Command**: Pre-migration backup command.\n\nEnsure all migrations are idempotent (safe to run multiple times) and wrapped in transactions where supported.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "cli-tool-builder",
+    "title": "CLI Tool Builder",
+    "description": "Build a professional command-line tool with argument parsing and user-friendly output.",
+    "category": "coding",
+    "tags": [
+      "cli",
+      "terminal",
+      "developer-tools"
+    ],
+    "prompt": "You are a CLI tool developer. Build a command-line tool in [LANGUAGE] that [DESCRIBE_TOOL_PURPOSE].\n\n**Tool Name**: [TOOL_NAME]\n**Target Users**: [e.g., developers, sysadmins, data engineers]\n**Key Commands/Subcommands**: [LIST_COMMANDS]\n**Input Sources**: [e.g., stdin, files, API calls]\n**Output Formats**: [e.g., table, JSON, CSV, plain text]\n\nRequirements:\n1. **Argument Parsing**: Use [LIBRARY, e.g., argparse/cobra/clap] with subcommands, flags, and positional args.\n2. **Help Text**: Comprehensive --help with examples for every command.\n3. **Configuration**: Support config file (~/.toolrc), environment variables, and CLI flags (in that priority order).\n4. **Output**: Colored terminal output, --json flag for machine-readable output, --quiet flag.\n5. **Progress**: Progress bars or spinners for long operations.\n6. **Error Messages**: Human-friendly errors with suggested fixes.\n7. **Shell Completion**: Generate bash/zsh/fish completion scripts.\n8. **Versioning**: --version flag with semantic versioning.\n\nProvide the complete source code, a README with installation instructions, and example usage for each command.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "web-scraping-script",
+    "title": "Web Scraping Script",
+    "description": "Build a robust web scraper with rate limiting, error handling, and data extraction.",
+    "category": "coding",
+    "tags": [
+      "web-scraping",
+      "data-extraction",
+      "automation"
+    ],
+    "prompt": "You are a web scraping expert. Build a scraper in [LANGUAGE, e.g., Python/Node.js] to extract data from [TARGET_WEBSITE_OR_TYPE].\n\n**Data to Extract**: [LIST_FIELDS, e.g., title, price, rating, URL]\n**Pages to Scrape**: [DESCRIBE_SCOPE, e.g., search results, product listings, paginated content]\n**Output Format**: [CSV / JSON / Database]\n**Library**: [e.g., BeautifulSoup, Scrapy, Puppeteer, Playwright]\n\nThe scraper must include:\n1. **Rate Limiting**: Configurable delay between requests (default 1-3 seconds random).\n2. **User-Agent Rotation**: Rotate through realistic user-agent strings.\n3. **Retry Logic**: Retry failed requests with exponential backoff (max 3 retries).\n4. **Proxy Support**: Optional proxy configuration for IP rotation.\n5. **Data Validation**: Validate extracted data before saving (required fields, type checks).\n6. **Pagination**: Automatically follow pagination links or handle infinite scroll.\n7. **Deduplication**: Skip already-scraped items based on unique identifier.\n8. **Resume Support**: Save progress so interrupted scrapes can resume.\n9. **Logging**: Log progress, errors, and statistics (items scraped, success rate).\n\nInclude ethical scraping notes: respect robots.txt, terms of service, and rate limits.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "data-pipeline-design",
+    "title": "Data Pipeline Architect",
+    "description": "Design an ETL/ELT data pipeline with scheduling, monitoring, and error recovery.",
+    "category": "coding",
+    "tags": [
+      "data-pipeline",
+      "etl",
+      "data-engineering"
+    ],
+    "prompt": "You are a data engineer. Design a data pipeline for [DESCRIBE_DATA_FLOW].\n\n**Source(s)**: [e.g., REST API, S3 bucket, PostgreSQL, Kafka topic]\n**Destination**: [e.g., data warehouse, analytics DB, data lake]\n**Volume**: [DATA_SIZE_PER_DAY]\n**Frequency**: [REAL_TIME / HOURLY / DAILY]\n**Orchestrator**: [Airflow / Prefect / Dagster / Step Functions]\n\nDesign the pipeline with:\n1. **Extract**: Connection handling, incremental extraction (CDC or timestamp-based), schema detection.\n2. **Transform**: Data cleaning, type casting, deduplication, business logic transformations.\n3. **Load**: Upsert strategy, partitioning, compression, schema evolution handling.\n4. **Orchestration**: DAG definition with task dependencies, scheduling, and SLA monitoring.\n5. **Idempotency**: Ensure re-runs produce the same result without duplicates.\n6. **Error Handling**: Dead letter queues, alerting on failures, automatic retry policies.\n7. **Monitoring**: Data quality checks (row counts, null rates, freshness), pipeline metrics dashboard.\n8. **Backfill**: Strategy for reprocessing historical data.\n\nProvide the orchestrator configuration (DAG file), key transformation code, and a data lineage description.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "microservices-architecture",
+    "title": "Microservices Architecture",
+    "description": "Design a microservices architecture with service boundaries, communication, and deployment.",
+    "category": "coding",
+    "tags": [
+      "microservices",
+      "architecture",
+      "distributed-systems"
+    ],
+    "prompt": "You are a microservices architect. Design a microservices architecture for [APPLICATION_DESCRIPTION].\n\n**Current State**: [MONOLITH / EXISTING_SERVICES]\n**Key Business Domains**: [LIST_DOMAINS]\n**Team Size**: [NUMBER_OF_TEAMS]\n**Scale Requirements**: [TRAFFIC_PATTERNS]\n\nProvide a complete architecture:\n1. **Service Decomposition**: Define each service with its bounded context, responsibilities, and data ownership.\n2. **Communication**: Sync (REST/gRPC) vs async (events/messages) for each interaction, with justification.\n3. **API Gateway**: Routing, authentication, rate limiting, request aggregation.\n4. **Data Strategy**: Database per service, eventual consistency patterns, saga pattern for distributed transactions.\n5. **Service Discovery**: How services find each other (DNS, service mesh, registry).\n6. **Resilience**: Circuit breakers, bulkheads, timeouts, retry policies per service.\n7. **Observability**: Distributed tracing (OpenTelemetry), centralized logging, metrics per service.\n8. **Deployment**: Container orchestration, service mesh, blue-green deployment per service.\n9. **Migration Plan**: If decomposing a monolith, provide a strangler fig pattern roadmap.\n\nInclude a service interaction diagram description and highlight potential distributed system pitfalls.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "graphql-schema-design",
+    "title": "GraphQL Schema Designer",
+    "description": "Design a complete GraphQL schema with types, queries, mutations, and subscriptions.",
+    "category": "coding",
+    "tags": [
+      "graphql",
+      "api",
+      "schema"
+    ],
+    "prompt": "You are a GraphQL expert. Design a complete GraphQL schema for a [APPLICATION_TYPE] application.\n\n**Core Entities**: [LIST_ENTITIES_AND_RELATIONSHIPS]\n**Key Operations**: [LIST_MAIN_USE_CASES]\n**Real-time Needs**: [DESCRIBE_SUBSCRIPTION_REQUIREMENTS]\n**Auth Model**: [e.g., role-based, attribute-based]\n\nProvide:\n1. **Type Definitions**: All types, input types, enums, interfaces, and unions with descriptions.\n2. **Queries**: All query fields with arguments, return types, and pagination (cursor-based).\n3. **Mutations**: All mutations with input validation, return types including user errors.\n4. **Subscriptions**: Real-time event types and filtering options.\n5. **Custom Scalars**: DateTime, JSON, URL, Email with validation.\n6. **Directives**: Auth directives (@auth, @hasRole), caching (@cacheControl), deprecation.\n7. **N+1 Prevention**: DataLoader patterns for each relationship.\n8. **Error Handling**: Typed error unions vs error extensions approach.\n9. **Complexity Limiting**: Query depth and complexity analysis configuration.\n\nProvide the complete SDL (Schema Definition Language) file and example resolver implementations for the most complex query and mutation.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "rest-api-implementation",
+    "title": "REST API Implementation",
+    "description": "Implement a complete REST API with middleware, validation, and error handling.",
+    "category": "coding",
+    "tags": [
+      "rest-api",
+      "backend",
+      "implementation"
+    ],
+    "prompt": "You are a backend developer. Implement a complete REST API for [RESOURCE_NAME] in [FRAMEWORK, e.g., Express/FastAPI/Spring Boot/Gin].\n\n**Resource Fields**: [LIST_FIELDS_WITH_TYPES]\n**Business Rules**: [LIST_VALIDATION_RULES]\n**Authentication**: [AUTH_METHOD]\n**Database**: [DATABASE_AND_ORM]\n\nImplement the following:\n1. **Routes**: Full CRUD (GET list, GET by ID, POST, PUT/PATCH, DELETE) with proper HTTP methods and status codes.\n2. **Controller Layer**: Request parsing, response formatting, HTTP-specific logic only.\n3. **Service Layer**: Business logic, validation, orchestration between repositories.\n4. **Repository Layer**: Database queries with proper parameterization.\n5. **Middleware**: Authentication, request logging, CORS, rate limiting, request ID.\n6. **Validation**: Input validation with detailed error messages per field.\n7. **Pagination**: Cursor-based pagination with configurable page size.\n8. **Filtering & Sorting**: Query parameter-based filtering and multi-field sorting.\n9. **Tests**: Integration tests for each endpoint covering happy path and error cases.\n\nFollow the framework's conventions and best practices. Include proper project structure with separation of concerns.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "typescript-types-advanced",
+    "title": "Advanced TypeScript Types",
+    "description": "Design advanced TypeScript types with generics, utility types, and type guards.",
+    "category": "coding",
+    "tags": [
+      "typescript",
+      "types",
+      "generics"
+    ],
+    "prompt": "You are a TypeScript expert. Help me design type-safe TypeScript types for [DESCRIBE_DOMAIN/USE_CASE].\n\n**Current Code**:\n```typescript\n[PASTE_CODE_OR_DESCRIBE_DATA_STRUCTURES]\n```\n\n**Pain Points**: [e.g., too many 'any' types, runtime type errors, poor autocomplete]\n\nPlease provide:\n1. **Base Types**: Interfaces and type aliases for all domain entities with readonly where appropriate.\n2. **Generics**: Generic types for reusable patterns (API responses, paginated lists, form state).\n3. **Utility Types**: Custom utility types using Pick, Omit, Partial, Required, Record, and mapped types.\n4. **Discriminated Unions**: Tagged unions for state machines or variant types with exhaustive checking.\n5. **Type Guards**: User-defined type guard functions with proper type narrowing.\n6. **Template Literals**: Template literal types for string patterns (routes, event names).\n7. **Conditional Types**: Infer return types based on input types.\n8. **Branded Types**: Nominal typing for IDs, currencies, or other primitives that shouldn't mix.\n\nFor each type, include a usage example and explain why this approach is better than alternatives. Ensure zero use of 'any'.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "css-tailwind-component",
+    "title": "CSS/Tailwind Component Styling",
+    "description": "Create responsive, accessible UI component styles with CSS or Tailwind CSS.",
+    "category": "coding",
+    "tags": [
+      "css",
+      "tailwind",
+      "ui-design"
+    ],
+    "prompt": "You are a CSS/UI expert. Create the styling for a [COMPONENT_NAME] component.\n\n**Design Requirements**: [DESCRIBE_VISUAL_DESIGN]\n**Styling Approach**: [Tailwind CSS / CSS Modules / Vanilla CSS / SCSS]\n**Breakpoints**: Mobile (< 640px), Tablet (640-1024px), Desktop (> 1024px)\n**Theme**: [DESCRIBE_COLOR_SCHEME, TYPOGRAPHY]\n**States**: [e.g., default, hover, focus, active, disabled, loading, error]\n\nProvide:\n1. **Base Styles**: Core component layout using Flexbox or Grid with justification.\n2. **Responsive Design**: Mobile-first approach with styles for each breakpoint.\n3. **Interactive States**: Hover, focus-visible, active, and disabled styles with smooth transitions.\n4. **Dark Mode**: Dark mode variant using CSS custom properties or Tailwind dark: prefix.\n5. **Animations**: Subtle entrance/exit animations and micro-interactions.\n6. **Accessibility**: Focus indicators meeting WCAG contrast ratios, reduced-motion media query.\n7. **RTL Support**: Logical properties (margin-inline-start vs margin-left) for bidirectional text.\n8. **Component Variants**: Size variants (sm, md, lg) and style variants (primary, secondary, ghost).\n\nIf using Tailwind, extract repeated patterns into @apply classes. Include the HTML structure alongside the styles.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "git-workflow-strategy",
+    "title": "Git Workflow Strategy",
+    "description": "Design a Git branching strategy with PR templates, hooks, and release management.",
+    "category": "coding",
+    "tags": [
+      "git",
+      "workflow",
+      "version-control"
+    ],
+    "prompt": "You are a DevOps lead. Design a Git workflow strategy for a [TEAM_SIZE]-person team working on a [PROJECT_TYPE].\n\n**Current Issues**: [DESCRIBE_PAIN_POINTS, e.g., merge conflicts, unclear process, broken main branch]\n**Release Cadence**: [e.g., weekly, bi-weekly, continuous]\n**Environments**: [e.g., dev, staging, production]\n**CI/CD**: [CURRENT_CI_SYSTEM]\n\nProvide a complete Git strategy:\n1. **Branching Model**: Git Flow, GitHub Flow, or Trunk-Based — recommend one with justification.\n2. **Branch Naming**: Convention with prefixes (feature/, bugfix/, hotfix/, release/).\n3. **Commit Messages**: Conventional Commits format with scope, type, and breaking change notation.\n4. **PR Process**: Template with checklist, required reviewers, auto-assignment rules.\n5. **Code Review**: Guidelines for reviewers (response time SLA, approval requirements).\n6. **Merge Strategy**: Squash, rebase, or merge commit — when to use each.\n7. **Release Process**: Tagging, changelog generation, semantic versioning automation.\n8. **Git Hooks**: Pre-commit (lint, format), commit-msg (validate format), pre-push (tests).\n9. **Protection Rules**: Branch protection settings for main and release branches.\n\nInclude a .gitconfig snippet, PR template file, and pre-commit hook script.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "code-architecture-patterns",
+    "title": "Code Architecture Patterns",
+    "description": "Design clean code architecture with proper layering, patterns, and SOLID principles.",
+    "category": "coding",
+    "tags": [
+      "architecture",
+      "design-patterns",
+      "clean-code"
+    ],
+    "prompt": "You are a software architect. Design the code architecture for a [APPLICATION_TYPE] application in [LANGUAGE/FRAMEWORK].\n\n**Key Features**: [LIST_FEATURES]\n**Team Experience Level**: [JUNIOR / MIXED / SENIOR]\n**Expected Growth**: [HOW_THE_APP_WILL_EVOLVE]\n**Current Pain Points**: [DESCRIBE_ARCHITECTURAL_ISSUES]\n\nDesign an architecture covering:\n1. **Project Structure**: Directory layout with clear separation of concerns. Explain what goes where.\n2. **Layered Architecture**: Define layers (presentation, application, domain, infrastructure) with dependency rules.\n3. **Design Patterns**: Recommend specific patterns (Repository, Factory, Strategy, Observer) with use cases in this project.\n4. **Dependency Injection**: DI container setup and how to wire dependencies.\n5. **SOLID Principles**: Concrete examples of each principle applied to this project's domain.\n6. **Error Boundary**: Where errors are caught, transformed, and reported at each layer.\n7. **Configuration Management**: How to handle environment-specific config, feature flags, secrets.\n8. **Module Boundaries**: Define public APIs between modules, prevent circular dependencies.\n\nProvide a skeleton implementation showing the architecture in action with a single feature end-to-end (from HTTP request to database and back).",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "study-notes-generator",
+    "title": "Study Notes Generator",
+    "description": "Generate structured study notes from any topic or textbook chapter.",
+    "category": "education",
+    "tags": [
+      "notes",
+      "study",
+      "summarization"
+    ],
+    "prompt": "You are an expert academic tutor. Create comprehensive, well-structured study notes on the topic: [TOPIC]. The notes should be organized for a [GRADE_LEVEL] student studying [SUBJECT]. Include the following sections: 1) Key Concepts — list and briefly explain the 5-8 most important ideas. 2) Definitions — provide clear definitions for all essential terms. 3) Relationships — explain how the key concepts connect to each other. 4) Examples — give 2-3 concrete examples that illustrate the main ideas. 5) Common Misconceptions — identify 2-3 frequent misunderstandings students have. 6) Quick Review Questions — write 5 self-test questions with brief answers. Use bullet points, bold key terms, and keep language clear and accessible. Aim for thorough coverage while remaining concise.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "lesson-plan-builder",
+    "title": "Lesson Plan Builder",
+    "description": "Create a detailed lesson plan aligned with learning objectives and standards.",
+    "category": "education",
+    "tags": [
+      "teaching",
+      "lesson-plan",
+      "curriculum"
+    ],
+    "prompt": "You are an experienced curriculum designer. Create a detailed lesson plan for teaching [TOPIC] to [GRADE_LEVEL] students. Subject: [SUBJECT]. Duration: [DURATION]. The lesson plan must include: 1) Learning Objectives — 3-4 measurable outcomes using Bloom's taxonomy verbs. 2) Standards Alignment — reference relevant [STANDARDS_FRAMEWORK] standards. 3) Materials Needed — list all required resources. 4) Warm-Up Activity (5-10 min) — an engaging opener to activate prior knowledge. 5) Direct Instruction (15-20 min) — step-by-step teaching sequence with key talking points. 6) Guided Practice — a collaborative activity where students apply the concept with support. 7) Independent Practice — an individual task to assess understanding. 8) Closure — a reflection or exit ticket activity. 9) Differentiation — modifications for advanced learners and students needing additional support. 10) Assessment — formative and summative assessment strategies.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "quiz-generator",
+    "title": "Quiz Generator",
+    "description": "Automatically generate quizzes with multiple question types from any content.",
+    "category": "education",
+    "tags": [
+      "quiz",
+      "assessment",
+      "testing"
+    ],
+    "prompt": "You are an assessment design specialist. Generate a comprehensive quiz on [TOPIC] for [GRADE_LEVEL] students in [SUBJECT]. Difficulty level: [DIFFICULTY: easy/medium/hard]. Create exactly: 1) 5 Multiple Choice questions — each with 4 options (A-D), one correct answer, and a brief explanation of why the correct answer is right. 2) 5 True/False questions — with corrections for false statements. 3) 3 Short Answer questions — requiring 2-3 sentence responses. 4) 2 Essay/Open-Ended questions — requiring critical thinking and analysis. For each question, indicate the cognitive level (Remember, Understand, Apply, Analyze, Evaluate, Create). Provide a complete answer key at the end with point values totaling 100. Ensure questions progress from lower-order to higher-order thinking skills.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "essay-grading-assistant",
+    "title": "Essay Grading Assistant",
+    "description": "Grade and provide detailed feedback on student essays using a rubric.",
+    "category": "education",
+    "tags": [
+      "grading",
+      "feedback",
+      "writing"
+    ],
+    "prompt": "You are an experienced writing instructor. Evaluate the following student essay using a structured rubric. Essay topic: [ESSAY_TOPIC]. Grade level: [GRADE_LEVEL]. Essay text: [ESSAY_TEXT]. Grade the essay on these criteria (each scored 1-5): 1) Thesis & Argument — clarity of thesis statement and strength of central argument. 2) Evidence & Support — quality and relevance of supporting evidence. 3) Organization & Structure — logical flow, paragraph transitions, introduction and conclusion effectiveness. 4) Language & Style — vocabulary, sentence variety, tone appropriateness. 5) Grammar & Mechanics — spelling, punctuation, grammar accuracy. For each criterion, provide: the score, specific examples from the essay, and actionable suggestions for improvement. End with an overall score out of 25, a letter grade, a summary of strengths, and the top 3 priority areas for revision. Maintain an encouraging, constructive tone throughout.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "flashcard-creator",
+    "title": "Flashcard Creator",
+    "description": "Generate effective flashcards optimized for spaced repetition learning.",
+    "category": "education",
+    "tags": [
+      "flashcards",
+      "memorization",
+      "spaced-repetition"
+    ],
+    "prompt": "You are a learning science expert specializing in spaced repetition. Create a set of 20 high-quality flashcards for studying [TOPIC] in [SUBJECT] at the [GRADE_LEVEL] level. Follow these principles: 1) Each card should test ONE atomic concept — avoid combining multiple ideas. 2) Use the minimum information principle — keep questions and answers concise. 3) Include a mix of card types: definition cards, concept application cards, comparison cards, and example-based cards. 4) For each flashcard provide: Front (question/prompt), Back (answer), and a Mnemonic Hint (optional memory aid). 5) Order cards from foundational concepts to more advanced ideas. 6) Avoid yes/no questions — use 'what', 'how', 'why', 'explain' prompts instead. 7) Include 2-3 image description cards where a visual would aid memory (describe what the image should show). Format each card clearly as Card 1, Card 2, etc.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "concept-explainer",
+    "title": "Concept Explainer",
+    "description": "Explain complex concepts at any level using analogies and examples.",
+    "category": "education",
+    "tags": [
+      "explanation",
+      "learning",
+      "simplification"
+    ],
+    "prompt": "You are a master educator known for making complex ideas accessible. Explain the concept of [CONCEPT] from [SUBJECT] to someone at the [LEVEL: beginner/intermediate/advanced] level. Structure your explanation as follows: 1) One-Sentence Summary — capture the essence in plain language. 2) The Analogy — create a relatable real-world analogy that maps to the key aspects of the concept. 3) Step-by-Step Explanation — break the concept into 4-6 digestible steps, building from what the learner likely already knows. 4) Visual Description — describe a diagram or visual that would help illustrate the concept. 5) Concrete Example — walk through a specific, practical example showing the concept in action. 6) Common Pitfalls — list 2-3 things people often get wrong about this concept. 7) Connection Map — briefly explain how this concept relates to [RELATED_TOPIC_1] and [RELATED_TOPIC_2]. Keep language appropriate for the specified level. Avoid jargon unless you define it first.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "homework-helper",
+    "title": "Homework Helper",
+    "description": "Guide students through homework problems with step-by-step reasoning.",
+    "category": "education",
+    "tags": [
+      "homework",
+      "tutoring",
+      "problem-solving"
+    ],
+    "prompt": "You are a patient, Socratic tutor. Help a [GRADE_LEVEL] student work through this homework problem in [SUBJECT]: [PROBLEM]. Important: Do NOT simply give the answer. Instead: 1) Identify the Concept — explain which concept or skill this problem is testing. 2) Recall Prior Knowledge — ask the student what they already know that might help (then provide the key prerequisite knowledge). 3) Break It Down — decompose the problem into 3-5 smaller, manageable steps. 4) Guided Steps — for each step, provide a guiding question or hint that leads the student toward the solution, followed by the worked step. 5) Solution — present the complete solution clearly. 6) Verification — show how to check the answer is correct. 7) Practice Problem — provide one similar problem for additional practice (with answer hidden in a spoiler format). Use encouraging language and celebrate the learning process, not just the answer.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "research-paper-outline",
+    "title": "Research Paper Outline",
+    "description": "Generate a structured outline for an academic research paper.",
+    "category": "education",
+    "tags": [
+      "research",
+      "academic",
+      "outline"
+    ],
+    "prompt": "You are an academic research advisor. Create a detailed outline for a research paper on the topic: [RESEARCH_TOPIC]. Field of study: [FIELD]. Target length: [PAGE_COUNT] pages. Academic level: [LEVEL: undergraduate/graduate/doctoral]. The outline should include: I. Abstract — key points to cover in 150-250 words. II. Introduction — background context, problem statement, research gap, research question/hypothesis, and significance of the study. III. Literature Review — organize into 3-4 thematic subsections with suggested key sources and theoretical frameworks to reference. IV. Methodology — recommended research design, data collection methods, sample/participants, and analysis approach appropriate for [RESEARCH_METHOD: qualitative/quantitative/mixed]. V. Expected Results — what findings to anticipate and how to present them. VI. Discussion — interpretation framework, limitations to acknowledge, and implications. VII. Conclusion — summary structure and future research directions. For each section, provide 2-3 bullet points of specific content to include and estimated word count.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "thesis-statement-crafter",
+    "title": "Thesis Statement Crafter",
+    "description": "Craft strong, arguable thesis statements for academic essays and papers.",
+    "category": "education",
+    "tags": [
+      "thesis",
+      "writing",
+      "argumentation"
+    ],
+    "prompt": "You are an academic writing coach specializing in argumentation. Help craft a strong thesis statement for an essay on [TOPIC] in [SUBJECT]. Essay type: [TYPE: argumentative/analytical/expository/compare-contrast]. The student's initial idea or position is: [INITIAL_IDEA]. Generate the following: 1) Three Thesis Options — provide three distinct thesis statements, each taking a slightly different angle or argument. For each, label the approach (e.g., causal, evaluative, policy-based). 2) Strength Analysis — for each thesis, rate it on: specificity (1-5), arguability (1-5), and scope appropriateness (1-5). Explain each rating briefly. 3) Recommended Thesis — select the strongest option and explain why. 4) Supporting Points Preview — list 3 main supporting arguments that would develop from this thesis. 5) Counterargument — identify the strongest potential counterargument and suggest how to address it. 6) Revision Tips — provide 3 general principles for strengthening thesis statements that the student can apply in future writing.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "literature-review-helper",
+    "title": "Literature Review Helper",
+    "description": "Structure and draft a literature review section for academic papers.",
+    "category": "education",
+    "tags": [
+      "literature-review",
+      "research",
+      "academic-writing"
+    ],
+    "prompt": "You are a research methodology expert. Help structure a literature review on [RESEARCH_TOPIC] for a [LEVEL: undergraduate/graduate/doctoral] paper in [FIELD]. The student has identified these key themes or sources: [KEY_SOURCES_OR_THEMES]. Create: 1) Organizational Framework — recommend the best structure (chronological, thematic, methodological, or theoretical) and justify why. 2) Theme Identification — identify 4-5 major themes or debates in this research area, with a brief description of each. 3) Synthesis Matrix — create a table template with columns for Source, Key Findings, Methodology, Theoretical Framework, and Relevance to Research Question. 4) Gap Analysis — identify 2-3 gaps in the existing literature that the student's research could address. 5) Transition Sentences — provide template transition sentences for moving between themes. 6) Critical Analysis Prompts — list 5 questions the student should ask of each source to deepen their analysis. 7) Writing Template — provide a paragraph-level template showing how to synthesize multiple sources around a single theme rather than summarizing source by source.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "math-problem-solver",
+    "title": "Math Problem Solver",
+    "description": "Solve math problems with detailed step-by-step explanations and visual reasoning.",
+    "category": "education",
+    "tags": [
+      "math",
+      "problem-solving",
+      "step-by-step"
+    ],
+    "prompt": "You are a patient mathematics tutor. Solve the following math problem with a detailed, step-by-step explanation. Problem: [MATH_PROBLEM]. Student level: [LEVEL: elementary/middle-school/high-school/college]. Math area: [AREA: algebra/geometry/calculus/statistics/other]. For your solution: 1) Problem Analysis — restate the problem in your own words and identify what is being asked. 2) Strategy Selection — explain which mathematical approach or formula you will use and why. 3) Step-by-Step Solution — show every step clearly, explaining the reasoning behind each operation. Never skip steps. 4) Visual Aid — describe a diagram, graph, or number line that would help illustrate the solution. 5) Answer — clearly state the final answer with appropriate units. 6) Verification — demonstrate how to check the answer by substitution or alternative method. 7) Key Takeaway — state the general principle or rule this problem demonstrates. 8) Similar Practice Problem — provide one related problem of equal difficulty with the answer.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "science-experiment-designer",
+    "title": "Science Experiment Designer",
+    "description": "Design safe, educational science experiments with clear procedures and analysis.",
+    "category": "education",
+    "tags": [
+      "science",
+      "experiment",
+      "lab"
+    ],
+    "prompt": "You are a science education specialist. Design a hands-on experiment for [GRADE_LEVEL] students to explore the concept of [SCIENCE_CONCEPT] in [BRANCH: biology/chemistry/physics/earth-science]. Setting: [SETTING: classroom/home/lab]. Include: 1) Experiment Title — a catchy, descriptive name. 2) Learning Objective — what students will understand after completing the experiment. 3) Hypothesis Template — a fill-in-the-blank hypothesis for students: 'If [variable], then [prediction], because [reasoning].' 4) Materials List — use commonly available materials; flag any items requiring adult supervision with ⚠️. 5) Safety Precautions — list all relevant safety measures. 6) Procedure — numbered steps written clearly enough for students to follow independently. 7) Data Collection — provide a table template for recording observations and measurements. 8) Analysis Questions — 4-5 questions guiding students to interpret their results. 9) Extension — suggest a follow-up experiment that builds on the findings. 10) Real-World Connection — explain where this science concept appears in everyday life.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "language-learning-coach",
+    "title": "Language Learning Coach",
+    "description": "Create personalized language learning exercises and conversation practice.",
+    "category": "education",
+    "tags": [
+      "language",
+      "learning",
+      "practice"
+    ],
+    "prompt": "You are a multilingual language coach. Create a focused learning session for a [PROFICIENCY: A1/A2/B1/B2/C1/C2] level student learning [TARGET_LANGUAGE]. Native language: [NATIVE_LANGUAGE]. Today's topic: [TOPIC_OR_THEME]. Generate: 1) Vocabulary Set — 10 essential words/phrases related to the topic with pronunciation guide, translation, and an example sentence each. 2) Grammar Focus — explain one grammar point relevant to this topic, with 3 clear examples and a comparison to the native language structure. 3) Dialogue — write a realistic 8-10 line conversation using the new vocabulary and grammar, with translation provided line by line. 4) Listening Comprehension — describe a short audio scenario and write 3 comprehension questions. 5) Speaking Exercise — provide 3 prompts for oral practice with model responses. 6) Writing Task — assign a short writing exercise (50-100 words) with evaluation criteria. 7) Cultural Note — share one cultural insight related to the topic that affects language use. 8) Common Mistakes — list 3 errors speakers of [NATIVE_LANGUAGE] typically make with this material.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "exam-prep-strategist",
+    "title": "Exam Prep Strategist",
+    "description": "Create a comprehensive exam preparation plan with practice questions and strategies.",
+    "category": "education",
+    "tags": [
+      "exam",
+      "preparation",
+      "study-plan"
+    ],
+    "prompt": "You are an academic performance coach. Create a comprehensive exam preparation plan for a [GRADE_LEVEL] student preparing for a [EXAM_TYPE] exam in [SUBJECT]. Exam date: [DATE]. Topics covered: [TOPIC_LIST]. Generate: 1) Study Schedule — a day-by-day plan from now until the exam, allocating time to each topic based on difficulty and weight. 2) Topic Priority Matrix — rank topics by importance (exam weight) and difficulty, recommending time allocation for each. 3) Key Concepts Summary — a one-page cheat sheet of the most critical formulas, definitions, and concepts. 4) Practice Questions — 10 exam-style questions spanning all major topics, with detailed answer explanations. 5) Exam Strategy — time management tips specific to this exam format, including how to allocate minutes per section. 6) Stress Management — 3 evidence-based techniques for managing test anxiety. 7) Last-Day Review — a focused 2-hour review plan for the day before the exam. 8) Post-Exam Reflection — a template for analyzing performance after the exam.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "course-syllabus-designer",
+    "title": "Course Syllabus Designer",
+    "description": "Design a complete course syllabus with weekly topics, assessments, and policies.",
+    "category": "education",
+    "tags": [
+      "syllabus",
+      "course-design",
+      "curriculum"
+    ],
+    "prompt": "You are a curriculum development expert. Design a complete course syllabus for [COURSE_TITLE] at the [LEVEL: high-school/undergraduate/graduate] level. Duration: [DURATION: semester/quarter/workshop]. Include: 1) Course Description — a compelling 3-4 sentence overview. 2) Learning Outcomes — 5-6 measurable course-level outcomes. 3) Required Materials — textbooks, software, or resources needed. 4) Weekly Schedule — a week-by-week breakdown with topics, readings, and activities for each session. 5) Assessment Structure — breakdown of grade components (e.g., participation 10%, midterm 25%, final project 30%, assignments 35%) with descriptions of each. 6) Assignment Descriptions — brief description of each major assignment with due dates and learning outcomes addressed. 7) Course Policies — attendance, late work, academic integrity, and accommodation statements. 8) Office Hours & Communication — recommended structure for student support. Ensure the syllabus follows backward design principles, aligning assessments with learning outcomes.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "student-feedback-writer",
+    "title": "Student Feedback Writer",
+    "description": "Generate constructive, personalized feedback for student work and performance.",
+    "category": "education",
+    "tags": [
+      "feedback",
+      "assessment",
+      "student-development"
+    ],
+    "prompt": "You are an educational assessment specialist skilled in growth-oriented feedback. Write detailed, constructive feedback for a [GRADE_LEVEL] student on their [ASSIGNMENT_TYPE] in [SUBJECT]. Student's work summary or key observations: [WORK_DESCRIPTION]. Current performance level: [LEVEL: below-expectations/meeting-expectations/exceeding-expectations]. Generate feedback that includes: 1) Positive Opening — identify 2-3 specific strengths demonstrated in the work, citing concrete examples. 2) Growth Areas — describe 2-3 areas for improvement using 'next step' language rather than deficit language. For each area, provide a specific, actionable suggestion. 3) Skill-Specific Comments — address [SKILL_1] and [SKILL_2] with targeted observations. 4) Goal Setting — suggest one short-term goal (next assignment) and one long-term goal (end of term). 5) Encouragement — close with a genuine, specific statement of encouragement tied to observed effort or growth. Tone: warm, professional, and motivating. Avoid generic praise. Every comment should reference something specific from the student's work.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "presentation-slides-outline",
+    "title": "Presentation Slides Outline",
+    "description": "Create a structured outline for educational or academic presentation slides.",
+    "category": "education",
+    "tags": [
+      "presentation",
+      "slides",
+      "public-speaking"
+    ],
+    "prompt": "You are a presentation design consultant for educators. Create a detailed slide-by-slide outline for a presentation on [TOPIC] in [SUBJECT]. Audience: [AUDIENCE]. Duration: [DURATION] minutes. Number of slides: [SLIDE_COUNT]. For each slide, provide: 1) Slide Title — clear and engaging. 2) Key Points — 3-4 bullet points of content (not full sentences; concise phrases). 3) Speaker Notes — 2-3 sentences of what the presenter should say. 4) Visual Suggestion — describe an image, chart, diagram, or graphic that would enhance the slide. Structure the presentation as: Opening (hook + agenda), Core Content (organized into 3-4 logical sections), and Closing (summary + call to action or discussion questions). Also include: a) Design Tips — 3 recommendations for visual consistency and readability. b) Engagement Moments — mark 2-3 slides where the presenter should pause for audience interaction (questions, polls, activities). c) Transition Phrases — suggest smooth transitions between major sections.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "academic-writing-coach",
+    "title": "Academic Writing Coach",
+    "description": "Improve academic writing with style, structure, and clarity suggestions.",
+    "category": "education",
+    "tags": [
+      "academic-writing",
+      "editing",
+      "style"
+    ],
+    "prompt": "You are an academic writing coach with expertise in scholarly communication. Review and improve the following academic text. Field: [FIELD]. Document type: [TYPE: essay/research-paper/thesis/dissertation/journal-article]. Text to review: [TEXT]. Provide: 1) Overall Assessment — a brief evaluation of the writing's current strengths and weaknesses. 2) Structure & Organization — evaluate paragraph structure, logical flow, and transitions. Suggest specific reorganization if needed. 3) Argument & Evidence — assess whether claims are well-supported and logically connected. Identify any gaps in reasoning. 4) Academic Tone — flag any instances of informal language, first-person overuse, or hedging that weakens arguments. Suggest alternatives. 5) Clarity & Conciseness — identify wordy passages, passive voice overuse, or unclear sentences. Provide revised versions. 6) Vocabulary Enhancement — suggest 5 discipline-specific terms that could replace general language. 7) Revised Version — rewrite the most problematic paragraph to demonstrate improvements. 8) Checklist — provide a 10-point self-editing checklist the student can use for future writing.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "citation-helper",
+    "title": "Citation Helper",
+    "description": "Generate and format citations in any academic style from source information.",
+    "category": "education",
+    "tags": [
+      "citation",
+      "references",
+      "formatting"
+    ],
+    "prompt": "You are a reference librarian and citation expert. Help format citations for academic work. Citation style: [STYLE: APA-7th/MLA-9th/Chicago/Harvard/IEEE/Vancouver]. Task: [TASK: format-citation/create-bibliography/check-citation/convert-style]. Source information: [SOURCE_DETAILS]. For each source, provide: 1) In-Text Citation — the correct parenthetical or narrative citation format with examples of both. 2) Reference List Entry — the complete, properly formatted reference entry. 3) Formatting Notes — highlight any special rules that apply to this source type (e.g., DOI formatting, multiple authors, online sources). If multiple sources are provided, also: 4) Alphabetized Reference List — compile all entries in correct order. 5) Common Errors — flag 3 frequent citation mistakes for this style and how to avoid them. 6) Style Quick Reference — provide a mini-guide for the 5 most common source types in [STYLE] format (book, journal article, website, book chapter, report). Ensure all citations follow the latest edition of the specified style guide.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "learning-roadmap-creator",
+    "title": "Learning Roadmap Creator",
+    "description": "Design a personalized learning roadmap with milestones and resources for any skill.",
+    "category": "education",
+    "tags": [
+      "roadmap",
+      "self-learning",
+      "skill-development"
+    ],
+    "prompt": "You are a learning design strategist. Create a personalized learning roadmap for mastering [SKILL_OR_SUBJECT]. Current level: [CURRENT_LEVEL: complete-beginner/some-basics/intermediate/advanced]. Goal: [LEARNING_GOAL]. Available time: [HOURS_PER_WEEK] hours per week. Timeline: [TIMELINE]. Generate: 1) Roadmap Overview — a visual-friendly phase breakdown (Foundation → Core Skills → Advanced → Mastery) with estimated duration for each phase. 2) Phase Details — for each phase, list: specific topics to cover, recommended resources (free and paid), hands-on projects or exercises, and a milestone assessment to confirm readiness for the next phase. 3) Weekly Study Plan Template — a sample week showing how to distribute [HOURS_PER_WEEK] hours across theory, practice, and review. 4) Resource Library — curate 10-15 top resources (books, courses, websites, tools) rated by quality and difficulty. 5) Progress Checkpoints — define 5 measurable checkpoints with specific skills to demonstrate at each. 6) Accountability System — suggest methods for tracking progress and staying motivated. 7) Community — recommend forums, groups, or communities for peer learning.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "short-story-writer",
+    "title": "Short Story Writer",
+    "description": "Generate compelling short stories with rich characters and engaging plots.",
+    "category": "creative",
+    "tags": [
+      "fiction",
+      "short-story",
+      "narrative"
+    ],
+    "prompt": "You are an award-winning short story author. Write a short story based on the following parameters. Genre: [GENRE]. Theme: [THEME]. Setting: [SETTING]. Main character: [CHARACTER_DESCRIPTION]. Conflict: [CONFLICT]. Tone: [TONE: dark/lighthearted/suspenseful/melancholic/humorous]. Target length: [WORD_COUNT] words. Follow these craft principles: 1) Open with a hook — the first paragraph must create immediate intrigue or tension. 2) Show, don't tell — use sensory details, actions, and dialogue to reveal character and emotion. 3) Maintain a clear narrative arc: inciting incident, rising action, climax, and resolution. 4) Develop the protagonist through their choices under pressure. 5) Use dialogue that reveals character and advances the plot — each character should have a distinct voice. 6) End with resonance — the conclusion should feel both surprising and inevitable. 7) Weave the theme subtly throughout rather than stating it explicitly. Include a brief author's note at the end explaining your narrative choices.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "poetry-generator",
+    "title": "Poetry Generator",
+    "description": "Compose original poems in various forms and styles with vivid imagery.",
+    "category": "creative",
+    "tags": [
+      "poetry",
+      "verse",
+      "literary"
+    ],
+    "prompt": "You are a versatile poet with mastery of both traditional and contemporary forms. Write a poem based on these specifications. Topic/Emotion: [TOPIC]. Form: [FORM: free-verse/sonnet/haiku-sequence/villanelle/limerick/ode/ballad/spoken-word]. Tone: [TONE]. Imagery focus: [IMAGERY: visual/auditory/tactile/olfactory/gustatory]. Follow these poetic principles: 1) Lead with a striking image or line that establishes mood. 2) Use concrete, specific imagery rather than abstract statements — anchor emotions in physical details. 3) Employ at least 3 literary devices: metaphor, simile, alliteration, enjambment, assonance, personification, or synesthesia. 4) If using a formal structure, adhere to its rules (meter, rhyme scheme, line count) precisely. 5) Build toward an emotional or intellectual turn (volta) that shifts the poem's perspective. 6) Close with a line that echoes or recontextualizes the opening. After the poem, provide: a) A brief analysis of the literary devices used. b) An alternative final stanza offering a different emotional resolution.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "song-lyrics-composer",
+    "title": "Song Lyrics Composer",
+    "description": "Write original song lyrics with verses, chorus, and bridge structure.",
+    "category": "creative",
+    "tags": [
+      "songwriting",
+      "lyrics",
+      "music"
+    ],
+    "prompt": "You are a professional songwriter who has written hits across multiple genres. Write original song lyrics with the following parameters. Genre: [GENRE: pop/rock/country/hip-hop/R&B/folk/indie/electronic]. Theme: [THEME]. Mood: [MOOD]. Inspired by (artist style, optional): [ARTIST_STYLE]. Structure the song as: Verse 1 (set the scene, introduce the story), Pre-Chorus (build tension), Chorus (the emotional core — catchy, memorable, repeatable), Verse 2 (deepen the narrative, add new perspective), Pre-Chorus, Chorus, Bridge (shift in perspective, key change moment, emotional peak), Final Chorus (with slight variation for impact), Outro. Guidelines: 1) The chorus must be singable and memorable — use simple, powerful language with natural rhythm. 2) Verses should tell a story that progresses. 3) Use sensory details and specific images rather than clichés. 4) Maintain consistent syllable patterns within matching sections. 5) Include internal rhymes and near-rhymes, not just end rhymes. After the lyrics, suggest: tempo (BPM), key, and a brief description of the instrumental mood for each section.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "movie-script-scene",
+    "title": "Movie Script Scene Writer",
+    "description": "Write professionally formatted movie script scenes with dialogue and direction.",
+    "category": "creative",
+    "tags": [
+      "screenwriting",
+      "film",
+      "script"
+    ],
+    "prompt": "You are a professional screenwriter. Write a movie scene using proper screenplay format. Genre: [GENRE]. Setting: [SETTING]. Characters involved: [CHARACTERS]. Scene purpose: [PURPOSE: introduce-character/build-tension/reveal-information/climax/resolution]. Emotional arc of the scene: [ARC: from_emotion → to_emotion]. Use standard screenplay formatting: 1) SCENE HEADING (INT./EXT., location, time of day). 2) Action lines — present tense, visual, concise. Describe only what the camera can see and the microphone can hear. 3) CHARACTER NAME (centered, caps) before each dialogue block. 4) Dialogue — natural, subtext-rich; characters should rarely say exactly what they mean. 5) Parentheticals — use sparingly, only when the delivery contradicts the words. 6) Transitions — only when necessary. Craft the scene with: a rising tension curve, at least one moment of subtext where meaning lies beneath the words, a visual storytelling beat (something communicated without dialogue), and a scene-ending hook that propels the story forward. Target length: 2-3 pages (approximately [WORD_COUNT] words).",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "character-development-kit",
+    "title": "Character Development Kit",
+    "description": "Create deep, multi-dimensional characters with backstories and motivations.",
+    "category": "creative",
+    "tags": [
+      "character",
+      "fiction",
+      "development"
+    ],
+    "prompt": "You are a character design specialist for fiction writers. Create a fully developed character profile based on these seeds. Name (or generate one): [NAME]. Role in story: [ROLE: protagonist/antagonist/mentor/sidekick/love-interest]. Genre: [GENRE]. Setting/World: [SETTING]. Build the character across these dimensions: 1) Surface — age, appearance (3 distinctive physical traits), mannerisms, speech patterns, and first impression they give. 2) Psychology — core desire (what they want), core need (what they actually need), greatest fear, fatal flaw, and greatest strength. 3) Backstory — the defining event that shaped who they are, their relationship with family, and a secret they keep. 4) Voice — write 5 sample dialogue lines that capture their unique way of speaking. 5) Arc Potential — describe their starting state and where they could end up; what must they learn or overcome? 6) Relationships — define their dynamic with [OTHER_CHARACTER] using a one-sentence summary. 7) Contradiction — identify one compelling contradiction in their personality (e.g., brave but afraid of intimacy). 8) Symbolic Object — suggest an object that represents their inner journey.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "world-building-architect",
+    "title": "World Building Architect",
+    "description": "Design immersive fictional worlds with geography, culture, and history.",
+    "category": "creative",
+    "tags": [
+      "world-building",
+      "fantasy",
+      "setting"
+    ],
+    "prompt": "You are a world-building consultant for fantasy and sci-fi authors. Design a fictional world based on these parameters. Genre: [GENRE: fantasy/sci-fi/dystopian/steampunk/post-apocalyptic]. Core concept: [CORE_CONCEPT]. Inspiration: [REAL_WORLD_INSPIRATION]. Build the world across these layers: 1) Geography & Environment — describe the physical world: continents, climate zones, notable landmarks, and how geography shapes civilization. 2) Societies & Cultures — design 2-3 distinct cultures with their values, customs, social hierarchies, and conflicts with each other. 3) History — create a timeline of 5-7 pivotal events that shaped the current state of the world. 4) Magic/Technology System — define the rules, limitations, costs, and societal impact of the world's unique system. 5) Economy & Resources — what do people trade, fight over, and value? 6) Religion & Mythology — outline 1-2 belief systems with creation myths. 7) Current Tensions — describe 2-3 active conflicts or mysteries that could drive stories. 8) Sensory Details — provide a 'postcard' paragraph capturing what it feels, smells, sounds, and looks like to stand in this world's most iconic location.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "plot-twist-generator",
+    "title": "Plot Twist Generator",
+    "description": "Generate surprising yet logical plot twists that elevate your story.",
+    "category": "creative",
+    "tags": [
+      "plot",
+      "twist",
+      "storytelling"
+    ],
+    "prompt": "You are a master storyteller specializing in narrative surprises. Generate plot twists for the following story setup. Genre: [GENRE]. Current plot summary: [PLOT_SUMMARY]. Main characters: [CHARACTERS]. The story's current trajectory: [EXPECTED_ENDING]. Generate 5 distinct plot twists, each with: 1) The Twist — a clear, one-sentence description of the revelation or reversal. 2) Foreshadowing Seeds — 3 subtle clues that could be planted earlier in the story to make the twist feel earned rather than random. 3) Character Impact — how this twist changes the protagonist's journey and forces them to make a difficult choice. 4) Reader/Audience Reaction — the intended emotional response (shock, heartbreak, satisfaction, dread). 5) Aftermath — how the story world changes after this twist and what new conflicts emerge. Rank the twists by: a) Surprise factor (1-5), b) Logical consistency (1-5), c) Emotional impact (1-5). Ensure at least one twist subverts a genre convention, one involves a character betrayal or hidden identity, and one recontextualizes earlier events in a new light.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "dialogue-writing-coach",
+    "title": "Dialogue Writing Coach",
+    "description": "Write natural, character-driven dialogue with subtext and distinct voices.",
+    "category": "creative",
+    "tags": [
+      "dialogue",
+      "writing",
+      "characters"
+    ],
+    "prompt": "You are a dialogue specialist and script doctor. Write a dialogue scene between [NUMBER] characters based on these parameters. Characters: [CHARACTER_1_NAME] ([CHARACTER_1_TRAITS]) and [CHARACTER_2_NAME] ([CHARACTER_2_TRAITS]). Situation: [SITUATION]. Underlying tension: [SUBTEXT]. Genre: [GENRE]. The dialogue should demonstrate: 1) Distinct Voices — each character must sound different through word choice, sentence length, speech patterns, and verbal tics. 2) Subtext — the characters should be talking about one thing on the surface while the real conversation happens underneath. 3) Conflict Escalation — the tension should build naturally through the exchange. 4) Beats — include action beats between dialogue lines (physical actions, pauses, gestures) that reveal emotion. 5) Exposition Naturally — weave in any necessary backstory without characters telling each other things they already know. After the dialogue, provide: a) A subtext annotation for 3 key lines explaining what the character really means. b) 3 alternative versions of the most pivotal line showing how different word choices change the dynamic.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "humor-comedy-writer",
+    "title": "Humor & Comedy Writer",
+    "description": "Write comedy content using various humor techniques and comedic structures.",
+    "category": "creative",
+    "tags": [
+      "comedy",
+      "humor",
+      "funny"
+    ],
+    "prompt": "You are a comedy writer with experience in stand-up, sitcoms, and sketch comedy. Create comedic content based on these parameters. Format: [FORMAT: stand-up-bit/sketch/sitcom-scene/comedic-essay/roast/parody]. Topic: [TOPIC]. Comedy style: [STYLE: observational/absurdist/satirical/self-deprecating/dark/slapstick/dry-wit]. Target audience: [AUDIENCE]. Create the piece following these comedy principles: 1) Setup-Punchline Structure — establish expectations, then subvert them. Every joke should have a clear setup and payoff. 2) Rule of Three — use the pattern of two normal items followed by an unexpected third. 3) Callback — reference an earlier joke later in the piece for a bigger laugh. 4) Specificity — specific details are funnier than vague ones. Say 'a 2003 Honda Civic' not 'a car.' 5) Escalation — each joke or beat should be funnier than the last, building to the biggest laugh. 6) Timing — indicate pauses and beats where they enhance comedic timing. After the piece, provide: a) A breakdown of 3 jokes explaining the comedy technique used. b) 2 alternative punchlines for the strongest joke. c) A tag (follow-up joke) for the closing bit.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "horror-story-creator",
+    "title": "Horror Story Creator",
+    "description": "Craft atmospheric horror stories that build dread and deliver genuine scares.",
+    "category": "creative",
+    "tags": [
+      "horror",
+      "suspense",
+      "dark-fiction"
+    ],
+    "prompt": "You are a horror fiction specialist in the tradition of literary horror. Write a horror story or scene with these parameters. Subgenre: [SUBGENRE: psychological/cosmic/gothic/folk/body/supernatural/slasher]. Setting: [SETTING]. Fear type: [FEAR: isolation/the-unknown/loss-of-control/uncanny/existential/pursuit]. Protagonist: [CHARACTER]. Length: [WORD_COUNT] words. Craft the horror using these techniques: 1) Atmosphere First — establish normalcy, then introduce wrongness gradually. Use environmental details (sounds, smells, temperature, light) to build unease. 2) The Uncanny — make familiar things feel slightly off rather than relying on monsters. 3) Pacing — alternate between slow dread-building passages and sudden, sharp moments of terror. 4) Restraint — what you don't show is scarier than what you do. Let the reader's imagination fill gaps. 5) Sensory Immersion — ground the reader in the protagonist's physical experience of fear (racing heart, cold sweat, tunnel vision). 6) Escalating Stakes — each encounter with the threat should be worse than the last. 7) Ambiguity — leave at least one element unexplained. End with either a devastating revelation or a lingering sense of dread that follows the reader.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "blog-post-comprehensive",
+    "title": "Comprehensive Blog Post",
+    "description": "Generate a well-structured, SEO-friendly blog post on any topic.",
+    "category": "writing",
+    "tags": [
+      "blog",
+      "content",
+      "SEO"
+    ],
+    "prompt": "Write a comprehensive blog post about [TOPIC] targeting [AUDIENCE]. The post should be approximately [WORD_COUNT] words long. Structure it with an engaging introduction that hooks the reader, [NUMBER] main sections with descriptive H2 headings, and a compelling conclusion with a call to action. Include relevant statistics or data points where appropriate. The tone should be [TONE: professional/casual/conversational]. Naturally incorporate these keywords: [KEYWORDS]. End with a thought-provoking question to encourage comments. Format the post with proper markdown, bullet points for key takeaways, and short paragraphs for readability.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "persuasive-essay",
+    "title": "Persuasive Essay",
+    "description": "Craft a compelling persuasive essay with strong arguments and evidence.",
+    "category": "writing",
+    "tags": [
+      "essay",
+      "academic",
+      "persuasion"
+    ],
+    "prompt": "Write a persuasive essay arguing [POSITION] on the topic of [TOPIC]. Target audience: [AUDIENCE]. Begin with a powerful hook that establishes the urgency of the issue. Present your thesis clearly in the introduction. Develop [NUMBER] body paragraphs, each with a distinct supporting argument backed by evidence, examples, or logical reasoning. Address and refute at least one counterargument to strengthen your position. Use rhetorical devices such as ethos, pathos, and logos strategically. Maintain a [TONE] tone throughout. Conclude by reinforcing your thesis and issuing a clear call to action. The essay should be approximately [WORD_COUNT] words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "professional-email",
+    "title": "Professional Email",
+    "description": "Draft a polished professional email for any business context.",
+    "category": "writing",
+    "tags": [
+      "email",
+      "business",
+      "communication"
+    ],
+    "prompt": "Draft a professional email for the following context: [CONTEXT]. The email is from [SENDER_ROLE] to [RECIPIENT_ROLE] at [COMPANY/ORGANIZATION]. Purpose: [PURPOSE]. Key points to cover: [KEY_POINTS]. The tone should be [TONE: formal/friendly/urgent/diplomatic]. Include a clear and specific subject line that encourages opening. Structure the email with a brief greeting, concise body paragraphs (no more than 3), and a clear call to action or next steps. Keep the total length under 250 words. End with an appropriate sign-off matching the level of formality. If applicable, mention any deadlines or time-sensitive information prominently.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "newsletter-engaging",
+    "title": "Engaging Newsletter",
+    "description": "Create a captivating newsletter that drives reader engagement and clicks.",
+    "category": "writing",
+    "tags": [
+      "newsletter",
+      "email marketing",
+      "engagement"
+    ],
+    "prompt": "Create an engaging newsletter for [BRAND/COMPANY] targeting [AUDIENCE]. Theme for this edition: [THEME]. Include the following sections: 1) A compelling headline and preview text that maximizes open rates, 2) A personal greeting or editor's note (2-3 sentences), 3) Featured story or announcement about [MAIN_TOPIC], 4) [NUMBER] curated tips or insights related to [INDUSTRY], 5) A product spotlight or resource recommendation, 6) An interactive element (poll question, quiz, or reader challenge), 7) Upcoming events or dates to remember. Tone: [TONE]. Include clear CTAs for each section. Keep each section concise — scannable in under 10 seconds. Total newsletter should take approximately 3-4 minutes to read.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "social-media-caption",
+    "title": "Social Media Caption",
+    "description": "Write scroll-stopping social media captions for any platform.",
+    "category": "writing",
+    "tags": [
+      "social media",
+      "caption",
+      "engagement"
+    ],
+    "prompt": "Write [NUMBER] engaging social media captions for [PLATFORM: Instagram/Twitter/LinkedIn/Facebook/TikTok] about [TOPIC] for [BRAND/PERSON]. Target audience: [AUDIENCE]. Each caption should: open with a hook that stops the scroll (question, bold statement, or surprising fact), deliver value or evoke emotion in the body, include a clear call to action (comment, share, save, or click link), and end with [NUMBER] relevant hashtags. Tone: [TONE: witty/inspirational/educational/casual]. For Instagram, keep captions between 125-200 words. For Twitter/X, stay under 280 characters. For LinkedIn, aim for 150-300 words with line breaks for readability. Include emoji suggestions where appropriate.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "product-description-converting",
+    "title": "High-Converting Product Description",
+    "description": "Write product descriptions that highlight benefits and drive purchases.",
+    "category": "writing",
+    "tags": [
+      "product",
+      "ecommerce",
+      "copywriting"
+    ],
+    "prompt": "Write a high-converting product description for [PRODUCT_NAME], a [PRODUCT_TYPE] sold by [BRAND]. Target customer: [CUSTOMER_PERSONA]. Price point: [PRICE_RANGE]. Key features: [FEATURES]. Start with a benefit-driven headline that speaks to the customer's desire or pain point. Write an opening paragraph that paints a picture of life with this product. List [NUMBER] key features, each translated into a tangible benefit using the 'Feature → So What → Benefit' framework. Include sensory language and power words that trigger emotion. Address the top [NUMBER] objections or hesitations a buyer might have. Add social proof placeholders [TESTIMONIAL/RATING]. Close with urgency and a compelling CTA. Keep total length between 150-300 words.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "press-release-professional",
+    "title": "Professional Press Release",
+    "description": "Draft a newsworthy press release following AP style guidelines.",
+    "category": "writing",
+    "tags": [
+      "press release",
+      "PR",
+      "media"
+    ],
+    "prompt": "Write a professional press release for [COMPANY] announcing [NEWS/EVENT]. Location: [CITY, STATE]. Date: [DATE]. Follow standard AP style press release format: Start with a compelling headline (under 10 words) and a subheadline providing additional context. Open with a strong lead paragraph answering Who, What, When, Where, Why, and How. Include a quote from [SPOKESPERSON_NAME], [TITLE] at [COMPANY], that adds a human element and forward-looking perspective. Provide supporting details, background context, and relevant data in the body paragraphs. Include a second quote from [PARTNER/CUSTOMER] if applicable. Add a boilerplate 'About [COMPANY]' section at the end. Include media contact information placeholder. Keep the total release between 400-500 words. Tone: authoritative yet accessible.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "speech-keynote",
+    "title": "Keynote Speech",
+    "description": "Write an impactful keynote speech that inspires and moves the audience.",
+    "category": "writing",
+    "tags": [
+      "speech",
+      "public speaking",
+      "keynote"
+    ],
+    "prompt": "Write a keynote speech for [SPEAKER_NAME], [SPEAKER_TITLE], to be delivered at [EVENT_NAME] for an audience of [AUDIENCE_DESCRIPTION]. Topic: [TOPIC]. Duration: approximately [MINUTES] minutes. Structure the speech with: 1) A powerful opening — use a story, startling statistic, or provocative question to grab attention in the first 30 seconds, 2) Establish credibility and connection with the audience, 3) Present [NUMBER] main ideas or arguments, each supported by stories, data, or examples, 4) Include at least one personal anecdote that makes the message relatable, 5) Build to an emotional climax or 'aha moment', 6) Close with a memorable call to action and a callback to the opening. Include stage direction notes [PAUSE], [EMPHASIZE], [AUDIENCE INTERACTION] where appropriate. Tone: [TONE: inspirational/thought-provoking/motivational].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "book-outline-detailed",
+    "title": "Book Outline Generator",
+    "description": "Create a detailed book outline with chapters, sections, and key points.",
+    "category": "writing",
+    "tags": [
+      "book",
+      "outline",
+      "planning"
+    ],
+    "prompt": "Create a detailed book outline for a [GENRE: non-fiction/fiction/self-help/business] book titled '[WORKING_TITLE]' by [AUTHOR_NAME]. Target reader: [TARGET_READER]. Core premise or thesis: [PREMISE]. The book should have [NUMBER] chapters. For each chapter, provide: 1) A compelling chapter title, 2) A 2-3 sentence summary of what the chapter covers, 3) 3-5 key points or scenes to be developed, 4) One story, case study, or example to include, 5) The key takeaway or transformation for the reader. Also include: a suggested book subtitle, a 100-word back cover blurb, the narrative arc or progression logic connecting chapters, and a note on the ideal word count per chapter. Ensure the outline builds momentum and each chapter naturally leads to the next.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "creative-short-story",
+    "title": "Creative Short Story",
+    "description": "Generate an original short story with vivid characters and compelling plot.",
+    "category": "writing",
+    "tags": [
+      "creative writing",
+      "fiction",
+      "storytelling"
+    ],
+    "prompt": "Write an original short story in the [GENRE: literary fiction/sci-fi/mystery/romance/horror/fantasy] genre. Setting: [SETTING]. Time period: [TIME_PERIOD]. Main character: [CHARACTER_DESCRIPTION] who wants [DESIRE] but faces [OBSTACLE]. Theme to explore: [THEME]. The story should be approximately [WORD_COUNT] words. Include: a hook that draws the reader in within the first paragraph, vivid sensory details that bring the setting to life, natural dialogue that reveals character, rising tension building to a climax, and a resolution that is [ENDING_TYPE: surprising/bittersweet/hopeful/ambiguous]. Write in [POV: first person/third person limited/omniscient] point of view with a [TONE] tone. Show, don't tell — use action and detail rather than exposition to convey emotion.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "sales-copywriting",
+    "title": "Sales Copywriting",
+    "description": "Write persuasive sales copy that converts readers into buyers.",
+    "category": "writing",
+    "tags": [
+      "copywriting",
+      "sales",
+      "conversion"
+    ],
+    "prompt": "Write persuasive sales copy for [PRODUCT/SERVICE] offered by [BRAND]. Target customer: [CUSTOMER_PERSONA] who struggles with [PAIN_POINT]. Use the PAS (Problem-Agitate-Solution) framework. Start by clearly identifying the problem your audience faces. Agitate by describing the consequences of inaction — make the pain vivid and relatable. Present [PRODUCT/SERVICE] as the solution with [NUMBER] key benefits. Include power words that trigger urgency and desire. Add [NUMBER] bullet points highlighting specific outcomes or results customers can expect. Incorporate social proof: '[TESTIMONIAL_PLACEHOLDER]'. Address the top objection: [OBJECTION]. Create a risk-reversal statement (guarantee). End with a strong, time-sensitive CTA. Tone: [TONE: confident/empathetic/bold]. Length: 300-500 words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "technical-documentation",
+    "title": "Technical Documentation",
+    "description": "Create clear, structured technical documentation for any product or API.",
+    "category": "writing",
+    "tags": [
+      "technical writing",
+      "documentation",
+      "developer"
+    ],
+    "prompt": "Write technical documentation for [PRODUCT/FEATURE/API]. Audience: [AUDIENCE: developers/end-users/system administrators] with [SKILL_LEVEL: beginner/intermediate/advanced] experience. Include the following sections: 1) Overview — what it does and why it matters (2-3 sentences), 2) Prerequisites — what the user needs before starting, 3) Quick Start — minimal steps to get up and running, 4) Detailed Configuration — all available options with descriptions and defaults, 5) Usage Examples — [NUMBER] practical code examples or step-by-step workflows, 6) Troubleshooting — [NUMBER] common issues and their solutions, 7) FAQ — [NUMBER] frequently asked questions. Use consistent formatting with code blocks, tables for parameters, and callout boxes for warnings or tips. Write in present tense, active voice, second person ('you'). Keep sentences under 25 words where possible.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "resume-cv-professional",
+    "title": "Professional Resume/CV",
+    "description": "Craft a tailored, ATS-friendly resume that highlights achievements.",
+    "category": "writing",
+    "tags": [
+      "resume",
+      "career",
+      "job search"
+    ],
+    "prompt": "Write a professional resume for [NAME], applying for the role of [JOB_TITLE] at [COMPANY]. Years of experience: [YEARS]. Industry: [INDUSTRY]. Current role: [CURRENT_ROLE] at [CURRENT_COMPANY]. Key skills: [SKILLS]. Education: [EDUCATION]. Structure the resume with: 1) A powerful professional summary (3-4 lines) tailored to the target role, highlighting unique value proposition, 2) Core competencies section with [NUMBER] relevant keywords for ATS optimization, 3) Professional experience — for each role, write [NUMBER] bullet points using the CAR format (Challenge-Action-Result) with quantified achievements (percentages, dollar amounts, metrics), 4) Education and certifications, 5) Optional: notable projects or publications. Prioritize relevance to [JOB_TITLE]. Use strong action verbs. Avoid personal pronouns. Keep to [NUMBER] page(s).",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "cover-letter-tailored",
+    "title": "Tailored Cover Letter",
+    "description": "Write a compelling cover letter customized to a specific job posting.",
+    "category": "writing",
+    "tags": [
+      "cover letter",
+      "job application",
+      "career"
+    ],
+    "prompt": "Write a tailored cover letter for [NAME] applying to [JOB_TITLE] at [COMPANY]. Key qualifications: [QUALIFICATIONS]. Relevant experience: [EXPERIENCE_HIGHLIGHTS]. The job posting emphasizes: [JOB_REQUIREMENTS]. Structure: Opening paragraph — grab attention with a specific connection to the company (recent news, mission, product) and state the role you're applying for. Second paragraph — highlight your most relevant achievement with measurable results that directly maps to their top requirement. Third paragraph — demonstrate cultural fit by connecting your values to [COMPANY]'s mission: [COMPANY_MISSION]. Closing — express enthusiasm, restate your value, and include a confident CTA for next steps. Tone: [TONE: confident/enthusiastic/professional]. Keep under 350 words. Avoid generic phrases like 'I am writing to apply for...'",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "linkedin-post-thought-leadership",
+    "title": "LinkedIn Thought Leadership Post",
+    "description": "Create engaging LinkedIn posts that build authority and drive engagement.",
+    "category": "writing",
+    "tags": [
+      "LinkedIn",
+      "thought leadership",
+      "personal brand"
+    ],
+    "prompt": "Write a LinkedIn post for [NAME], a [TITLE] in the [INDUSTRY] industry, about [TOPIC]. Post type: [TYPE: story/opinion/lesson learned/industry insight/career advice]. Start with a bold first line that stops the scroll — use a contrarian take, surprising number, or provocative question. Break the post into short paragraphs (1-2 sentences each) with line breaks for mobile readability. Include a personal story or specific example that illustrates your point. Share [NUMBER] actionable takeaways the reader can implement immediately. End with a question that invites comments and discussion. Tone: [TONE: authentic/bold/reflective/inspiring]. Length: 150-250 words. Do NOT use hashtags in the body — add 3-5 relevant hashtags at the very end. Avoid corporate jargon. Write like you're talking to a smart colleague over coffee.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "youtube-script-engaging",
+    "title": "YouTube Video Script",
+    "description": "Write a structured YouTube script that retains viewers and drives engagement.",
+    "category": "writing",
+    "tags": [
+      "YouTube",
+      "video",
+      "script"
+    ],
+    "prompt": "Write a YouTube video script for a [VIDEO_LENGTH]-minute video about [TOPIC] for the channel [CHANNEL_NAME]. Target audience: [AUDIENCE]. Video style: [STYLE: educational/entertainment/tutorial/vlog/review]. Structure: 1) HOOK (first 15 seconds) — open with a compelling question, shocking fact, or bold promise that prevents clicking away, 2) INTRO (30 seconds) — briefly introduce the topic and what viewers will learn/gain, include a subscribe CTA, 3) MAIN CONTENT — break into [NUMBER] clear sections with transitions, include B-roll suggestions in [brackets], 4) ENGAGEMENT BOOST — at the midpoint, add an interactive element (poll, question, challenge), 5) CLIMAX — deliver the most valuable insight or payoff, 6) OUTRO — summarize key points, strong CTA (like, subscribe, comment), and tease next video. Include on-screen text suggestions and thumbnail title ideas. Tone: [TONE].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "podcast-script-episode",
+    "title": "Podcast Episode Script",
+    "description": "Create a structured podcast episode script with talking points and transitions.",
+    "category": "writing",
+    "tags": [
+      "podcast",
+      "audio",
+      "script"
+    ],
+    "prompt": "Write a podcast episode script for '[PODCAST_NAME]' — Episode: '[EPISODE_TITLE]'. Host: [HOST_NAME]. Guest (if applicable): [GUEST_NAME], [GUEST_TITLE]. Episode length: [DURATION] minutes. Topic: [TOPIC]. Format: [FORMAT: solo/interview/co-hosted/storytelling]. Include: 1) Cold open teaser (30 seconds) — a compelling soundbite or question from later in the episode, 2) Intro with music cue and episode overview, 3) [NUMBER] main segments with talking points, transition phrases, and suggested follow-up questions for interviews, 4) Mid-roll ad break placement with natural transition, 5) Listener Q&A or interactive segment, 6) Key takeaways summary, 7) Outro with CTA (review, subscribe, visit website). Add [MUSIC CUE] and [SFX] notes. Include time stamps for each segment. Tone: [TONE: conversational/educational/entertaining]. Write in natural spoken language, not written prose.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "ad-copy-multi-platform",
+    "title": "Multi-Platform Ad Copy",
+    "description": "Generate ad copy variations optimized for different advertising platforms.",
+    "category": "writing",
+    "tags": [
+      "advertising",
+      "ad copy",
+      "paid media"
+    ],
+    "prompt": "Write ad copy for [PRODUCT/SERVICE] by [BRAND] across multiple platforms. Target audience: [AUDIENCE]. Key benefit: [MAIN_BENEFIT]. Offer: [OFFER/PROMOTION]. Generate variations for: 1) Google Search Ads — 3 headlines (30 chars each), 2 descriptions (90 chars each), 2) Facebook/Instagram Ads — primary text (125 words), headline (5-7 words), description (1 sentence), CTA button suggestion, 3) LinkedIn Ads — intro text (150 words), headline, CTA for B2B angle, 4) YouTube Pre-roll — 15-second script with hook in first 5 seconds. For each platform, follow its best practices and character limits. Use the AIDA framework (Attention-Interest-Desire-Action). Include emotional triggers relevant to [AUDIENCE]. A/B test suggestion: provide 2 headline variations per platform with different angles (benefit-led vs. curiosity-led). Tone: [TONE].",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "tagline-slogan-generator",
+    "title": "Tagline & Slogan Generator",
+    "description": "Create memorable taglines and slogans that capture brand essence.",
+    "category": "writing",
+    "tags": [
+      "tagline",
+      "branding",
+      "slogan"
+    ],
+    "prompt": "Generate [NUMBER] tagline and slogan options for [BRAND/PRODUCT]. Industry: [INDUSTRY]. Brand personality: [PERSONALITY: bold/playful/sophisticated/trustworthy/innovative]. Target audience: [AUDIENCE]. Key brand values: [VALUES]. Unique selling proposition: [USP]. Competitor taglines to differentiate from: [COMPETITOR_TAGLINES]. For each tagline: 1) The tagline itself (3-8 words maximum), 2) The technique used (rhyme, alliteration, metaphor, wordplay, contrast, imperative), 3) One sentence explaining why it works. Organize the options into categories: a) Benefit-focused (what the customer gains), b) Emotion-focused (how it makes them feel), c) Identity-focused (who they become), d) Action-focused (what to do). Ensure all taglines are original, easy to remember, and sound natural when spoken aloud. Flag the top 3 recommendations with reasoning.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "brand-storytelling-narrative",
+    "title": "Brand Storytelling Narrative",
+    "description": "Craft a compelling brand origin story that builds emotional connection.",
+    "category": "writing",
+    "tags": [
+      "storytelling",
+      "brand",
+      "narrative"
+    ],
+    "prompt": "Write a compelling brand story for [BRAND/COMPANY]. Founder(s): [FOUNDER_NAMES]. Founded: [YEAR]. Industry: [INDUSTRY]. The story should follow the classic narrative arc: 1) The Origin — what problem or frustration inspired the founding? What was the 'aha moment'? 2) The Struggle — what obstacles, failures, or doubts did the founders face? Make this real and vulnerable, 3) The Breakthrough — what turning point changed everything? 4) The Mission — what drives the company today beyond profit? 5) The Vision — where is the brand heading and why should the audience care? Weave in the brand values: [VALUES]. Target audience for this story: [AUDIENCE]. The narrative should make readers feel [DESIRED_EMOTION: inspired/connected/trusting/excited]. Use vivid, specific details rather than generic statements. Length: [WORD_COUNT] words. This story will be used on: [PLACEMENT: website about page/investor deck/social media/press kit].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "email-cold-outreach",
+    "title": "Cold Outreach Email",
+    "description": "Write a cold email that gets opened, read, and replied to.",
+    "category": "writing",
+    "tags": [
+      "email",
+      "outreach",
+      "sales"
+    ],
+    "prompt": "Write a cold outreach email from [SENDER_NAME], [SENDER_TITLE] at [COMPANY], to [RECIPIENT_ROLE] at [TARGET_COMPANY]. Goal: [GOAL: book a meeting/start a conversation/introduce a product]. Research hook: [SPECIFIC_DETAIL about the recipient or their company]. Structure: 1) Subject line — personalized, under 7 words, curiosity-driven (provide 3 options), 2) Opening line — reference something specific about them (NOT 'I hope this finds you well'), 3) Value proposition — one sentence connecting their likely pain point [PAIN_POINT] to your solution, 4) Proof — one brief credibility marker (client result, metric, or name-drop), 5) CTA — one low-friction ask (specific day/time suggestion or simple yes/no question). Total length: under 120 words. Tone: [TONE: casual-professional/direct/consultative]. Write as a peer, not a salesperson. No attachments mentioned. P.S. line optional for a second hook.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "whitepaper-outline",
+    "title": "Whitepaper Outline & Draft",
+    "description": "Create an authoritative whitepaper that establishes thought leadership.",
+    "category": "writing",
+    "tags": [
+      "whitepaper",
+      "B2B",
+      "thought leadership"
+    ],
+    "prompt": "Write a whitepaper for [COMPANY] on the topic of [TOPIC]. Target reader: [AUDIENCE: C-suite/technical decision-makers/industry professionals]. Industry: [INDUSTRY]. Purpose: [PURPOSE: educate/persuade/generate leads]. Structure: 1) Title page with a compelling title and subtitle, 2) Executive Summary (200 words) — key findings and why they matter, 3) Introduction — define the problem or industry challenge with current data, 4) [NUMBER] main sections exploring different facets of the topic, each with data, analysis, and expert insights, 5) Case study or real-world example demonstrating the concepts, 6) Recommendations or framework for action, 7) Conclusion with forward-looking perspective, 8) References/sources placeholder. Include pull quotes, data visualization suggestions, and callout boxes for key statistics. Tone: authoritative, data-driven, objective. Length: approximately [WORD_COUNT] words.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "social-media-thread",
+    "title": "Twitter/X Thread",
+    "description": "Write a viral-worthy Twitter/X thread that educates and engages.",
+    "category": "writing",
+    "tags": [
+      "Twitter",
+      "thread",
+      "social media"
+    ],
+    "prompt": "Write a Twitter/X thread of [NUMBER] tweets about [TOPIC]. Author persona: [NAME], a [TITLE] in [INDUSTRY]. Thread type: [TYPE: how-to/lessons learned/myth-busting/story/analysis]. Tweet 1 (Hook): Start with a bold claim, surprising stat, or contrarian opinion that makes people stop scrolling. Include 'Thread 🧵' at the end. Tweets 2-[N-1]: Each tweet should deliver one clear idea, use simple language, and flow naturally to the next. Include specific examples, numbers, or mini-stories. Use line breaks within tweets for readability. Vary tweet structure (some with lists, some narrative, some with a single punchy line). Final tweet: Summarize the key takeaway, ask for engagement (retweet/follow), and link to [RESOURCE] if applicable. Each tweet must be under 280 characters. Tone: [TONE: authoritative/conversational/provocative].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "case-study-writing",
+    "title": "Customer Case Study",
+    "description": "Write a compelling case study showcasing customer success and results.",
+    "category": "writing",
+    "tags": [
+      "case study",
+      "B2B",
+      "social proof"
+    ],
+    "prompt": "Write a customer case study for [COMPANY] featuring client [CLIENT_NAME] in the [CLIENT_INDUSTRY] industry. Product/service used: [PRODUCT/SERVICE]. Follow the Problem-Solution-Results framework: 1) Client Overview — who they are, size, and what they do (2-3 sentences), 2) The Challenge — describe the specific pain points and business impact before using [PRODUCT/SERVICE]. Use quotes from [CLIENT_CONTACT_NAME], [TITLE], 3) Why They Chose [COMPANY] — what made them select this solution over alternatives, 4) The Solution — how [PRODUCT/SERVICE] was implemented, timeline, and key features used, 5) The Results — [NUMBER] quantified outcomes (revenue increase, time saved, cost reduction, efficiency gains) with specific numbers, 6) Looking Ahead — future plans and expansion. Include a sidebar with key metrics at a glance. Length: [WORD_COUNT] words. Tone: professional, credible, story-driven.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "website-copy-homepage",
+    "title": "Homepage Website Copy",
+    "description": "Write conversion-optimized homepage copy that communicates value instantly.",
+    "category": "writing",
+    "tags": [
+      "website",
+      "copywriting",
+      "homepage"
+    ],
+    "prompt": "Write homepage copy for [COMPANY], a [DESCRIPTION] serving [TARGET_AUDIENCE]. Main value proposition: [VALUE_PROP]. Structure the page sections: 1) Hero Section — headline (under 10 words, benefit-driven), subheadline (1-2 sentences expanding on the promise), primary CTA button text, and secondary CTA, 2) Social Proof Bar — suggest types of logos/badges/numbers to display, 3) Problem Section — articulate the audience's pain in their own words, 4) Solution Section — how [COMPANY] solves it, with [NUMBER] key features/benefits using icons, 5) How It Works — 3-4 simple steps, 6) Testimonial Section — [NUMBER] testimonial placeholders with specific prompts for what each should address, 7) FAQ Section — [NUMBER] common questions and answers, 8) Final CTA Section — urgency-driven closing with headline and button. Tone: [TONE]. Write for scanning — short paragraphs, clear hierarchy.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "grant-proposal-writing",
+    "title": "Grant Proposal",
+    "description": "Write a persuasive grant proposal for funding applications.",
+    "category": "writing",
+    "tags": [
+      "grant",
+      "nonprofit",
+      "proposal"
+    ],
+    "prompt": "Write a grant proposal for [ORGANIZATION_NAME], a [TYPE: nonprofit/research institution/startup] seeking [AMOUNT] in funding from [FUNDER_NAME] for [PROJECT_NAME]. Mission: [MISSION]. Project summary: [PROJECT_DESCRIPTION]. Include: 1) Cover Letter — personalized to the funder's priorities, 2) Executive Summary — the problem, your solution, expected impact, and funding request in 250 words, 3) Statement of Need — data-driven description of the problem with local/national statistics, 4) Project Description — goals, objectives (SMART format), methodology, timeline with milestones, 5) Organizational Capacity — why your team is qualified, key personnel bios, 6) Budget Summary — line items with justification for major expenses, 7) Evaluation Plan — how you will measure success with specific KPIs, 8) Sustainability Plan — how the project continues after funding ends. Tone: compelling yet professional. Align language with [FUNDER_NAME]'s stated priorities: [FUNDER_PRIORITIES].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "product-review-article",
+    "title": "Product Review Article",
+    "description": "Write a balanced, in-depth product review that helps readers decide.",
+    "category": "writing",
+    "tags": [
+      "review",
+      "content",
+      "product"
+    ],
+    "prompt": "Write a detailed product review article for [PRODUCT_NAME] by [BRAND]. Product category: [CATEGORY]. Price: [PRICE]. Target reader: [AUDIENCE] considering purchasing this product. Structure: 1) Introduction — what the product is and who it's for, your overall verdict upfront (star rating out of 5), 2) First Impressions — unboxing, design, build quality, 3) Key Features Deep Dive — test and evaluate [NUMBER] main features with specific observations, 4) Performance — real-world usage scenarios and results, 5) Pros and Cons — honest, balanced list of [NUMBER] each, 6) Comparison — briefly compare to [NUMBER] alternatives in the same price range: [COMPETITORS], 7) Who Should Buy This — and who shouldn't, 8) Final Verdict — summary rating with breakdown (value, performance, design, ease of use). Include a specs table. Tone: honest, knowledgeable, conversational. Length: [WORD_COUNT] words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "internal-memo-business",
+    "title": "Business Internal Memo",
+    "description": "Draft a clear internal memo for organizational communication.",
+    "category": "writing",
+    "tags": [
+      "memo",
+      "business",
+      "internal communication"
+    ],
+    "prompt": "Write an internal memo from [SENDER_NAME], [SENDER_TITLE] to [RECIPIENTS: all staff/department/leadership team] at [COMPANY]. Subject: [SUBJECT]. Purpose: [PURPOSE: announce a change/share an update/request action/address a concern]. Date: [DATE]. Structure: 1) Header — TO, FROM, DATE, RE fields, 2) Opening — state the purpose clearly in the first sentence, 3) Background/Context — why this matters, what led to this (2-3 sentences), 4) Key Information — the main message with specific details, dates, numbers, or policy changes, 5) Impact — how this affects the recipients and what changes they should expect, 6) Action Required — specific steps recipients need to take with deadlines, 7) Resources/Support — where to go for questions or more information. Tone: [TONE: direct/empathetic/motivational/formal]. Keep under 400 words. Use bullet points for action items. Avoid jargon and ambiguity.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "ebook-chapter-draft",
+    "title": "eBook Chapter Draft",
+    "description": "Write a complete eBook chapter with actionable content and engaging flow.",
+    "category": "writing",
+    "tags": [
+      "ebook",
+      "content",
+      "long-form"
+    ],
+    "prompt": "Write Chapter [NUMBER] of an eBook titled '[EBOOK_TITLE]' for [BRAND/AUTHOR]. Chapter title: '[CHAPTER_TITLE]'. Target reader: [AUDIENCE]. The chapter should cover [TOPIC] and fit within the broader eBook theme of [OVERALL_THEME]. Include: 1) Chapter opening — a story, scenario, or question that draws the reader in, 2) [NUMBER] main sections with clear subheadings, 3) Practical examples, frameworks, or step-by-step instructions the reader can apply immediately, 4) At least one visual element suggestion (diagram, chart, checklist, or infographic description), 5) A 'Key Takeaways' box summarizing the chapter in [NUMBER] bullet points, 6) Transition to the next chapter topic: [NEXT_CHAPTER_TOPIC]. Write in a [TONE: conversational/authoritative/friendly] tone. Use 'you' to address the reader directly. Length: approximately [WORD_COUNT] words. Include callout boxes for tips, warnings, or pro tips.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "apology-letter-business",
+    "title": "Business Apology Letter",
+    "description": "Write a sincere, professional apology letter that rebuilds trust.",
+    "category": "writing",
+    "tags": [
+      "apology",
+      "customer service",
+      "communication"
+    ],
+    "prompt": "Write a professional apology letter from [COMPANY/PERSON] to [RECIPIENT: customers/client/partner/employees] regarding [INCIDENT/ISSUE]. What happened: [DESCRIPTION_OF_ISSUE]. Impact on recipients: [IMPACT]. Structure: 1) Opening — acknowledge the issue directly without deflection or minimizing, 2) Take responsibility — use 'we' language, no passive voice or blame-shifting, 3) Explain (briefly) — what went wrong and why, without making excuses, 4) Empathize — show you understand how this affected them specifically, 5) Action taken — concrete steps already implemented to fix the immediate problem, 6) Prevention — specific measures to ensure this doesn't happen again, 7) Make it right — offer compensation, remedy, or goodwill gesture: [COMPENSATION_OFFER], 8) Closing — reaffirm commitment to the relationship. Tone: sincere, humble, action-oriented. Length: 200-350 words. This will be sent via [CHANNEL: email/letter/social media post].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "seo-content-strategy",
+    "title": "SEO Content Strategy",
+    "description": "Develop a comprehensive SEO content plan targeting high-value keywords.",
+    "category": "marketing",
+    "tags": [
+      "SEO",
+      "content strategy",
+      "keywords"
+    ],
+    "prompt": "Create a comprehensive SEO content strategy for [BRAND/WEBSITE] in the [INDUSTRY] niche. Target audience: [AUDIENCE]. Business goal: [GOAL: increase organic traffic/generate leads/build authority]. Include: 1) Keyword Research Framework — identify [NUMBER] primary keywords and [NUMBER] long-tail variations for [TOPIC_CLUSTER], categorized by search intent (informational, navigational, transactional, commercial), 2) Content Pillar Strategy — define [NUMBER] pillar pages with supporting cluster content mapped to each, 3) Content Calendar — monthly publishing schedule with content types (blog posts, guides, listicles, comparisons), 4) On-Page SEO Checklist — title tag formulas, meta description templates, header structure, internal linking strategy, 5) Content Brief Template — for each priority piece, outline target keyword, secondary keywords, word count, competing URLs to outrank, and unique angle. Prioritize topics by search volume vs. competition difficulty.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "email-campaign-sequence",
+    "title": "Email Campaign Sequence",
+    "description": "Design a multi-email campaign sequence that nurtures leads to conversion.",
+    "category": "marketing",
+    "tags": [
+      "email marketing",
+      "automation",
+      "nurture"
+    ],
+    "prompt": "Design a [NUMBER]-email campaign sequence for [BRAND] to [GOAL: nurture leads/onboard users/re-engage inactive customers/promote a launch]. Target segment: [AUDIENCE_SEGMENT]. Trigger: [TRIGGER: sign-up/purchase/abandonment/download]. For each email, provide: 1) Send timing (delay from trigger or previous email), 2) Subject line (with A/B variant), 3) Preview text, 4) Email purpose and key message, 5) Body copy outline with personalization tokens [FIRST_NAME], [COMPANY], etc., 6) Primary CTA (button text and destination), 7) Design notes (layout, images, colors). Overall sequence strategy: define the narrative arc — how does the relationship progress from email 1 to the final email? Include a decision branch: if recipient [OPENS/CLICKS/DOESN'T_OPEN] email [NUMBER], send [ALTERNATIVE]. Metrics to track per email: open rate, CTR, conversion benchmarks for [INDUSTRY].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "social-media-strategy",
+    "title": "Social Media Strategy",
+    "description": "Build a complete social media strategy with platform-specific tactics.",
+    "category": "marketing",
+    "tags": [
+      "social media",
+      "strategy",
+      "content planning"
+    ],
+    "prompt": "Develop a 90-day social media strategy for [BRAND] targeting [AUDIENCE] across [PLATFORMS: Instagram/LinkedIn/Twitter/TikTok/Facebook]. Business objectives: [OBJECTIVES]. Current followers: [FOLLOWER_COUNT]. Budget: [BUDGET]. Include: 1) Platform Prioritization — rank platforms by ROI potential for this brand with reasoning, 2) Content Pillars — [NUMBER] recurring themes with example post ideas for each, 3) Content Mix — percentage breakdown (educational/entertaining/promotional/community), 4) Posting Frequency — optimal schedule per platform with best times, 5) Content Formats — platform-specific formats to prioritize (Reels, carousels, Stories, polls, etc.), 6) Engagement Strategy — how to grow community (comment strategy, DM approach, collaboration tactics), 7) Hashtag Strategy — [NUMBER] hashtag sets for different content types, 8) KPIs and Targets — specific metrics to track with monthly growth targets, 9) Paid Amplification — which organic posts to boost and budget allocation. Include a sample week content calendar.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "brand-voice-guidelines",
+    "title": "Brand Voice Guidelines",
+    "description": "Define a distinctive brand voice with clear dos, don'ts, and examples.",
+    "category": "marketing",
+    "tags": [
+      "brand voice",
+      "branding",
+      "tone"
+    ],
+    "prompt": "Create comprehensive brand voice guidelines for [BRAND] in the [INDUSTRY] industry. Target audience: [AUDIENCE]. Brand personality traits: [TRAITS: e.g., bold, approachable, witty, trustworthy]. Brand values: [VALUES]. Include: 1) Voice Overview — describe the brand voice in 2-3 sentences as if describing a person, 2) Voice Attributes — [NUMBER] core attributes, each with a scale (e.g., 'Formal ←→ Casual: We sit at 7/10 toward casual'), 3) Tone Variations — how the voice adapts across contexts (social media, customer support, crisis, celebration), 4) Vocabulary — words we love, words we avoid, industry jargon policy, 5) Grammar & Style — sentence length preference, contraction usage, emoji policy, punctuation style, 6) Do's and Don'ts — [NUMBER] specific examples of each with before/after rewrites, 7) Channel-Specific Guidelines — how voice manifests on website, email, social, ads, support. Include [NUMBER] sample paragraphs written in the brand voice for different scenarios.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "competitor-analysis-framework",
+    "title": "Competitor Analysis",
+    "description": "Conduct a structured competitor analysis to identify opportunities and threats.",
+    "category": "marketing",
+    "tags": [
+      "competitor analysis",
+      "strategy",
+      "market research"
+    ],
+    "prompt": "Create a comprehensive competitor analysis for [BRAND] in the [INDUSTRY] market. Analyze [NUMBER] key competitors: [COMPETITOR_1], [COMPETITOR_2], [COMPETITOR_3]. For each competitor, evaluate: 1) Company Overview — size, funding, market position, target audience, 2) Product/Service Comparison — features, pricing, unique selling points vs. ours, 3) Marketing Strategy — channels used, content approach, messaging themes, ad spend estimates, 4) Digital Presence — website UX assessment, SEO performance (estimated domain authority, top keywords), social media following and engagement rates, 5) Strengths and Weaknesses — honest SWOT for each, 6) Customer Sentiment — what their reviews/testimonials reveal (common praise and complaints). Synthesize into: a) Competitive positioning map (suggest axes), b) [NUMBER] gaps/opportunities we can exploit, c) Threats to monitor, d) Strategic recommendations for differentiation. Format as an executive-ready report with clear headers and data tables.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "customer-persona-builder",
+    "title": "Customer Persona Builder",
+    "description": "Build detailed customer personas based on data and market insights.",
+    "category": "marketing",
+    "tags": [
+      "persona",
+      "audience",
+      "research"
+    ],
+    "prompt": "Create [NUMBER] detailed customer personas for [BRAND/PRODUCT] in the [INDUSTRY] market. For each persona, include: 1) Name and Photo Description — a realistic, relatable character, 2) Demographics — age range, gender, location, income, education, job title, 3) Psychographics — values, interests, lifestyle, personality traits, 4) Goals — what they want to achieve (both professional and personal), 5) Pain Points — [NUMBER] specific frustrations related to [PRODUCT_CATEGORY], 6) Buying Behavior — how they research, decision-making process, price sensitivity, preferred channels, 7) Media Consumption — social platforms, publications, podcasts, influencers they follow, 8) Objections — top [NUMBER] reasons they might NOT buy, 9) Messaging Angle — the key message that would resonate most with this persona, 10) Day-in-the-Life Scenario — a brief narrative showing when/how they'd encounter and need [PRODUCT]. Differentiate personas by their primary motivation for purchasing.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "ab-test-copy-variants",
+    "title": "A/B Test Copy Variants",
+    "description": "Generate strategic A/B test copy variations with clear hypotheses.",
+    "category": "marketing",
+    "tags": [
+      "A/B testing",
+      "conversion",
+      "optimization"
+    ],
+    "prompt": "Generate A/B test copy variants for [ELEMENT: headline/CTA/email subject/landing page/ad copy] on [PAGE/CAMPAIGN] for [BRAND]. Current copy (Control): '[CURRENT_COPY]'. Current conversion rate: [RATE]%. Target audience: [AUDIENCE]. Create [NUMBER] test variants, each based on a different psychological principle: 1) Social Proof — leverage numbers, testimonials, or popularity, 2) Urgency/Scarcity — time limits or limited availability, 3) Benefit-Focused — lead with the outcome, not the feature, 4) Curiosity Gap — create an information gap that compels action, 5) Loss Aversion — frame around what they'll miss. For each variant provide: a) The copy itself, b) The hypothesis ('We believe [CHANGE] will [EFFECT] because [REASON]'), c) The psychological trigger being tested, d) Expected impact (low/medium/high), e) Minimum sample size recommendation. Also suggest the testing priority order and statistical significance threshold.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "landing-page-copy",
+    "title": "Landing Page Copy",
+    "description": "Write high-converting landing page copy with strategic section flow.",
+    "category": "marketing",
+    "tags": [
+      "landing page",
+      "conversion",
+      "copywriting"
+    ],
+    "prompt": "Write conversion-optimized landing page copy for [PRODUCT/SERVICE/OFFER] by [BRAND]. Campaign goal: [GOAL: sign-ups/purchases/demo requests/downloads]. Traffic source: [SOURCE: paid ads/email/social/organic]. Target audience: [AUDIENCE] with pain point: [PAIN_POINT]. Page sections: 1) Hero — headline (benefit-driven, under 10 words), subheadline (expand the promise), primary CTA, hero image description, 2) Problem — agitate the pain with [NUMBER] specific scenarios, 3) Solution — introduce [PRODUCT] as the answer with key differentiator, 4) Features/Benefits — [NUMBER] features each paired with a tangible benefit and icon suggestion, 5) Social Proof — testimonial layout, logos, stats ([NUMBER] customers, [METRIC]), 6) How It Works — 3 simple steps, 7) Objection Handling — FAQ addressing top [NUMBER] concerns, 8) Pricing/Offer — present the offer with anchoring and value stack, 9) Final CTA — urgency-driven close with guarantee. Include micro-copy for form fields and button states.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "sales-page-long-form",
+    "title": "Long-Form Sales Page",
+    "description": "Create a long-form sales page that takes readers on a persuasive journey.",
+    "category": "marketing",
+    "tags": [
+      "sales page",
+      "direct response",
+      "copywriting"
+    ],
+    "prompt": "Write a long-form sales page for [PRODUCT/COURSE/SERVICE] priced at [PRICE] by [BRAND/CREATOR]. Target buyer: [BUYER_PERSONA]. Primary desire: [DESIRE]. Primary fear: [FEAR]. Use this proven structure: 1) Pre-headline — call out the audience, 2) Headline — big promise with specificity, 3) Opening Story — relatable struggle that mirrors the reader's situation, 4) Problem Amplification — deepen the pain, show the cost of inaction, 5) Failed Solutions — why other approaches haven't worked, 6) The Discovery — your unique mechanism or approach, 7) Introduce the Offer — what's included with perceived value for each component, 8) Bonuses — [NUMBER] bonuses with individual value, 9) Social Proof — diverse testimonials (skeptic-turned-believer, quick win, transformation), 10) Price Justification — compare to alternatives and ROI, 11) Guarantee — risk reversal ([NUMBER]-day guarantee), 12) FAQ — overcome final objections, 13) Closing — final emotional appeal and CTA. Include value stack totaling [TOTAL_VALUE] vs. actual price.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "lead-magnet-creation",
+    "title": "Lead Magnet Creation",
+    "description": "Design and outline a high-value lead magnet that attracts ideal prospects.",
+    "category": "marketing",
+    "tags": [
+      "lead magnet",
+      "lead generation",
+      "funnel"
+    ],
+    "prompt": "Design a lead magnet for [BRAND] targeting [AUDIENCE] in the [INDUSTRY] space. Goal: capture email addresses and begin nurturing toward [END_GOAL: product purchase/demo request/consultation]. Lead magnet type: [TYPE: checklist/template/guide/toolkit/quiz/cheat sheet/swipe file/calculator]. Topic: [TOPIC] — solving the specific problem of [PROBLEM]. Include: 1) Title — benefit-driven, specific (e.g., 'The [NUMBER]-Step [OUTCOME] [TYPE]'), 2) Landing Page Headline and Subheadline for the opt-in page, 3) [NUMBER] bullet points describing what's inside (use 'curiosity + benefit' format), 4) Complete outline of the lead magnet content with [NUMBER] sections, 5) Design notes — format, length, branding elements, 6) Delivery email copy — subject line and body for the automated delivery, 7) Follow-up sequence brief — [NUMBER] emails to send after delivery with topics and timing, 8) Promotion plan — [NUMBER] channels and tactics to drive opt-ins. The lead magnet should be completable in under [TIME] and deliver a quick win."
+  }
+]
