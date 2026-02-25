@@ -21,11 +21,11 @@
     {
       "id": "pro-pack",
       "name": "Pro Pack",
-      "tagline": "500+ premium prompts with lifetime updates",
+      "tagline": "200+ premium prompts with lifetime updates",
       "price": 990,
       "priceLabel": "$9.90",
       "features": [
-        "500+ premium prompts",
+        "200+ premium prompts",
         "Advanced chain-of-thought templates",
         "Regular updates",
         "Lifetime access"
