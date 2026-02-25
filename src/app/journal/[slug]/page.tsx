@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug);
   if (!post) return { title: "Not Found" };
   return {
-    title: `${post.title} — PromptVault Journal`,
+    title: `${post.title} — LaerKai Journal`,
     description: post.excerpt,
     openGraph: { title: post.title, description: post.excerpt, type: "article" },
   };

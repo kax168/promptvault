@@ -28,7 +28,7 @@ export default function Story() {
           <FadeIn delay={0.3}>
             <p>
               150+ prompts later, I realized this collection was too useful to keep to myself.
-              So I built PromptVault — a searchable library of battle-tested AI prompt templates,
+              So I built LaerKai — a searchable library of battle-tested AI prompt templates,
               organized by category, with clear placeholders you can customize in seconds.
             </p>
           </FadeIn>

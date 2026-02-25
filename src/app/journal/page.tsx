@@ -3,8 +3,8 @@ import { JournalCard } from "@/components/JournalCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Journal — PromptVault",
-  description: "Follow the PromptVault journey. Milestones, lessons, and building in public.",
+  title: "Journal — LaerKai",
+  description: "Follow the LaerKai journey. Milestones, lessons, and building in public.",
 };
 
 export default function JournalPage() {

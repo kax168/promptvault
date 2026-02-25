@@ -1,5 +1,5 @@
 {
-  "name": "PromptVault",
+  "name": "LaerKai",
   "tagline": "AI Prompts That Actually Work",
   "description": "150+ battle-tested AI prompt templates. Free starter pack. Pro pack for power users.",
   "avatar": "⚡",
@@ -16,8 +16,8 @@
   },
   "social": {
     "twitter": null,
-    "reddit": "https://reddit.com/user/Visual-Piglet5499",
-    "github": "https://github.com/kax168/promptvault",
+    "reddit": null,
+    "github": null,
     "gumroad": null
   }
 }

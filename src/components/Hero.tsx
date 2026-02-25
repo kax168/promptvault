@@ -19,7 +19,7 @@ export default function Hero() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative w-28 h-28 mb-8 rounded-2xl overflow-hidden border-2 border-amber-500/20 glow-gold"
       >
-        <img src="/logo.png" alt="PromptVault" className="w-full h-full object-cover" />
+        <img src="/logo.png" alt="LaerKai" className="w-full h-full object-cover" />
       </motion.div>
 
       {/* Headline */}
