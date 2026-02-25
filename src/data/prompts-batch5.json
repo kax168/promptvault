@@ -1,0 +1,82 @@
+[
+  {
+    "id": "social-media-calendar",
+    "title": "Social Media Calendar",
+    "description": "Create a structured monthly social media content calendar across multiple platforms.",
+    "category": "marketing",
+    "tags": ["social media", "content planning", "scheduling"],
+    "prompt": "Create a 30-day social media content calendar for [BRAND_NAME], a [INDUSTRY] company targeting [TARGET_AUDIENCE]. Platforms: [PLATFORMS]. For each day, specify: platform, content type (carousel, reel, story, text post, poll), topic/hook, caption draft (under 150 words), relevant hashtags (5-10), and optimal posting time. Include a mix of educational (40%), entertaining (30%), and promotional (30%) content. Align posts with [CAMPAIGN_GOAL] and incorporate [UPCOMING_EVENTS_OR_DATES]. Suggest 4 recurring content series with catchy names. Note which posts should be boosted with paid spend. End with KPIs to track weekly.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "influencer-outreach",
+    "title": "Influencer Outreach",
+    "description": "Draft personalized influencer collaboration outreach messages that convert.",
+    "category": "marketing",
+    "tags": ["influencer", "outreach", "partnerships"],
+    "prompt": "Write a personalized outreach message to [INFLUENCER_NAME], a [PLATFORM] creator with [FOLLOWER_COUNT] followers in the [NICHE] space. Our brand [BRAND_NAME] sells [PRODUCT/SERVICE] and we want to propose a [COLLABORATION_TYPE] (e.g., sponsored post, affiliate, product seeding, brand ambassador). The message should: open with a specific compliment referencing [RECENT_CONTENT_THEY_MADE], clearly state the value proposition for them, outline deliverables and compensation ([BUDGET_RANGE]), include a soft CTA, and feel genuine — not templated. Keep it under 200 words. Also provide a follow-up message for 5 days later if no response, and a brief negotiation response template if they counter on price.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "brand-positioning-statement",
+    "title": "Brand Positioning Statement",
+    "description": "Develop a clear brand positioning framework that differentiates from competitors.",
+    "category": "marketing",
+    "tags": ["branding", "positioning", "strategy"],
+    "prompt": "Develop a comprehensive brand positioning statement for [BRAND_NAME] in the [INDUSTRY] market. Target audience: [TARGET_AUDIENCE]. Main competitors: [COMPETITOR_1], [COMPETITOR_2], [COMPETITOR_3]. Define: the category we compete in, the unique value proposition (what we do differently), the key benefit (functional and emotional), reasons to believe (3-5 proof points), and the brand personality (5 adjectives). Write the positioning statement in the format: 'For [target] who [need], [brand] is the [category] that [key benefit] because [reasons to believe].' Then create a positioning map plotting us against competitors on two axes: [AXIS_1] and [AXIS_2]. Suggest a tagline (under 8 words) and a 30-second elevator pitch.",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "customer-journey-map",
+    "title": "Customer Journey Map",
+    "description": "Map the complete customer journey from awareness to advocacy with touchpoints and emotions.",
+    "category": "marketing",
+    "tags": ["customer experience", "journey mapping", "conversion"],
+    "prompt": "Create a detailed customer journey map for [BRAND_NAME]'s [PRODUCT/SERVICE] targeting [CUSTOMER_PERSONA]. Map five stages: Awareness, Consideration, Decision, Onboarding, and Advocacy. For each stage, define: customer goals and questions, emotional state (frustrated/curious/excited/confident), key touchpoints (list 3-5 channels), actions the customer takes, pain points and friction, opportunities for our brand to add value, and specific content or messaging needed. Identify the top 3 'moments of truth' where we can win or lose the customer. Suggest one automation or personalization tactic per stage. End with a prioritized list of 5 quick wins to improve the journey based on [KNOWN_PAIN_POINT].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  },
+  {
+    "id": "referral-program-design",
+    "title": "Referral Program Design",
+    "description": "Design a referral program that incentivizes word-of-mouth growth.",
+    "category": "marketing",
+    "tags": ["referral", "growth", "word-of-mouth"],
+    "prompt": "Design a referral program for [BRAND_NAME], a [BUSINESS_TYPE] with an average order value of [AOV] and customer lifetime value of [CLV]. Define: the incentive structure for both referrer and referee (discount, credit, cash, free product), referral mechanics (unique link, code, or in-app share), eligibility rules and fraud prevention measures, and the user flow from share to conversion. Write the referral invitation copy (email + SMS + in-app notification — each under 50 words). Suggest 3 program names that feel exciting, not corporate. Outline a launch plan: soft launch to top [N]% of customers, then broader rollout. Include KPIs to track (referral rate, conversion rate, CAC reduction) and a simple A/B test plan for the incentive amount.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "affiliate-marketing-program",
+    "title": "Affiliate Marketing Program",
+    "description": "Build an affiliate marketing program structure with commission tiers and recruitment strategy.",
+    "category": "marketing",
+    "tags": ["affiliate", "partnerships", "revenue"],
+    "prompt": "Design an affiliate marketing program for [BRAND_NAME] selling [PRODUCT/SERVICE] at [PRICE_RANGE]. Define: commission structure (percentage or flat rate) with 3 performance tiers, cookie duration and attribution model, approved promotional methods and restrictions, creative assets to provide (banners, email swipes, landing pages), and application/vetting criteria for affiliates. Write a recruitment email targeting [AFFILIATE_TYPE] (bloggers, YouTubers, comparison sites, coupon sites). Include an affiliate onboarding checklist (first 7 days), a monthly newsletter template to keep affiliates engaged, and a top-performer bonus structure. Suggest which affiliate platform to use based on [BUDGET] and [TECHNICAL_CAPABILITY]. List 5 KPIs to monitor weekly.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "webinar-promotion-plan",
+    "title": "Webinar Promotion Plan",
+    "description": "Create a full promotional plan to maximize webinar registrations and attendance.",
+    "category": "marketing",
+    "tags": ["webinar", "promotion", "lead generation"],
+    "prompt": "Create a webinar promotion plan for '[WEBINAR_TITLE]' hosted by [BRAND_NAME] on [DATE]. Target audience: [TARGET_AUDIENCE]. Speaker: [SPEAKER_NAME_AND_TITLE]. Write: a compelling registration page headline and 150-word description, a 3-email invitation sequence (2 weeks, 1 week, 2 days before), social media posts for [PLATFORMS] (3 variations each), a LinkedIn personal post for the speaker, and 3 reminder emails (day before, morning of, 5 minutes before). Include a post-webinar follow-up sequence: thank-you email with replay link, nurture email for attendees, and re-engagement email for no-shows. Suggest 3 partnership or cross-promotion tactics to expand reach. Target [REGISTRATION_GOAL] registrations with an expected [ATTENDANCE_RATE]% show rate.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "product-launch-email-sequence",
+    "title": "Product Launch Email Sequence",
+    "description": "Write a multi-email launch sequence that builds anticipation and drives sales.",
+    "category": "marketing",
+    "tags": ["email marketing", "product launch", "copywriting"],
+    "prompt": "Write a 7-email product launch sequence for [PRODUCT_NAME] by [BRAND_NAME], priced at [PRICE]. Target audience: [TARGET_AUDIENCE]. The sequence: Email 1 (Day -7): Teaser — hint at something coming, build curiosity. Email 2 (Day -3): Problem agitation — highlight [PAIN_POINT] vividly. Email 3 (Day -1): Behind the scenes — share the creation story. Email 4 (Day 0): Launch announcement — full reveal with CTA. Email 5 (Day +1): Social proof — testimonials from [BETA_USERS/EARLY_REVIEWERS]. Email 6 (Day +3): FAQ and objection handling. Email 7 (Day +5): Last chance — urgency with [SCARCITY_ELEMENT]. Each email: subject line (under 50 chars), preview text, body (150-250 words), and CTA button text. Tone: [BRAND_VOICE].",
+    "model": "Claude/GPT-4",
+    "isPro": true
+  }
+]
