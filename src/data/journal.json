@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": "launch-day",
+      "slug": "launch-day",
+      "title": "Launch Day — PromptVault Goes Live",
+      "excerpt": "159 prompts, 3 Reddit posts, and a dream. Day 1 of building in public.",
+      "content": "Today marks the official launch of PromptVault. After weeks of collecting, testing, and organizing AI prompts, we finally went live with 159 battle-tested templates across 7 categories.\n\nWe posted to three subreddits — r/ChatGPT, r/PromptEngineering, and r/SideProject. The response was immediate.\n\nEvery prompt in the library has been tested across ChatGPT, Claude, and Gemini. No fluff, no filler — just templates that actually produce good output.\n\nThe Starter Pack is free. The Pro Pack is $9.90. Let's see where this goes.",
+      "date": "2026-02-25",
+      "tags": ["launch", "milestone"],
+      "type": "milestone",
+      "image": null,
+      "author": "PromptVault"
+    },
+    {
+      "id": "first-100-prompts",
+      "slug": "first-100-prompts",
+      "title": "Crossing 100 Prompts",
+      "excerpt": "The library hit triple digits. Here's what I learned about what makes a good prompt.",
+      "content": "We crossed 100 unique prompts today. Getting here taught me a lot about what separates a mediocre prompt from a great one.\n\nThe best prompts share three traits:\n1. Clear role assignment — tell the AI who it is\n2. Structured output format — specify exactly what you want back\n3. Contextual placeholders — make customization obvious\n\nEvery prompt in PromptVault follows this pattern. That's why they work across models.",
+      "date": "2026-02-25",
+      "tags": ["progress", "lessons"],
+      "type": "progress",
+      "image": null,
+      "author": "PromptVault"
+    },
+    {
+      "id": "the-idea",
+      "slug": "the-idea",
+      "title": "Why I Built PromptVault",
+      "excerpt": "I was tired of writing the same prompts over and over. So I built a library.",
+      "content": "It started with frustration. Every time I needed AI to do something, I'd spend 10 minutes crafting a prompt from scratch. Then I'd do it again the next day.\n\nSo I started a text file. Then a spreadsheet. Then I realized other people had the same problem.\n\nPromptVault is that text file, grown up. A searchable, categorized library of prompts that actually work. Free to browse, with a Pro pack for power users.\n\nThe goal: make AI 10x more useful by giving people better starting points.",
+      "date": "2026-02-25",
+      "tags": ["origin", "story"],
+      "type": "origin",
+      "image": null,
+      "author": "PromptVault"
+    }
+  ],
+  "_meta": {
+    "source": "local-json",
+    "cms_ready": true,
+    "note": "Replace this file with CMS API calls (Contentful, Sanity, Notion, etc.) when ready. Keep the same interface."
+  }
+}

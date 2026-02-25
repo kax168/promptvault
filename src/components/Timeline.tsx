@@ -36,6 +36,11 @@ export default function Timeline() {
             </motion.div>
           ))}
         </div>
+        <div className="text-center mt-6">
+          <a href="/journal" className="text-xs text-slate-500 hover:text-amber-400 transition-colors">
+            View all entries →
+          </a>
+        </div>
       </div>
     </section>
   );
