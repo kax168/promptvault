@@ -1,0 +1,162 @@
+[
+  {
+    "id": "pitch-deck-builder",
+    "title": "Pitch Deck Builder",
+    "description": "Create a compelling investor pitch deck outline with key slides and talking points.",
+    "category": "business",
+    "tags": ["pitch deck", "fundraising", "startup"],
+    "prompt": "You are an expert startup advisor who has helped raise over $500M in venture funding. Create a comprehensive pitch deck outline for [COMPANY_NAME], a [INDUSTRY] company that [VALUE_PROPOSITION]. Include 12-15 slides covering: problem statement with market pain points, solution overview, market opportunity with TAM/SAM/SOM, business model and revenue streams, traction and key metrics, competitive landscape and differentiation, go-to-market strategy, team highlights, financial projections for [TIME_HORIZON], funding ask of [AMOUNT] with use of funds breakdown, and a compelling closing slide. For each slide, provide the headline, 3-4 bullet points, and suggested visuals.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "investor-update-email",
+    "title": "Investor Update Email",
+    "description": "Draft a concise monthly or quarterly investor update that builds trust and transparency.",
+    "category": "business",
+    "tags": ["investor relations", "reporting", "communication"],
+    "prompt": "You are a seasoned founder who excels at investor communication. Write a [MONTHLY/QUARTERLY] investor update email for [COMPANY_NAME]. Structure it with these sections: 1) TL;DR with 3 key highlights in one sentence each, 2) Key Metrics presenting [METRIC_1], [METRIC_2], [METRIC_3] with month-over-month trends, 3) Wins listing top 3 achievements this period, 4) Challenges being transparent about 1-2 obstacles and how you are addressing them, 5) Product Updates on major releases or milestones, 6) Team changes or new hires, 7) Financial Snapshot with burn rate runway and revenue, 8) Asks for specific ways investors can help. Keep the tone confident yet honest. Total length: 500-700 words.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "partnership-proposal-draft",
+    "title": "Partnership Proposal",
+    "description": "Generate a strategic partnership proposal that clearly articulates mutual value.",
+    "category": "business",
+    "tags": ["partnerships", "strategy", "B2B"],
+    "prompt": "Act as a business development strategist. Draft a partnership proposal from [YOUR_COMPANY] to [PARTNER_COMPANY] in the [INDUSTRY] space. The proposal should include: an executive summary of the partnership vision, analysis of synergies between both companies, proposed collaboration model such as [CO_MARKETING/INTEGRATION/RESELLER/JOINT_VENTURE], specific value proposition for each party, implementation roadmap with milestones over [TIMELINE], resource commitments from both sides, success metrics and KPIs, risk mitigation strategies, and proposed next steps. Tone should be professional and persuasive. Highlight how this partnership addresses [SHARED_MARKET_OPPORTUNITY].",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "market-sizing-analysis",
+    "title": "Market Sizing Analysis",
+    "description": "Perform a structured top-down and bottom-up market sizing for a target opportunity.",
+    "category": "business",
+    "tags": ["market research", "TAM", "analysis"],
+    "prompt": "You are a management consultant specializing in market analysis. Perform a rigorous market sizing for [PRODUCT_OR_SERVICE] targeting [TARGET_SEGMENT] in [GEOGRAPHY]. Provide both top-down and bottom-up approaches: Top-down starting from the total [INDUSTRY] market size, applying relevant filters to arrive at TAM, SAM, and SOM with clear assumptions. Bottom-up estimating from unit economics with number of potential customers times average deal size times purchase frequency. Include data sources and assumptions clearly stated, sensitivity analysis with optimistic base and pessimistic scenarios, growth rate projections for [TIME_HORIZON], and key market drivers and inhibitors. Present findings in a structured format with numbers.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "business-model-canvas",
+    "title": "Business Model Canvas",
+    "description": "Fill out a complete Business Model Canvas with strategic insights for a venture.",
+    "category": "business",
+    "tags": ["business model", "strategy", "canvas"],
+    "prompt": "You are a business strategist experienced with the Osterwalder Business Model Canvas. Complete all 9 building blocks for [COMPANY_NAME], which provides [PRODUCT_SERVICE] to [TARGET_CUSTOMER]. For each block provide 3-5 specific actionable items: 1) Customer Segments, 2) Value Propositions, 3) Channels, 4) Customer Relationships, 5) Revenue Streams, 6) Key Resources, 7) Key Activities, 8) Key Partnerships, 9) Cost Structure. End with a strategic assessment of the model strengths and vulnerabilities and recommend the top 3 experiments to validate riskiest assumptions.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "competitive-moat-analysis",
+    "title": "Competitive Moat Analysis",
+    "description": "Analyze and strengthen your company's competitive advantages and defensibility.",
+    "category": "business",
+    "tags": ["competition", "moat", "strategy"],
+    "prompt": "You are a competitive strategy expert versed in Porter's Five Forces and Hamilton Helmer's 7 Powers framework. Analyze the competitive moat for [COMPANY_NAME] operating in [INDUSTRY]. Evaluate each of the 7 Powers: Scale Economies, Network Effects, Counter-Positioning, Switching Costs, Branding, Cornered Resource, and Process Power. For each power rate its current strength as weak moderate or strong and provide specific evidence. Then identify the top 2-3 moat sources to invest in, map key competitors [COMPETITOR_1] [COMPETITOR_2] [COMPETITOR_3] against these dimensions, recommend 5 concrete actions to deepen defensibility over [TIME_HORIZON], and flag the biggest competitive threat on the horizon.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "hiring-scorecard-template",
+    "title": "Hiring Scorecard",
+    "description": "Build a structured hiring scorecard to evaluate candidates objectively and consistently.",
+    "category": "business",
+    "tags": ["hiring", "HR", "recruitment"],
+    "prompt": "You are a talent acquisition expert who designs structured hiring processes. Create a comprehensive hiring scorecard for the role of [JOB_TITLE] at [COMPANY_NAME] in the [DEPARTMENT] team. Include: Role Mission in one sentence defining success, Outcomes with 3-5 measurable outcomes expected in the first [TIME_PERIOD], Competencies with 6-8 key competencies each with a 1-5 rating scale and behavioral anchors for scores 1 3 and 5, Culture Fit Indicators with 3-4 values-aligned behaviors to assess, Interview Questions with 2 behavioral questions per competency with ideal answer guidelines, Red Flags listing 5 warning signs to watch for, and a Final Recommendation framework of strong hire or hire or no hire or strong no hire.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "quarterly-planning-okrs",
+    "title": "Quarterly Planning & OKRs",
+    "description": "Facilitate quarterly planning with clear objectives, key results, and resource allocation.",
+    "category": "business",
+    "tags": ["OKRs", "planning", "goals"],
+    "prompt": "You are an experienced COO who has led quarterly planning at high-growth companies. Facilitate a Q[QUARTER] [YEAR] planning session for [COMPANY_NAME]. Based on the company annual goals of [ANNUAL_GOALS], generate: 3-4 company-level Objectives that are ambitious and inspiring each with 3-4 measurable Key Results with specific numeric targets, suggested team-level OKRs for [TEAM_1] [TEAM_2] and [TEAM_3] that cascade from company OKRs, a resource allocation recommendation across priorities, key dependencies and risks to flag, a proposed cadence for check-ins and scoring, and a list of what to explicitly say NO to this quarter. Ensure OKRs follow best practices: outcomes over outputs measurable and stretchy but achievable.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "customer-interview-guide",
+    "title": "Customer Interview Guide",
+    "description": "Design a customer discovery interview script that uncovers real needs without leading bias.",
+    "category": "business",
+    "tags": ["customer discovery", "research", "interviews"],
+    "prompt": "You are a product researcher trained in the Mom Test methodology. Create a customer interview guide for [COMPANY_NAME] exploring the problem space of [PROBLEM_AREA] for [TARGET_PERSONA]. Include: Pre-interview setup with logistics recording consent and rapport building, Opening questions (3) about their role and workflow, Problem exploration (5-6 questions) digging into current pain points without mentioning your solution, Current solutions (3-4 questions) about how they solve the problem today and what they spend, Prioritization (2-3 questions) about importance vs other problems, Closing to ask for referrals and next steps. For each question include a follow-up probe and a common mistake to avoid. Add a debrief template to capture insights immediately after.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "product-market-fit-survey",
+    "title": "Product-Market Fit Survey",
+    "description": "Create a Sean Ellis-style PMF survey to measure and improve product-market fit.",
+    "category": "business",
+    "tags": ["PMF", "survey", "growth"],
+    "prompt": "You are a growth strategist who has helped multiple startups find product-market fit. Design a comprehensive PMF survey for [PRODUCT_NAME] targeting [USER_SEGMENT]. Include: The core Sean Ellis question about how users would feel if they could no longer use the product, 10-12 additional questions covering primary use case, frequency of use, alternatives considered, key benefit received, what they would use instead, who they would recommend it to, biggest improvement suggestion, willingness to pay [PRICE_POINT], and NPS score. For each question specify the question type and provide analysis guidance explaining what good vs concerning responses look like. Include segmentation recommendations by [USER_ATTRIBUTE] and end with a PMF scoring rubric.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "inbox-zero-system",
+    "title": "Inbox Zero System",
+    "description": "Design a personalized inbox zero workflow to eliminate email overwhelm.",
+    "category": "productivity",
+    "tags": ["email", "inbox zero", "workflow"],
+    "prompt": "You are a productivity coach specializing in email management. Design a personalized Inbox Zero system for [ROLE_TITLE] who receives approximately [EMAIL_VOLUME] emails per day across [NUMBER] email accounts. Create: a triage framework with 5 categories (act, delegate, defer, archive, delete) with clear criteria for each, recommended email processing schedule with [NUMBER] daily sessions of [DURATION] minutes, folder and label structure optimized for [INDUSTRY], template responses for the 5 most common email types in [ROLE_TITLE] role, automation rules to pre-sort newsletters notifications and low-priority messages, a weekly maintenance routine to prevent backlog, and tool recommendations compatible with [EMAIL_CLIENT]. Goal: process email in under [TARGET_MINUTES] minutes per day.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "deep-work-schedule",
+    "title": "Deep Work Schedule",
+    "description": "Create a structured deep work schedule that maximizes focused productivity.",
+    "category": "productivity",
+    "tags": ["deep work", "focus", "time management"],
+    "prompt": "You are a productivity expert inspired by Cal Newport's Deep Work philosophy. Design a weekly deep work schedule for [ROLE_TITLE] who needs to balance [DEEP_WORK_TASKS] with collaborative responsibilities like [COLLABORATIVE_TASKS]. Consider their peak energy hours are [PEAK_HOURS] and they work [WORK_HOURS] per week. Create: a time-blocked weekly template with dedicated deep work sessions of [SESSION_LENGTH], rituals for entering and exiting deep work mode, environment design recommendations for [WORKSPACE_TYPE], a shutdown routine to cleanly end each workday, strategies for protecting deep work blocks from interruptions, a scoring system to track deep work hours weekly with a target of [TARGET_HOURS], and guidelines for which tasks qualify as deep work vs shallow work in their specific role.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "async-communication-playbook",
+    "title": "Async Communication Playbook",
+    "description": "Build an async-first communication framework for distributed teams.",
+    "category": "productivity",
+    "tags": ["async", "remote work", "communication"],
+    "prompt": "You are a remote work consultant who has helped [COMPANY_SIZE]-person distributed teams thrive across time zones. Create an async communication playbook for [TEAM_NAME] spanning [NUMBER_TIMEZONES] time zones. Include: communication channel guidelines specifying when to use [TOOL_1] vs [TOOL_2] vs [TOOL_3] vs email, response time expectations by urgency level (urgent under 2h, standard under 24h, FYI no response needed), templates for async status updates that replace daily standups, guidelines for writing clear async messages with context action needed and deadline, decision-making framework that works without real-time meetings, meeting reduction strategy to cut current [MEETING_HOURS] hours per week by 50 percent, and an escalation path for when async breaks down and sync is truly needed.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "process-audit-framework",
+    "title": "Process Audit Framework",
+    "description": "Systematically audit and optimize team processes to eliminate waste and bottlenecks.",
+    "category": "productivity",
+    "tags": ["process improvement", "audit", "efficiency"],
+    "prompt": "You are a lean operations consultant. Conduct a process audit for the [PROCESS_NAME] workflow at [COMPANY_NAME] in the [DEPARTMENT] team. The current process involves [CURRENT_STEPS] and takes approximately [CURRENT_DURATION]. Analyze: map each step with time spent, owner, and tools used, identify the 7 wastes (transport, inventory, motion, waiting, overproduction, overprocessing, defects) in this specific process, calculate the value-add ratio of productive time vs total time, pinpoint the top 3 bottlenecks with root cause analysis, propose an optimized workflow targeting [TARGET_DURATION], recommend automation opportunities for repetitive steps, create before and after process maps, and define KPIs to measure improvement after implementation.",
+    "model": "Any",
+    "isPro": true
+  },
+  {
+    "id": "automation-finder",
+    "title": "Automation Finder",
+    "description": "Identify and prioritize automation opportunities across your daily workflows.",
+    "category": "productivity",
+    "tags": ["automation", "efficiency", "tools"],
+    "prompt": "You are a workflow automation specialist. Analyze the daily tasks of a [ROLE_TITLE] at [COMPANY_NAME] and identify automation opportunities. Their recurring tasks include [TASK_LIST]. For each task: assess automation potential (full, partial, or not automatable), estimate current time spent per week, recommend specific tools or integrations from [TOOL_STACK], calculate ROI as hours saved vs setup time, and provide implementation difficulty (easy, medium, hard). Prioritize the top 5 automations by impact-to-effort ratio. For each top automation provide a step-by-step implementation guide, expected time savings per month, and potential pitfalls. Target: reclaim [TARGET_HOURS] hours per week through automation.",
+    "model": "Any",
+    "isPro": false
+  },
+  {
+    "id": "team-retrospective-facilitator",
+    "title": "Team Retrospective",
+    "description": "Facilitate an effective team retrospective that drives actionable improvements.",
+    "category": "productivity",
+    "tags": ["retrospective", "agile", "team"],
+    "prompt": "You are an agile coach facilitating a [SPRINT/MONTHLY/QUARTERLY] retrospective for [TEAM_NAME], a [TEAM_SIZE]-person [TEAM_TYPE] team. The period covered [TIME_PERIOD] and key events included [KEY_EVENTS]. Design a retrospective using the [4Ls/STARFISH/SAILBOAT] format. Include: a 5-minute icebreaker relevant to the team context, structured prompts for each retrospective category, a dot-voting mechanism to prioritize discussion topics, facilitation tips for handling [REMOTE/IN_PERSON/HYBRID] dynamics, time-boxed agenda for a [DURATION]-minute session, action item template with owner deadline and success criteria, and a follow-up plan to track action items from this and previous retros. Ensure psychological safety by including ground rules.",
+    "model": "Any",
+    "isPro": false
+  }
+]
