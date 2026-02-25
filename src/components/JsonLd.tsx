@@ -1,6 +1,6 @@
 import site from "@/data/site.json";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://promptvault-eight-ruby.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fromlaerkai.store";
 
 export function JsonLd() {
   const schema = {

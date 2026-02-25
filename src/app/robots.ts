@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://promptvault-eight-ruby.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fromlaerkai.store";
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/journal";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://promptvault-eight-ruby.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fromlaerkai.store";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const journalSlugs = getAllSlugs();

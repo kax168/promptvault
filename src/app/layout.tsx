@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://promptvault-eight-ruby.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fromlaerkai.store";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
