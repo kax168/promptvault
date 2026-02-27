@@ -26,6 +26,14 @@ export default function Footer() {
         <p className="text-slate-600 text-xs">
           Built with ☕ and AI. Prompts tested across ChatGPT, Claude & Gemini.
         </p>
+        <div className="flex justify-center gap-4 mt-4 mb-2">
+          <a href="/about" className="text-xs text-slate-600 hover:text-slate-400">About</a>
+          <a href="/blog" className="text-xs text-slate-600 hover:text-slate-400">Blog</a>
+          <a href="/prompts" className="text-xs text-slate-600 hover:text-slate-400">Prompts</a>
+          <a href="/privacy" className="text-xs text-slate-600 hover:text-slate-400">Privacy</a>
+          <a href="/terms" className="text-xs text-slate-600 hover:text-slate-400">Terms</a>
+          <a href="/contact" className="text-xs text-slate-600 hover:text-slate-400">Contact</a>
+        </div>
         <p className="text-slate-700 text-[10px] mt-2">
           © 2026 {site.name}. All rights reserved.
         </p>
