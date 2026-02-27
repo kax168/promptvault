@@ -26,6 +26,12 @@ const posts = [
     date: "2026-02-27",
   },
   {
+    slug: "prompt-chaining-for-ai-agents",
+    title: "Prompt Chaining for AI Agents: How to Build Reliable Multi-Step Workflows",
+    excerpt: "Learn how prompt chaining breaks complex AI tasks into reliable, modular steps. A practical guide to building smarter AI agent workflows in 2026.",
+    date: "2026-02-27",
+  },
+  {
     slug: "10-prompts-every-developer-needs",
     title: "10 AI Prompts Every Developer Needs in 2026",
     excerpt: "From code review to debugging to documentation — these prompts will supercharge your development workflow.",
