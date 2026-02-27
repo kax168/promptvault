@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#0a0e1a" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3367550361022545" crossOrigin="anonymous"></script>
       </head>
       <body className="bg-[#0a0e1a] text-slate-100 antialiased">
         <nav className="sticky top-0 z-50 bg-[#0a0e1a]/80 backdrop-blur border-b border-slate-800">
