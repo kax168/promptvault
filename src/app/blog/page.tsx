@@ -20,6 +20,12 @@ const posts = [
     date: "2026-02-27",
   },
   {
+    slug: "how-to-write-system-prompts-for-ai-agents",
+    title: "How to Write System Prompts for AI Agents: A Complete Guide",
+    excerpt: "Learn how to craft effective system prompts for AI agents. Step-by-step techniques to build reliable, task-focused AI agents with clear instructions.",
+    date: "2026-02-27",
+  },
+  {
     slug: "10-prompts-every-developer-needs",
     title: "10 AI Prompts Every Developer Needs in 2026",
     excerpt: "From code review to debugging to documentation — these prompts will supercharge your development workflow.",

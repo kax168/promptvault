@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogSlugs = ["what-is-prompt-engineering", "chatgpt-vs-claude-vs-gemini", "10-prompts-every-developer-needs"];
+  const blogSlugs = ["what-is-prompt-engineering", "chatgpt-vs-claude-vs-gemini", "10-prompts-every-developer-needs", "how-to-write-system-prompts-for-ai-agents"];
   const blogPages = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}`,
     lastModified: new Date(),
