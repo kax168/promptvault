@@ -32,6 +32,12 @@ const posts = [
     date: "2026-02-27",
   },
   {
+    slug: "best-ai-prompts-for-small-business",
+    title: "Best AI Prompts for Small Business: 15 Ready-to-Use Templates",
+    excerpt: "Discover 15 proven AI prompts for small business owners. From marketing emails to financial planning — copy-paste templates that save hours every week.",
+    date: "2026-02-28",
+  },
+  {
     slug: "10-prompts-every-developer-needs",
     title: "10 AI Prompts Every Developer Needs in 2026",
     excerpt: "From code review to debugging to documentation — these prompts will supercharge your development workflow.",
