@@ -43,6 +43,12 @@ const posts = [
     excerpt: "From code review to debugging to documentation — these prompts will supercharge your development workflow.",
     date: "2026-02-27",
   },
+  {
+    slug: "ai-content-optimization-guide",
+    title: "AI Content Optimization: How to Rank Higher with AI-Generated Content in 2026",
+    excerpt: "Master AI content optimization for SEO. Learn proven strategies to make AI-generated content rank on Google while maintaining quality and authenticity.",
+    date: "2026-03-04",
+  },
 ];
 
 export default function BlogPage() {
