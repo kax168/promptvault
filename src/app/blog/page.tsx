@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-workflow-automation-content-creators-2026",
+    title: "AI Workflow Automation for Content Creators in 2026: The Complete Guide",
+    excerpt: "Discover how content creators are using AI workflow automation to 10x their output in 2026. From ideation to publishing, learn the exact systems that save 20+ hours per week.",
+    date: "2026-03-05",
+  },
+  {
     slug: "chain-of-symbol-prompting-2026",
     title: "Chain-of-Symbol Prompting: The 2026 Breakthrough That Beats Chain-of-Thought",
     excerpt: "Discover Chain-of-Symbol (CoS) prompting - the revolutionary 2026 technique that outperforms traditional Chain-of-Thought for spatial reasoning and planning tasks.",
