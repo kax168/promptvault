@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "chain-of-symbol-prompting-2026",
+    title: "Chain-of-Symbol Prompting: The 2026 Breakthrough That Beats Chain-of-Thought",
+    excerpt: "Discover Chain-of-Symbol (CoS) prompting - the revolutionary 2026 technique that outperforms traditional Chain-of-Thought for spatial reasoning and planning tasks.",
+    date: "2026-03-05",
+  },
+  {
     slug: "what-is-prompt-engineering",
     title: "What Is Prompt Engineering? A Beginner's Guide",
     excerpt: "Learn the fundamentals of prompt engineering and how to get better results from AI models like ChatGPT, Claude, and Gemini.",
