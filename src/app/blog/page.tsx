@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "chain-of-symbol-prompting-spatial-reasoning",
+    title: "Chain-of-Symbol Prompting for Spatial Reasoning Tasks: A 2026 Guide",
+    excerpt: "Discover how Chain-of-Symbol (CoS) prompting outperforms traditional Chain-of-Thought for spatial reasoning, planning, and grid-based AI tasks.",
+    date: "2026-03-06",
+  },
+  {
     slug: "ai-workflow-automation-content-creators-2026",
     title: "AI Workflow Automation for Content Creators in 2026: The Complete Guide",
     excerpt: "Discover how content creators are using AI workflow automation to 10x their output in 2026. From ideation to publishing, learn the exact systems that save 20+ hours per week.",
