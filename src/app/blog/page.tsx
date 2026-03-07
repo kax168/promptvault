@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "context-engineering-vs-prompt-engineering-2026",
+    title: "Context Engineering vs Prompt Engineering in 2026: What Changed and Why It Matters",
+    excerpt: "The AI industry has shifted from prompt engineering to context engineering. Learn what changed, why it matters, and how to adapt your workflow for production AI systems in 2026.",
+    date: "2026-03-07",
+  },
+  {
     slug: "ai-writing-assistants-long-form-2026",
     title: "AI Writing Assistants for Long-Form Content in 2026: Complete Comparison Guide",
     excerpt: "Compare the best AI writing assistants for long-form content in 2026. From novels to technical documentation, discover which tools deliver quality, consistency, and speed.",
