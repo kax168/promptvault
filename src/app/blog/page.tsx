@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-agents-marketing-automation-2026",
+    title: "AI Agents for Marketing Automation in 2026: The Complete Implementation Guide",
+    excerpt: "Discover how AI agents are transforming marketing automation in 2026. Learn implementation strategies, real-world use cases, and how to deploy autonomous marketing agents that drive results.",
+    date: "2026-03-07",
+  },
+  {
     slug: "context-engineering-vs-prompt-engineering-2026",
     title: "Context Engineering vs Prompt Engineering in 2026: What Changed and Why It Matters",
     excerpt: "The AI industry has shifted from prompt engineering to context engineering. Learn what changed, why it matters, and how to adapt your workflow for production AI systems in 2026.",

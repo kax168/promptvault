@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogSlugs = ["context-engineering-vs-prompt-engineering-2026", "ai-writing-assistants-long-form-2026", "chain-of-symbol-prompting-spatial-reasoning", "ai-workflow-automation-content-creators-2026", "chain-of-symbol-prompting-2026", "what-is-prompt-engineering", "chatgpt-vs-claude-vs-gemini", "10-prompts-every-developer-needs", "how-to-write-system-prompts-for-ai-agents", "prompt-chaining-for-ai-agents", "best-ai-prompts-for-small-business", "ai-content-optimization-guide"];
+  const blogSlugs = ["ai-agents-marketing-automation-2026", "context-engineering-vs-prompt-engineering-2026", "ai-writing-assistants-long-form-2026", "chain-of-symbol-prompting-spatial-reasoning", "ai-workflow-automation-content-creators-2026", "chain-of-symbol-prompting-2026", "what-is-prompt-engineering", "chatgpt-vs-claude-vs-gemini", "10-prompts-every-developer-needs", "how-to-write-system-prompts-for-ai-agents", "prompt-chaining-for-ai-agents", "best-ai-prompts-for-small-business", "ai-content-optimization-guide"];
   const blogPages = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}`,
     lastModified: new Date(),
