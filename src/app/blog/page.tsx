@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-content-automation-workflows-2026",
+    title: "AI Content Automation Workflows in 2026: Build Systems That Scale",
+    excerpt: "Learn how to build production-ready AI content automation workflows in 2026. From ideation to publishing, discover the exact systems that save 25+ hours per week while maintaining quality.",
+    date: "2026-03-08",
+  },
+  {
     slug: "few-shot-prompting-ai-agents-production-2026",
     title: "Few-Shot Prompting for AI Agents: Production Best Practices 2026",
     excerpt: "Master few-shot prompting strategies for production AI agents. Learn example selection, dynamic retrieval, optimal quantities, and testing frameworks that improve reliability by 40%.",
