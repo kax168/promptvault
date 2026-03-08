@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "few-shot-prompting-ai-agents-production-2026",
+    title: "Few-Shot Prompting for AI Agents: Production Best Practices 2026",
+    excerpt: "Master few-shot prompting strategies for production AI agents. Learn example selection, dynamic retrieval, optimal quantities, and testing frameworks that improve reliability by 40%.",
+    date: "2026-03-08",
+  },
+  {
     slug: "ai-agents-marketing-automation-2026",
     title: "AI Agents for Marketing Automation in 2026: The Complete Implementation Guide",
     excerpt: "Discover how AI agents are transforming marketing automation in 2026. Learn implementation strategies, real-world use cases, and how to deploy autonomous marketing agents that drive results.",
