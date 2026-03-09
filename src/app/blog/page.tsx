@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "prompt-management-systems-ai-teams-2026",
+    title: "Prompt Management Systems for AI Teams in 2026: Complete Guide",
+    excerpt: "Discover the best prompt management systems for AI teams in 2026. Compare Braintrust, Langfuse, Vellum, and more. Learn which tools prevent production failures and scale with your AI agents.",
+    date: "2026-03-09",
+  },
+  {
     slug: "ai-content-automation-workflows-2026",
     title: "AI Content Automation Workflows in 2026: Build Systems That Scale",
     excerpt: "Learn how to build production-ready AI content automation workflows in 2026. From ideation to publishing, discover the exact systems that save 25+ hours per week while maintaining quality.",
