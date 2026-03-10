@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "chain-of-thought-prompting-developers-2026",
+    title: "Chain-of-Thought Prompting for Developers: Complete 2026 Guide",
+    excerpt: "Master Chain-of-Thought prompting to build smarter AI applications. Learn step-by-step reasoning techniques that improve code generation, debugging, and problem-solving by 60%.",
+    date: "2026-03-10",
+  },
+  {
     slug: "prompt-management-systems-ai-teams-2026",
     title: "Prompt Management Systems for AI Teams in 2026: Complete Guide",
     excerpt: "Discover the best prompt management systems for AI teams in 2026. Compare Braintrust, Langfuse, Vellum, and more. Learn which tools prevent production failures and scale with your AI agents.",
