@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-writing-prompts-bloggers-2026",
+    title: "AI Writing Prompts for Bloggers in 2026: 21 Templates That Speed Up Content Without Sounding Robotic",
+    excerpt: "Discover the best AI writing prompts for bloggers in 2026. Use these 21 proven templates to speed up ideation, outlining, drafting, rewriting, and SEO optimization without losing your voice.",
+    date: "2026-03-11",
+  },
+  {
     slug: "prompt-engineering-best-practices-2026",
     title: "Prompt Engineering Best Practices 2026: 15 Proven Techniques for Better AI Outputs",
     excerpt: "Learn the top prompt engineering best practices for 2026. Discover 15 proven techniques to improve AI accuracy, structure prompts better, reduce hallucinations, and get higher-quality outputs.",
