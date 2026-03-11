@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "prompt-engineering-best-practices-2026",
+    title: "Prompt Engineering Best Practices 2026: 15 Proven Techniques for Better AI Outputs",
+    excerpt: "Learn the top prompt engineering best practices for 2026. Discover 15 proven techniques to improve AI accuracy, structure prompts better, reduce hallucinations, and get higher-quality outputs.",
+    date: "2026-03-11",
+  },
+  {
     slug: "chain-of-thought-prompting-developers-2026",
     title: "Chain-of-Thought Prompting for Developers: Complete 2026 Guide",
     excerpt: "Master Chain-of-Thought prompting to build smarter AI applications. Learn step-by-step reasoning techniques that improve code generation, debugging, and problem-solving by 60%.",
