@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-writing-assistant-for-long-form-content-2026",
+    title: "AI Writing Assistant for Long-Form Content in 2026: How Writers and Marketers Publish Faster Without Losing Quality",
+    excerpt: "Discover how to use an AI writing assistant for long-form content in 2026. Learn the best workflows for outlining, drafting, editing, SEO optimization, and publishing higher-quality articles faster.",
+    date: "2026-03-12",
+  },
+  {
     slug: "prompt-engineering-for-marketers",
     title: "Prompt Engineering for Marketers: SEO, Content, and Campaign Workflows That Actually Convert",
     excerpt: "Learn prompt engineering for marketers with practical frameworks for SEO research, blog briefs, ad copy, email campaigns, and content workflows that improve speed without sacrificing quality.",
