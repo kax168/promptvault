@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-productivity-tools-for-writers-2026",
+    title: "AI Productivity Tools for Writers in 2026: Build a Faster Content Workflow Without Losing Your Voice",
+    excerpt: "Discover the best AI productivity tools for writers in 2026. Learn how to combine outlining, drafting, editing, research, and prompt systems into a workflow that saves time without sacrificing quality.",
+    date: "2026-03-13",
+  },
+  {
     slug: "ai-prompt-templates-for-small-business-2026",
     title: "AI Prompt Templates for Small Business in 2026: 25 Practical Prompts to Save Time and Grow Faster",
     excerpt: "Discover the best AI prompt templates for small business in 2026. Use 25 practical prompts for marketing, customer support, sales, operations, and content without wasting hours on trial and error.",
