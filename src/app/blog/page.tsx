@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "prompt-engineering-examples-for-marketing-teams-2026",
+    title: "Prompt Engineering Examples for Marketing Teams in 2026: 17 Workflows That Save Time and Improve Campaign Performance",
+    excerpt: "Discover practical prompt engineering examples for marketing teams in 2026. Learn 17 repeatable workflows for SEO, email, paid ads, social content, and campaign planning.",
+    date: "2026-03-14",
+  },
+  {
     slug: "ai-productivity-tools-for-writers-2026",
     title: "AI Productivity Tools for Writers in 2026: Build a Faster Content Workflow Without Losing Your Voice",
     excerpt: "Discover the best AI productivity tools for writers in 2026. Learn how to combine outlining, drafting, editing, research, and prompt systems into a workflow that saves time without sacrificing quality.",
