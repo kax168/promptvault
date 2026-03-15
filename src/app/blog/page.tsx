@@ -6,9 +6,7 @@ export const metadata: Metadata = {
   description: "AI tips, prompt engineering guides, and tutorials from LaerKai.",
 };
 
-const posts = [
-  {
-    slug: "prompt-research-for-seo-geo-2026",
+
     title: "Prompt Research for SEO and GEO in 2026: How to Find High-Intent Topics That Rank in Search and AI Answers",
     excerpt: "Learn what prompt research means for SEO and GEO in 2026. Discover how to find high-intent prompt clusters, build content around AI search behavior, and turn prompt-led queries into qualified traffic.",
     date: "2026-03-15",
