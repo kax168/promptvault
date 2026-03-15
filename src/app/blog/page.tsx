@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "prompt-research-for-seo-geo-2026",
+    title: "Prompt Research for SEO and GEO in 2026: How to Find High-Intent Topics That Rank in Search and AI Answers",
+    excerpt: "Learn what prompt research means for SEO and GEO in 2026. Discover how to find high-intent prompt clusters, build content around AI search behavior, and turn prompt-led queries into qualified traffic.",
+    date: "2026-03-15",
+  },
+  {
     slug: "ai-editing-workflow-for-writers-2026",
     title: "AI Editing Workflow for Writers in 2026: How to Revise Faster Without Losing Voice or Quality",
     excerpt: "Discover the best AI editing workflow for writers in 2026. Learn how to use AI for revision, clarity, structure, and SEO polish without flattening your voice or publishing generic content.",
